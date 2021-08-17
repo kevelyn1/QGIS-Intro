@@ -10,13 +10,13 @@ A map is the most common output of GIS. This tutorial shows how to create a map 
 Lets make a map from vector data.
 
 
- [<span style="color:#0B608A">QGIS Tutorials and Tips</span>](https://www.qgistutorials.com/en/docs/introduction.html)
+ [<span style="color:#0564A0">QGIS Tutorials and Tips</span>](https://www.qgistutorials.com/en/docs/introduction.html)
 
 ## Download data
 
 Download the data from:
 
-`<span style="color:#AF1B03">file_name</span`
+<span style="color:#AF1B03">`file_name`</span>
 
 ## Create a map from vector data
 
