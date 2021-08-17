@@ -2,7 +2,7 @@
 layout: article
 title: Introduction
 modified: 2021-11-8
-categories: QGIS
+categories: qgis
 image:
   teaser: QGIS_intro_teaser.png
 ---
