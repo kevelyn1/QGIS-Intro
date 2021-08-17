@@ -7,7 +7,7 @@ image:
   teaser: QGIS_intro_teaser.png
 ---
 
-Lets make a map from vector data. <span style="color:blue"> [QGIS Tutorials and Tips](https://www.qgistutorials.com/en/docs/introduction.html)</span>
+Lets make a map from vector data.  [<span style="color:blue">QGIS Tutorials and Tips</span>](https://www.qgistutorials.com/en/docs/introduction.html)
 
 dada
 
