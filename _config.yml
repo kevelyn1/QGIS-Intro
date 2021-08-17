@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title: "#QGIS"
+title: "Introduction to QGIS"
 description: "Introduction to QGIS Tutorials"
 logo: QGIS_intro_teaser2.png # 120x120 px default image used for Twitter summary card
 teaser: QGIS_intro_teaser.png #  400x250 px default teaser image used in image archive grid
