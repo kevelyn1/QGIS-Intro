@@ -16,7 +16,7 @@ Lets make a map from vector data.
 
 Download the data from:
 
-<span style="color:#AF1B03">`file_name`</span>
+`<span style="color:#AF1B03">file_name</span>`
 
 ## Create a map from vector data
 
