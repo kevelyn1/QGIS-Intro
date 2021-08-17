@@ -1,11 +1,11 @@
 # Site navigation links
 
-- title: Landscape Geoinformatics
-  url: https://landscape-geoinformatics.ut.ee/
+- title: Introduction
+  url: https://kevelyn1.github.io/QGIS-Intro/qgis/intro/
   excerpt:
   image:
 
-- title: Introduction
-  url: https://twitter.com/evelynuuemaa
+- title: Landscape Geoinformatics
+  url: https://landscape-geoinformatics.ut.ee/
   excerpt:
   image:
