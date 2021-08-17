@@ -22,6 +22,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
+  - jemoji
 
 
 # Site owner
