@@ -1,11 +1,11 @@
 # Site navigation links
 
 - title: Introduction
-  url: https://kevelyn1.github.io/QGIS-Intro/qgis/intro/
+  url: /qgis/intro/
   excerpt:
   image:
 
-- title: Landscape Geoinformatics
-  url: https://landscape-geoinformatics.ut.ee/
+- title: Making a map
+  url: /qgis/making-a-map/
   excerpt:
   image:

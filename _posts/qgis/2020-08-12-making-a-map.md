@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Making a map
-modified: 2020-08-12
+modified: 2020-08-10
 categories: qgis
 image:
   teaser: QGIS_intro_teaser.png
