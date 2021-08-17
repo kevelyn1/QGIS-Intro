@@ -2,9 +2,9 @@
 layout: article
 title: Introduction
 modified: 2021-11-8
-categories: QGIS_intro
+categories: QGIS
 image:
-  teaser: day1_dialects_teaser.png
+  teaser: QGIS_intro_teaser.png
 ---
 
 # Introduction

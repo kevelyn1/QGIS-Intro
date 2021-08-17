@@ -1,6 +1,6 @@
-# 30 Day Map Challenge 2020
+# QGIS
 
-[![30Day Map Challenge Teaser](images/mapchallenge-categories_teaser.jpg)](https://github.com/kevelyn1/30DayMapChallenge2020)
+[![QGIS teaser](images/QGIS_intro_teaser.png)](https://github.com/kevelyn1/)
 
 ---
 
