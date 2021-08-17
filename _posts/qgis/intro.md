@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Introduction
-modified: 2021-11-8
+modified: 2021-08-11
 categories: qgis
 image:
   teaser: QGIS_intro_teaser.png
