@@ -63,4 +63,4 @@ exclude:
   - spec
   - tmp
 
-theme: jekyll-theme-slate
+theme: jekyll-theme-cayman
