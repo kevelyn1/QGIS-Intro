@@ -18,17 +18,5 @@ Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](h
 ### Steps to make a map
 
 1. Download and extract the Natural Earth Quick Start Kit data. Open QGIS. Locate the <span style="font-family:Consolas; color:#AF1B03">Natural_Earth_quick_start</span> folder in the Browser panel. Expand the folder to locate the <span style="font-family:Consolas; color:#AF1B03">Natural_Earth_quick_start_for_QGIS_v3</span> project. This is the project file that contains styled layers in QGIS Document format. Double-click the project to open it.
-
 ![image of browse data](../../images/2_browse_data.png)
-
 2. The state of your QGIS session is called a project. QGIS works on one project at a time.  Please save your project `Project ► Save as` into your folder. The information saved in a project file includes add layers, layer properties and symbology, projection of the map view, print layouts etc. Read more about QGIS project from [<span style="color:#0564A0">QGIS Documentation</span>](https://docs.qgis.org/testing/en/docs/user_manual/introduction/project_files.html#).
-
-
-
-
-
-
-
-
-
-QGIS can save the state of your workspace into a QGIS project file using the menu options
