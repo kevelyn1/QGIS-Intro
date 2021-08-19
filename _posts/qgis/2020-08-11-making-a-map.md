@@ -24,3 +24,14 @@ Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](h
 4. The attribute table of <span style="font-family:Consolas; color:#AF1B03">ne_10m_populated_places</span> contains place names in multiple languages and therefore you can use variables to create a map in several language. Open the attribute table of <span style="font-family:Consolas; color:#AF1B03">ne_10m_populated_places</span> by making a right click on the layer name choose `Open Attribute Table`. Find in the table variables (column names) <span style="font-family:Consolas">name_en</span> and <span style="font-family:Consolas">name_el</span>. Place names are generated automatically to the map based on these variables. ![image of browse data](../../images/2_attribute_table.png)
 5. Use the pan and zoom controls in the Map Navigation Toolbar and zoom to New Zealand.You can see that the map kind of ends half way in the map view. This is because of the date line. The map extent specified to end there, however, it is possible to re-define the map center line and therefore also the western-most and eastern-most borders. ![image of browse data](../../images/2_zoom_pan_nz.png)
 6. Before we make a map suitable for printing, we need to choose an appropriate projection. From the Status bar in the lower right corner ![image of browse data](../../images/icon_crs.png). The default CRS for the project is set to EPSG:3857 Pseudo-Mercator. This CRS is popularly used for web mapping and is a decent choice for our purpose, so we can leave it to its default value. The New Zealand's official geodetic datum for New Zealand and its offshore islands is [<span style="color:#0564A0">NZGD2000</span>](https://www.linz.govt.nz/data/geodetic-system/datums-projections-and-heights/geodetic-datums/new-zealand-geodetic-datum-2000-nzgd2000) and if you are working for a smaller region in NZ, using this CRS will be better.
+
+Some text[^1].
+
+Some other text[^2].
+
+The identifier in the square brackets does not have to be numeric[^my_footnote].
+
+[^1]: Some footnote.
+[^2]: Other footnote.
+
+[^my_footnote]: This also works fine.
