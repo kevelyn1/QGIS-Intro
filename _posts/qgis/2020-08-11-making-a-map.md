@@ -16,7 +16,7 @@ A map is the most common output of GIS. This tutorial shows how to create a map 
   * [2.1. Creating the main map](#21-creating-the-main-map)
   * [2.2. Creating an inset map](#22-creating-an-inset-map)
   * [2.3. Adding grid to the map](#23-adding-grid-to-the-map)
-  * [2.4. Adding the north arrow, scale and map title](#24-adding-the-north-arrow--scale-and-map-title)
+  * [2.4. Adding the north arrow, scale bar and map title](#24-adding-the-north-arrow-scale-bar-and-map-title)
   * [2.5. Exporting map as image](#25-exporting-map-as-image)
 
 ### 1. Download data
@@ -69,10 +69,10 @@ Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](h
 22. Scroll down to the Grid frame section and check the Draw coordinates box. The default format is Degrees but it appears as a number. We can change this to Decimal with Suffic under Format. Then you can bring the coordinates inside the frame and rotate them into appropriate direction. You can also change the font of the coordinates if you like. As our grid lines are full degrees then there is no need to show so high coordinate precision and you can change this to 1.
 ![image of coordinate number adjustment](../../images/2_coordinate number.png)
 
-#### 2.4. Adding the north arrow, scale and map title
+#### 2.4. Adding the north arrow, scale bar and map title
 23. First, we'll add a rectangluar frame to hold the map elements (north arrow, scale and label). Go to `Add Item ► Add Shape ► Add Rectangle` or alternatively use Add shape button ![image of add rectangle](../../images/icon_add shape.png) and draw a rectangle. Note that new item called Rectangle 1 appears in the Item list panel. You can change the Style of the rectangle to match the map background by clicking on the Style button under Item properties panel.
 ![image of drawing an rectangle](../../images/2_draw rectangle.png)
-24. Now we will add a North Arrow to the map. QGIS comes with a nice collection of North Arrows. Click `Add Item ► Add North Arrow` or alternatively click Add North Arrow ![image of add north arrow](../../images/icon_add north arrow.png). Holding your left mouse button, draw a rectangle. On the right-hand panel, click on the Item Properties tab then click arrows and choose the arrow style to your liking. 
+24. Now we will add a North Arrow to the map. QGIS comes with a nice collection of North Arrows. Click `Add Item ► Add North Arrow` or alternatively click Add North Arrow ![image of add north arrow](../../images/icon_add north arrow.png). Holding your left mouse button, draw a rectangle. On the right-hand panel, click on the Item Properties tab then click arrows and choose the arrow style to your liking.
 
 Tip
 
