@@ -63,7 +63,10 @@ Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](h
 ![image of select CRS](../../images/2_change_crs_grid.png)
 20. In the Coordinate Reference System Selector dialog, uncheck the option "Use Map CRS" and enter <span style="font-family:Consolas">4326</span> in the Filter box. From the results, select the WGS84 EPSG:4326 as the CRS. Click OK.
 ![image of select CRS](../../images/2_4326_crs.png)
-21. Select the Interval values as 5 degrees in both X and Y direction. You can adjust the Offset to change where the grid lines appear.
+21. Select the Interval values as 5 degrees in both X and Y direction. You can adjust the Offset to change where the grid lines appear. You might also want to change the line style of the grid lines. You can do that by clicking on the line next to the Line style. You can change the color and the thickness of the lines. Currently, it might be good idea to reduce the line width to 0.1 because with the default line style the grid is a bit too overpowering.
+![image of grid interval](../../images/2_grid interval.png)
+22. Scroll down to the Grid frame section and check the Draw coordinates box. The default format is Degrees but it appears as a number. We can change this to Decimal with Suffic under Format. Then you can bring the coordinates inside the frame and rotate them into appropriate direction. You can also change the font of the coordinates if you like. As our grid lines are full degrees then there is no need to show so high coordinate precision and you can change this to 1.
+![image of coordinate number adjustment](../../images/2_coordinate number.png)
 
 
 [^1]: EPSG Geodetic Parameter Dataset (also EPSG registry) is a public registry of geodetic datums, spatial reference systems, Earth ellipsoids, coordinate transformations and related units of measurement.  Each entity is assigned an EPSG code between 1024-32767, along with a standard machine-readable well-known text (WKT) representation. (Wiki) The EPSG codes are unique and they are very useful to use for searching and identifying the CRS-s in GIS programmes.
