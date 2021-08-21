@@ -59,7 +59,7 @@ Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](h
 #### 2.3. Adding grid to the map
 18. Now that we have the map inset ready, we will add a grid to the main map. Select the Map 1 object from the Items panel. In the Item properties tab, scroll down to the Grids section. Click the Add a new grid button and then Modify grid….
 ![image of add grid](../../images/2_add_grid.png)
-19. By default, the grid lines use the same units and projection as the currently selected map. However, for small scale maps (1:2 000 000 – 1:∞)[^3] it is more common and useful to display grid lines in degrees. We can select a different CRS for the grid. Click on the Select CRS button ![image of select CRS](../../images/2_choose CRS.png)
+19. By default, the grid lines use the same units and projection as the currently selected map. However, for small scale maps (1:2 000 000 – 1:∞)[^3] it is more common and useful to display grid lines in degrees. We can select a different CRS for the grid. Click on the Select CRS button ![image of select CRS](../../images/icon_CRS2.png)
 ![image of select CRS](../../images/2_change_crs_grid.png)
 20. In the Coordinate Reference System Selector dialog, uncheck the option "Use Map CRS" and enter <span style="font-family:Consolas">4326</span> in the Filter box. From the results, select the WGS84 EPSG:4326 as the CRS. Click OK.
 ![image of select CRS](../../images/2_4326_crs.png)
