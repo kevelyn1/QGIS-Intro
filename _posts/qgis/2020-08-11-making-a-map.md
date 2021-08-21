@@ -7,21 +7,22 @@ image:
   teaser: QGIS_intro_teaser.png
 ---
 
-- [Download data](#download-data)
-- [Steps to make a map](#steps-to-make-a-map)
-  * [Creating the main map](#creating-the-main-map)
+- [1. Download data](#1-download-data)
+- [2. Steps to make a map](#2-steps-to-make-a-map)
+  * [2.1. Creating the main map](#21-creating-the-main-map)
+  * [2.2. Creating an inset map](#22-creating-an-inset-map)
 
 A map is the most common output of GIS. This tutorial shows how to create a map from vector and raster data with standard map elements like map inset, grids, north arrow, scale bar and labels.
 Lets make a map from vector data.
 
-### Download data
+### 1. Download data
 
 We will use the Natural Earth dataset - specifically the Natural Earth Quick Start Kit that comes with beautifully styled global layers that can be loaded directly to QGIS.
 
 Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](https://naciscdn.org/naturalearth/packages/Natural_Earth_quick_start.zip). If the download link doesn’t work, get it directly from Natural Earth Downloads page.
 
-### Steps to make a map
-#### Creating the main map
+### 2. Steps to make a map
+#### 2.1. Creating the main map
 
 1. Download and extract the Natural Earth Quick Start Kit data. Open QGIS. Locate the <span style="font-family:Consolas; color:#AF1B03">Natural_Earth_quick_start</span> folder in the Browser panel. Expand the folder to locate the <span style="font-family:Consolas; color:#AF1B03">Natural_Earth_quick_start_for_QGIS_v3</span> project. This is the project file that contains styled layers in QGIS Document format. Double-click the project to open it.
 ![image of browse data](../../images/2_browse_data.png)
@@ -38,7 +39,7 @@ Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](h
 11. The initial project has layer group for the scale of 1 to 18 million switched on in the layer panel. As we set our scale to less than 1 million in the previous scale then we should change the layer visibility in the main map menu. Switch back to the map view and switch off the visibility of the <span style="font-family:Consolas; color:#AF1B03">z5 - 1:18m</span> and switch on the visibility of <span style="font-family:Consolas; color:#AF1B03">z5 - 1:4m</span>. The map rendering might take a while. Switch back to the Layout view and click refresh ![image of refresh icon](../../images/icon_refresh.png) in the map's Item properties panel.
 ![image of change layer visibility](../../images/2_change layer visibility.png)
 
-#### Creating an inset map
+#### 2.2. Creating an inset map
 
 12. Now we will add a map inset[^2] that shows New Zealand's location in the world. Before we make any changes to the layers in the main QGIS window, check the Lock layers and Lock styles for layers boxes. This will ensure that if we turn off some layers or change their styles, this view will not change. ![image of lock layers](../../images/2_lock layers.png)
 13. To add the inset map, click ![image of browse data](../../images/icon_add_map.png) which makes the Add map mode active. Draw an rectangle to the upper left corner of the map or whereever you would like to add the inset. You will now notice that we have 2 map objects in the Print Layout. When making changes, make sure you have the correct map selected. You can also change the name of Map 2 to Inset map if making a double click on the name.
