@@ -16,7 +16,7 @@ A map is the most common output of GIS. This tutorial shows how to create a map 
   * [2.1. Creating the main map](#21-creating-the-main-map)
   * [2.2. Creating an inset map](#22-creating-an-inset-map)
   * [2.3. Adding grid to the map](#23-adding-grid-to-the-map)
-  * [2.4. Adding the north arrow, scale bar and map title](#24-adding-the-north-arrow-scale-bar-and-map-title)
+  * [2.4. Adding the north arrow, scale bar, map title and legend](#24-adding-the-north-arrow-scale-bar-map-title-and-legend)
   * [2.5. Exporting map as image](#25-exporting-map-as-image)
 
 ### 1. Download data
@@ -69,7 +69,7 @@ Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](h
 22. Scroll down to the Grid frame section and check the Draw coordinates box. The default format is Degrees but it appears as a number. We can change this to Decimal with Suffic under Format. Then you can bring the coordinates inside the frame and rotate them into appropriate direction. You can also change the font of the coordinates if you like. As our grid lines are full degrees then there is no need to show so high coordinate precision and you can change this to 1.
 ![image of coordinate number adjustment](../../images/2_coordinate number.png)
 
-#### 2.4. Adding the north arrow, scale bar and map title
+#### 2.4. Adding the north arrow, scale bar, map title and legend
 23. First, we'll add a rectangluar frame to hold the map elements (north arrow, scale and label). Go to `Add Item ► Add Shape ► Add Rectangle` or alternatively use Add shape button ![image of add rectangle](../../images/icon_add shape.png) and draw a rectangle. Note that new item called Rectangle 1 appears in the Item list panel. You can change the Style of the rectangle to match the map background by clicking on the Style button under Item properties panel.
 ![image of drawing an rectangle](../../images/2_draw rectangle.png)
 24. Now we will add a North Arrow to the map. QGIS comes with a nice collection of North Arrows. Click `Add Item ► Add North Arrow` or alternatively click Add North Arrow ![image of add north arrow](../../images/icon_add north arrow.png). Holding your left mouse button, draw a rectangle. On the right-hand panel, click on the Item Properties tab then click arrows and choose the arrow style to your liking.![image of add north arrow](../../images/2_add north arrow.png)
@@ -81,10 +81,12 @@ Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](h
 ![image of add title](../../images/2_add title.png)
 26. Similarly to previous step, add the information about the map projection, credits for the data, software and map design.
 ![image of add credits](../../images/2_add credits.png)
-27. Lets add scale bar to the map. Click on `Add Item ► Add Scalebar` or alternatively click on Add Scale Bar ![image of add scale bar](../../images/icon_add scalebar.png). Click on the layout where you want the scalebar to appear. In the Item Properties tab, make sure you have chosen the correct map element <span style="font-family:Consolas">Map 1</span> for which to display the scalebar. Choose the Style that fit your requirement. In the Segments panel, change the Fixed width to <span style="font-family:Consolas">150</span> units and adjust the segments to your liking. It is possible to adjust many properties of the scale bar. Read more about designing and adjusting scale bar properties from [<span style="color:#0564A0">QGIS Documentation</span>](https://docs.qgis.org/3.16/en/docs/user_manual/print_composer/composer_items/composer_scale_bar.html?highlight=scale%20bar#the-scale-bar-item)
+27. Lets add scale bar to the map. Click on `Add Item ► Add Scalebar` or alternatively click on Add Scale Bar ![image of add scale bar](../../images/icon_add scalebar.png). Click on the layout where you want the scalebar to appear. In the Item Properties tab, make sure you have chosen the correct map element <span style="font-family:Consolas">Map 1</span> for which to display the scalebar. Choose the Style that fit your requirement. In the Segments panel, change the Fixed width to <span style="font-family:Consolas">150</span> units and adjust the segments to your liking. It is possible to adjust many properties of the scale bar. Read more about designing and adjusting scale bar properties from [<span style="color:#0564A0">QGIS Documentation</span>](https://docs.qgis.org/3.16/en/docs/user_manual/print_composer/composer_items/composer_scale_bar.html?highlight=scale%20bar#the-scale-bar-item).
 ![image of add scale bar](../../images/2_add scale bar.png)
-
-
+28. Finally, we will add legend to the map. Click on `Add Item ► Add Legend` or alternatively click on Add Legend
+![image of add scale bar](../../images/icon_add legend.png). Click on the layout where you want the scalebar to appear and holding left-side mouse button draw a rectangle. The legend should appear and it will cover most of the map as it is pulling automatically the legend info from all the layers in the Map view. We need to switch off most of the layers from the legend. In the Item Properties tab, scroll down to Legend items and uncheck the Auto update  under the Legend items. This will disconnect the legend from the map view layer panel and several legend adjustment buttons will become active.
+![image of add legend](../../images/2_add legend.png)
+29. 
 For the simplicity, we only add populated places to the legend.
 
 #### 2.5. Exporting map as image
