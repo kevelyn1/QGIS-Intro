@@ -79,14 +79,16 @@ Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](h
 
 25. Add title to your map by `Add Item ► Add Label` or alternatively click ![image of add north arrow](../../images/icon_add label.png). Click on the map and draw a box where the label should be. In the Item Properties tab, expand the Label section and enter a label for the map, and increase the font size and change the font type if needed.
 ![image of add title](../../images/2_add title.png)
-26. Similarly to previous step, add the information about the map projection, credits for the data and map design, and other relevant information to the map.
+26. Similarly to previous step, add the information about the map projection, credits for the data, software and map design.
 ![image of add credits](../../images/2_add credits.png)
-27. Lets add scale bar to the map. Click
+27. Lets add scale bar to the map. Click on `Add Item ► Add Scalebar` or alternatively click on Add Scale Bar ![image of add scale bar](../../images/icon_add scalebar.png). Click on the layout where you want the scalebar to appear. In the Item Properties tab, make sure you have chosen the correct map element <span style="font-family:Consolas">Map 1</span> for which to display the scalebar. Choose the Style that fit your requirement. In the Segments panel, change the Fixed width to <span style="font-family:Consolas">150</span> units and adjust the segments to your liking. It is possible to adjust many properties of the scale bar. Read more about designing and adjusting scale bar properties from [<span style="color:#0564A0">QGIS Documentation</span>](https://docs.qgis.org/3.16/en/docs/user_manual/print_composer/composer_items/composer_scale_bar.html?highlight=scale%20bar#the-scale-bar-item)
+![image of add scale bar](../../images/2_add scale bar.png)
+
 
 For the simplicity, we only add populated places to the legend.
 
 #### 2.5. Exporting map as image
-
+Once you are satisfied with the map, you can export it as an Image, PDF or SVG. For this tutorial, let’s export it as an image. `Click Layout ► Export as Image`.
 
 [^1]: EPSG Geodetic Parameter Dataset (also EPSG registry) is a public registry of geodetic datums, spatial reference systems, Earth ellipsoids, coordinate transformations and related units of measurement.  Each entity is assigned an EPSG code between 1024-32767, along with a standard machine-readable well-known text (WKT) representation. (Wiki) The EPSG codes are unique and they are very useful to use for searching and identifying the CRS-s in GIS programmes.
 [^2]: An inset map is a smaller map featured on the same page as the main map (GIS Wiki)
