@@ -73,12 +73,13 @@ Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](h
 23. First, we'll add a rectangluar frame to hold the map elements (north arrow, scale and label). Go to `Add Item ► Add Shape ► Add Rectangle` or alternatively use Add shape button ![image of add rectangle](../../images/icon_add shape.png) and draw a rectangle. Note that new item called Rectangle 1 appears in the Item list panel. You can change the Style of the rectangle to match the map background by clicking on the Style button under Item properties panel.
 ![image of drawing an rectangle](../../images/2_draw rectangle.png)
 24. Now we will add a North Arrow to the map. QGIS comes with a nice collection of North Arrows. Click `Add Item ► Add North Arrow` or alternatively click Add North Arrow ![image of add north arrow](../../images/icon_add north arrow.png). Holding your left mouse button, draw a rectangle. On the right-hand panel, click on the Item Properties tab then click arrows and choose the arrow style to your liking.
-
 ![image of add north arrow](../../images/2_add north arrow.png)
-
 >**Tip** :smirk:
 >
-*QGIS north arrows are SVG images and you may add new images from external sources or design your own north arrow*
+*QGIS north arrows are SVG images and you may add new images from external sources or design your own north arrow. Read more about picture and north arrow items as SVG images in QGIS from [QGIS Documentation]*
+
+25. Add title
+
 
 #### 2.5. Exporting map as image
 
