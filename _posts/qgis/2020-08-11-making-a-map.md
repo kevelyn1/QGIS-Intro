@@ -11,10 +11,10 @@ A map is the most common output of GIS. This tutorial shows how to create a map 
 
 #### The tutorial consists of the following steps:
 
-[1. Download data](#1-download-data)
-[2. Steps to make a map](#2-steps-to-make-a-map)
-  [2.1. Creating the main map](#21-creating-the-main-map)
-  [2.2. Creating an inset map](#22-creating-an-inset-map)
+- [1. Download data](#1-download-data)
+- [2. Steps to make a map](#2-steps-to-make-a-map)
+  * [2.1. Creating the main map](#21-creating-the-main-map)
+  * [2.2. Creating an inset map](#22-creating-an-inset-map)
   * [2.3. Adding grid to the map](#23-adding-grid-to-the-map)
   * [2.4. Adding the north arrow, scale and map title](#24-adding-the-north-arrow--scale-and-map-title)
   * [2.5. Exporting map as image](#25-exporting-map-as-image)
@@ -27,7 +27,6 @@ Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](h
 
 ### 2. Steps to make a map
 #### 2.1. Creating the main map
-
 1. Download and extract the Natural Earth Quick Start Kit data. Open QGIS. Locate the <span style="font-family:Consolas; color:#AF1B03">Natural_Earth_quick_start</span> folder in the Browser panel. Expand the folder to locate the <span style="font-family:Consolas; color:#AF1B03">Natural_Earth_quick_start_for_QGIS_v3</span> project. This is the project file that contains styled layers in QGIS Document format. Double-click the project to open it.
 ![image of browse data](../../images/2_browse_data.png)
 2. The state of your QGIS session is called a project. QGIS works on one project at a time.  Please save your project `Project ► Save as` into your folder. The information saved in a project file includes added layers, layer properties and symbology, projection of the map view, print layouts etc. Read more about QGIS project from [<span style="color:#0564A0">QGIS Documentation</span>](https://docs.qgis.org/testing/en/docs/user_manual/introduction/project_files.html#).
@@ -44,7 +43,6 @@ Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](h
 ![image of change layer visibility](../../images/2_change layer visibility.png)
 
 #### 2.2. Creating an inset map
-
 12. Now we will add a map inset[^2] that shows New Zealand's location in the world. Before we make any changes to the layers in the main QGIS window, check the Lock layers and Lock styles for layers boxes. This will ensure that if we turn off some layers or change their styles, this view will not change. ![image of lock layers](../../images/2_lock layers.png)
 13. To add the inset map, click ![image of browse data](../../images/icon_add_map.png) which makes the Add map mode active. Draw an rectangle to the upper left corner of the map or whereever you would like to add the inset. You will now notice that we have 2 map objects in the Print Layout. When making changes, make sure you have the correct map selected. You can also change the name of Map 2 to Inset map if making a double click on the name.
 ![image of lock layers](../../images/2_inset map.png)
@@ -72,6 +70,11 @@ Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](h
 ![image of coordinate number adjustment](../../images/2_coordinate number.png)
 
 #### 2.4. Adding the north arrow, scale and map title
+23. First, we'll add a rectangluar frame to hold the map elements (north arrow, scale and label). Go to `Add Item ► Add Shape ► Add Rectangle` or alternatively use Add shape button ![image of add rectangle](../../images/icon_add shape.png) and draw a rectangle. Note that new item called Rectangle 1 appears in the Item list panel. You can change the Style of the rectangle to match the map background by clicking on the Style button under Item properties panel.
+![image of drawing an rectangle](../../images/2_draw rectangle.png)
+24. Now we will add a North Arrow to the map. QGIS comes with a nice collection of North Arrows. Click `Add Item ► Add North Arrow` or alternatively click Add North Arrow ![image of add north arrow](../../images/icon_add north arrow.png). Holding your left mouse button, draw a rectangle. On the right-hand panel, click on the Item Properties tab then click arrows and choose the arrow style to your liking. 
+
+Tip
 
 #### 2.5. Exporting map as image
 
