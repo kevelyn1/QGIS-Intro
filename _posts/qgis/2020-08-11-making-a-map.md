@@ -7,13 +7,12 @@ image:
   teaser: QGIS_intro_teaser.png
 ---
 
+A map is the most common output of GIS. This tutorial shows how to create a map from vector and raster data with standard map elements like map inset, grids, north arrow, scale bar and labels.
+
 - [1. Download data](#1-download-data)
 - [2. Steps to make a map](#2-steps-to-make-a-map)
   * [2.1. Creating the main map](#21-creating-the-main-map)
   * [2.2. Creating an inset map](#22-creating-an-inset-map)
-
-A map is the most common output of GIS. This tutorial shows how to create a map from vector and raster data with standard map elements like map inset, grids, north arrow, scale bar and labels.
-Lets make a map from vector data.
 
 ### 1. Download data
 
