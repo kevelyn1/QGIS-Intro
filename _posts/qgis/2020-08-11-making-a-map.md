@@ -16,8 +16,9 @@ A map is the most common output of GIS. This tutorial shows how to create a map 
   * [2.1. Creating the main map](#21-creating-the-main-map)
   * [2.2. Creating an inset map](#22-creating-an-inset-map)
   * [2.3. Adding grid to the map](#23-adding-grid-to-the-map)
-  * [2.4. Adding the north arrow, scale bar, map title and legend](#24-adding-the-north-arrow-scale-bar-map-title-and-legend)
-  * [2.5. Exporting map as image](#25-exporting-map-as-image)
+  * [2.4. Adding the north arrow, scale bar, map title and legend](#24-adding-the-north-arrow--scale-bar--map-title-and-legend)
+  * [2.5. Adding legend to the map](#25-adding-legend-to-the-map)
+  * [2.6. Exporting map as image](#26-exporting-map-as-image)
 
 ### 1. Download data
 
@@ -83,6 +84,8 @@ Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](h
 ![image of add credits](../../images/2_add credits.png)
 27. Lets add scale bar to the map. Click on `Add Item ► Add Scalebar` or alternatively click on Add Scale Bar ![image of add scale bar](../../images/icon_add scalebar.png). Click on the layout where you want the scalebar to appear. In the Item Properties tab, make sure you have chosen the correct map element <span style="font-family:Consolas">Map 1</span> for which to display the scalebar. Choose the Style that fit your requirement. In the Segments panel, change the Fixed width to <span style="font-family:Consolas">150</span> units and adjust the segments to your liking. It is possible to adjust many properties of the scale bar. Read more about designing and adjusting scale bar properties from [<span style="color:#0564A0">QGIS Documentation</span>](https://docs.qgis.org/3.16/en/docs/user_manual/print_composer/composer_items/composer_scale_bar.html?highlight=scale%20bar#the-scale-bar-item).
 ![image of add scale bar](../../images/2_add scale bar.png)
+
+#### 2.5. Adding legend to the map
 28. Finally, we will add legend to the map. Click on `Add Item ► Add Legend` or alternatively click on Add Legend
 ![image of add scale bar](../../images/icon_add legend.png). Click on the layout where you want the scalebar to appear and holding left-side mouse button draw a rectangle. The legend should appear and it will cover most of the map as it is pulling automatically the legend info from all the layers in the Map view. We need to switch off most of the layers from the legend. In the Item Properties tab, scroll down to Legend items and uncheck the Auto update  under the Legend items. This will disconnect the legend from the map view layer panel and several legend adjustment buttons will become active.
 ![image of add legend](../../images/2_add legend.png)
@@ -93,13 +96,15 @@ Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](h
 31. Click on the small arrow in front of the layer <span style="font-family:Consolas; color:#AF1B03">ne_10m_populated_places z5 copy copy copy</span> to see all of its sublayers. Delete all sublayers except <span style="font-family:Consolas; color:#AF1B03">Admin-0 capital, Admin-1 capital, Populated place</span>.
 ![image of add legend](../../images/2_delete legend items3.png)
 32. We will now change the names of the legend items more appropriate. Double click on the <span style="font-family:Consolas; color:#AF1B03">z7 / 1:4m</span> and delete the text and just enter space. The QGIS won't accept leaving the place empty but as we don't need text there then entering space will allow it to keep seemingly empty.
-![image of add legend](../../images/2_rename legend items.png).
+![image of rename legend items](../../images/2_rename legend items.png).
 33. Delete also the layer name of <span style="font-family:Consolas; color:#AF1B03">ne_10m_populated_places z5 copy copy copy</span> similarly to previous step.
-34. Rename 
+34. Rename layer name <span style="font-family:Consolas; color:#AF1B03">Admin-0 capital</span> to <span style="font-family:Consolas; color:#AF1B03">Capital city</span>, layer name <span style="font-family:Consolas; color:#AF1B03">Admin-1 capital</span> to <span style="font-family:Consolas; color:#AF1B03"> Administrative unit capital</span>.
+![image of rename legend items](../../images/2_rename legend items2.png)
+35. Because of deleting some of the layer names, there is too muc white space on the top of the legend. We will remove this by using Spacing options under Legend properties. Scroll down in the Legend Item properties tab to Spacing. Open it's options by clicking on a small arrow next to it. Change the value of Legend Title ‣ Space below to 0 and Subgroups ‣ Above subgroup also 0. Note while doing that how the legend changes.
+![image of rename legend items](../../images/2_change legend spacing.png)
 
-For the simplicity, we only add populated places to the legend.
 
-#### 2.5. Exporting map as image
+#### 2.6. Exporting map as image
 Once you are satisfied with the map, you can export it as an Image, PDF or SVG. For this tutorial, let’s export it as an image. `Click Layout ► Export as Image`.
 
 [^1]: EPSG Geodetic Parameter Dataset (also EPSG registry) is a public registry of geodetic datums, spatial reference systems, Earth ellipsoids, coordinate transformations and related units of measurement.  Each entity is assigned an EPSG code between 1024-32767, along with a standard machine-readable well-known text (WKT) representation. (Wiki) The EPSG codes are unique and they are very useful to use for searching and identifying the CRS-s in GIS programmes.
