@@ -86,7 +86,17 @@ Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](h
 28. Finally, we will add legend to the map. Click on `Add Item ► Add Legend` or alternatively click on Add Legend
 ![image of add scale bar](../../images/icon_add legend.png). Click on the layout where you want the scalebar to appear and holding left-side mouse button draw a rectangle. The legend should appear and it will cover most of the map as it is pulling automatically the legend info from all the layers in the Map view. We need to switch off most of the layers from the legend. In the Item Properties tab, scroll down to Legend items and uncheck the Auto update  under the Legend items. This will disconnect the legend from the map view layer panel and several legend adjustment buttons will become active.
 ![image of add legend](../../images/2_add legend.png)
-29. 
+29. We will first remove all the unnecessary layers from the legend. Under the Legend items, select all layers except <span style="font-family:Consolas; color:#AF1B03">z7 / 1:4</span> and click Remove selected item(s) from legend.
+![image of add legend](../../images/2_delete legend items.png)
+30. For the simplicity, we will show only cities and other populated places in the legend. Therefore we will delete all other sublayers of the <span style="font-family:Consolas; color:#AF1B03">z7 / 1:4</span>. Click on the small arrow next to the layer group name under Legend items. This should reveal sublayers of the group. Delete all sublayers of the <span style="font-family:Consolas; color:#AF1B03">z7 / 1:4</span> except layer <span style="font-family:Consolas; color:#AF1B03">ne_10m_populated_places z5 copy copy copy</span>
+![image of add legend](../../images/2_delete legend items2.png)
+31. Click on the small arrow in front of the layer <span style="font-family:Consolas; color:#AF1B03">ne_10m_populated_places z5 copy copy copy</span> to see all of its sublayers. Delete all sublayers except <span style="font-family:Consolas; color:#AF1B03">Admin-0 capital, Admin-1 capital, Populated place</span>.
+![image of add legend](../../images/2_delete legend items3.png)
+32. We will now change the names of the legend items more appropriate. Double click on the <span style="font-family:Consolas; color:#AF1B03">z7 / 1:4m</span> and delete the text and just enter space. The QGIS won't accept leaving the place empty but as we don't need text there then entering space will allow it to keep seemingly empty.
+![image of add legend](../../images/2_rename legend items.png).
+33. Delete also the layer name of <span style="font-family:Consolas; color:#AF1B03">ne_10m_populated_places z5 copy copy copy</span> similarly to previous step.
+34. Rename 
+
 For the simplicity, we only add populated places to the legend.
 
 #### 2.5. Exporting map as image
