@@ -4,10 +4,12 @@ title: Making a map
 modified: 2020-08-11
 categories: qgis
 image:
-  teaser: QGIS_intro_teaser.png
+  teaser: make_map_teaser.png
 ---
 
 A map is the most common output of GIS. This tutorial shows how to create a map from vector and raster data with standard map elements like map inset, grids, north arrow, scale bar and labels.
+
+#### The tutorial consists of the following steps:
 
 - [1. Download data](#1-download-data)
 - [2. Steps to make a map](#2-steps-to-make-a-map)
