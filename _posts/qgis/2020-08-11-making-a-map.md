@@ -72,19 +72,16 @@ Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](h
 #### 2.4. Adding the north arrow, scale bar and map title
 23. First, we'll add a rectangluar frame to hold the map elements (north arrow, scale and label). Go to `Add Item ► Add Shape ► Add Rectangle` or alternatively use Add shape button ![image of add rectangle](../../images/icon_add shape.png) and draw a rectangle. Note that new item called Rectangle 1 appears in the Item list panel. You can change the Style of the rectangle to match the map background by clicking on the Style button under Item properties panel.
 ![image of drawing an rectangle](../../images/2_draw rectangle.png)
-24. Now we will add a North Arrow to the map. QGIS comes with a nice collection of North Arrows. Click `Add Item ► Add North Arrow` or alternatively click Add North Arrow ![image of add north arrow](../../images/icon_add north arrow.png). Holding your left mouse button, draw a rectangle. On the right-hand panel, click on the Item Properties tab then click arrows and choose the arrow style to your liking.
+24. Now we will add a North Arrow to the map. QGIS comes with a nice collection of North Arrows. Click `Add Item ► Add North Arrow` or alternatively click Add North Arrow ![image of add north arrow](../../images/icon_add north arrow.png). Holding your left mouse button, draw a rectangle. On the right-hand panel, click on the Item Properties tab then click arrows and choose the arrow style to your liking.![image of add north arrow](../../images/2_add north arrow.png)
 >**Tip** :smirk:
 >
 *QGIS north arrows are SVG images and you may add new images from external sources or design your own north arrow. Read more about picture and north arrow items as SVG images in QGIS from [<span style="color:#0564A0">QGIS Documentation</span>](https://docs.qgis.org/3.16/en/docs/user_manual/print_composer/composer_items/composer_image.html?highlight=north%20arrow#the-picture-and-the-north-arrow-items)*
 
-![image of add north arrow](../../images/2_add north arrow.png)
 25. Add title to your map by `Add Item ► Add Label` or alternatively click ![image of add north arrow](../../images/icon_add label.png). Click on the map and draw a box where the label should be. In the Item Properties tab, expand the Label section and enter a label for the map, and increase the font size and change the font type if needed.
 ![image of add title](../../images/2_add title.png)
 26. Similarly to previous step, add the information about the map projection, credits for the data and map design, and other relevant information to the map.
-![image of add title](../../images/2_add credits.png)
-
-
-26. Lets add scale bar to the map. Click
+![image of add credits](../../images/2_add credits.png)
+27. Lets add scale bar to the map. Click
 
 For the simplicity, we only add populated places to the legend.
 
