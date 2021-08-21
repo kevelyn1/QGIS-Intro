@@ -6,6 +6,11 @@ categories: qgis
 image:
   teaser: QGIS_intro_teaser.png
 ---
+
+- [Download data](#download-data)
+- [Steps to make a map](#steps-to-make-a-map)
+  * [Creating the main map](#creating-the-main-map)
+
 A map is the most common output of GIS. This tutorial shows how to create a map from vector and raster data with standard map elements like map inset, grids, north arrow, scale bar and labels.
 Lets make a map from vector data.
 
@@ -16,6 +21,7 @@ We will use the Natural Earth dataset - specifically the Natural Earth Quick Sta
 Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](https://naciscdn.org/naturalearth/packages/Natural_Earth_quick_start.zip). If the download link doesn’t work, get it directly from Natural Earth Downloads page.
 
 ### Steps to make a map
+#### Creating the main map
 
 1. Download and extract the Natural Earth Quick Start Kit data. Open QGIS. Locate the <span style="font-family:Consolas; color:#AF1B03">Natural_Earth_quick_start</span> folder in the Browser panel. Expand the folder to locate the <span style="font-family:Consolas; color:#AF1B03">Natural_Earth_quick_start_for_QGIS_v3</span> project. This is the project file that contains styled layers in QGIS Document format. Double-click the project to open it.
 ![image of browse data](../../images/2_browse_data.png)
@@ -31,6 +37,9 @@ Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](h
 10. You will see that the rectangle window will be rendered with the map from the main QGIS Map view. The rendered map may not be covering the full extent of our interest area if you did not draw the full extent of the canvas. Use `Edit ‣ Select/Move item and Edit ‣ Move Content` from the menu or alternatively ![image of icon select data](../../images/icon_select_move item.png) and ![image of move content](../../images/icon_move_content.png) to pan the map in the window and center it in the composer. To adjust the zoom level, click on the Item Properties tab and enter 8500000 as the Scale value. Alternatively, you can also click on ![image of move content](../../images/icon_move_content.png) and use mouse scroll-in to zoom in, however, this is not very convenient. ![image of zoom in](../../images/2_zoom in.png)
 11. The initial project has layer group for the scale of 1 to 18 million switched on in the layer panel. As we set our scale to less than 1 million in the previous scale then we should change the layer visibility in the main map menu. Switch back to the map view and switch off the visibility of the <span style="font-family:Consolas; color:#AF1B03">z5 - 1:18m</span> and switch on the visibility of <span style="font-family:Consolas; color:#AF1B03">z5 - 1:4m</span>. The map rendering might take a while. Switch back to the Layout view and click refresh ![image of refresh icon](../../images/icon_refresh.png) in the map's Item properties panel.
 ![image of change layer visibility](../../images/2_change layer visibility.png)
+
+#### Creating an inset map
+
 12. Now we will add a map inset[^2] that shows New Zealand's location in the world. Before we make any changes to the layers in the main QGIS window, check the Lock layers and Lock styles for layers boxes. This will ensure that if we turn off some layers or change their styles, this view will not change. ![image of lock layers](../../images/2_lock layers.png)
 13. To add the inset map, click ![image of browse data](../../images/icon_add_map.png) which makes the Add map mode active. Draw an rectangle to the upper left corner of the map or whereever you would like to add the inset. You will now notice that we have 2 map objects in the Print Layout. When making changes, make sure you have the correct map selected. You can also change the name of Map 2 to Inset map if making a double click on the name.
 ![image of lock layers](../../images/2_inset map.png)
@@ -38,13 +47,13 @@ Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](h
 ![image of lock layers](../../images/2_zoom for inset.png)
 16. The current main map and the inset have the same CRS (Pseudo-Mercator) which for global maps is not really suitable because it distorts the areas close to poles. Therefore we use more suitable CRS called Winkel Tripel (EPSG 54042) which is also known as National Geographic projection. Winkel Tripel is minimal error projection which means that it tries to minimize all types of map distortion (area, shape, angle, distances) and it looks aesthetically pleasing. Click on the Select CRS button ![image of select CRS](../../images/icon_CRS2.png) on the Item properties panel of the inset map. Coordinate Referrence System Selector panel will open. Uncheck the option "Use Project CRS" and type EPSG code "54042" into Filter field. This should find Winkel Tripel. Click on World_Winkel_Tripel_NGS and then OK. This should switch the inset map's CRS to Winkel Tripel.
 ![image of lock layers](../../images/2_inset projection.png)
-
 ![image of select CRS](../../images/2_choose CRS.png)
 15. You might need to adjust the zoom level of the inset map and you can use Select/Move ![image of icon select data](../../images/icon_select_move item.png) and Move Content ![image of move content](../../images/icon_move_content.png) to pan the map in the window and center it in the composer. You can also change the size of the inset map.
 16. To make more clear visual separation between the main map and inset map, we can add frame around the inset map. Select the Map 2 (inset map) object from the Items panel. Select the Item properties tab. Scroll down to the Frame panel and check the box next to it. You can change the color and thickness of the frame border so it is easy to distinguish against the map background.
 ![image of icon select data](../../images/2_frame inset.png)
-
-
+17. One neat feature of the Print Layout is that it can automatically highlight the area of the main map in the inset map (and also vice versa). Select the Map 2 object from the Items panel. In the Item properties tab, scroll down to the Overviews section. Click the Add a new overview button. Select <span style="font-family:Consolas">Map 1</span> as the Map Frame. This tells the Print Layout to highlight the current object Map 2 with the extent of the map shown in the Map 1 object.
+![image of icon select data](../../images/2_hightlight inset.png)
+18.
 
 
 [^1]: EPSG Geodetic Parameter Dataset (also EPSG registry) is a public registry of geodetic datums, spatial reference systems, Earth ellipsoids, coordinate transformations and related units of measurement.  Each entity is assigned an EPSG code between 1024-32767, along with a standard machine-readable well-known text (WKT) representation. (Wiki) The EPSG codes are unique and they are very useful to use for searching and identifying the CRS-s in GIS programmes.
