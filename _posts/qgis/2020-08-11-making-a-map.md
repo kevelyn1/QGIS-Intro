@@ -11,10 +11,13 @@ A map is the most common output of GIS. This tutorial shows how to create a map 
 
 #### The tutorial consists of the following steps:
 
-- [1. Download data](#1-download-data)
-- [2. Steps to make a map](#2-steps-to-make-a-map)
-  * [2.1. Creating the main map](#21-creating-the-main-map)
-  * [2.2. Creating an inset map](#22-creating-an-inset-map)
+[1. Download data](#1-download-data)
+[2. Steps to make a map](#2-steps-to-make-a-map)
+  [2.1. Creating the main map](#21-creating-the-main-map)
+  [2.2. Creating an inset map](#22-creating-an-inset-map)
+  * [2.3. Adding grid to the map](#23-adding-grid-to-the-map)
+  * [2.4. Adding the north arrow, scale and map title](#24-adding-the-north-arrow--scale-and-map-title)
+  * [2.5. Exporting map as image](#25-exporting-map-as-image)
 
 ### 1. Download data
 
@@ -67,6 +70,10 @@ Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](h
 ![image of grid interval](../../images/2_grid interval.png)
 22. Scroll down to the Grid frame section and check the Draw coordinates box. The default format is Degrees but it appears as a number. We can change this to Decimal with Suffic under Format. Then you can bring the coordinates inside the frame and rotate them into appropriate direction. You can also change the font of the coordinates if you like. As our grid lines are full degrees then there is no need to show so high coordinate precision and you can change this to 1.
 ![image of coordinate number adjustment](../../images/2_coordinate number.png)
+
+#### 2.4. Adding the north arrow, scale and map title
+
+#### 2.5. Exporting map as image
 
 
 [^1]: EPSG Geodetic Parameter Dataset (also EPSG registry) is a public registry of geodetic datums, spatial reference systems, Earth ellipsoids, coordinate transformations and related units of measurement.  Each entity is assigned an EPSG code between 1024-32767, along with a standard machine-readable well-known text (WKT) representation. (Wiki) The EPSG codes are unique and they are very useful to use for searching and identifying the CRS-s in GIS programmes.
