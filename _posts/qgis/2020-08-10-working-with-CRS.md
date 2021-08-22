@@ -4,10 +4,14 @@ title: Working with CRS
 modified: 2020-08-10
 categories: qgis
 image:
-  teaser: make_map_teaser.png
+  teaser: CRS_teaser.png
 ---
 
-A map is the most common output of GIS. This tutorial shows how to create a map from vector and raster data with standard map elements like map inset, grids, north arrow, scale bar and labels.
+Coordinate Reference System (CRS) often cause a lot of frustration when working with GIS data. But a proper understanding of the concepts and access to the right tools will make it much easier to deal with projections. Coordinate Reference Systems, also referred to as Spatial Reference Systems, include two common types:
++ Geographic Coordinate Sytems (GCS)
++ Projected Coordinate Systems (PCS)
+
+In this tutorial, we will explore how CRSs work in QGIS and learn about tools available for vector and raster data layers.
 
 #### The tutorial consists of the following steps:
 

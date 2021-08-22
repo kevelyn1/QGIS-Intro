@@ -7,7 +7,7 @@ image:
   teaser: make_map_teaser.png
 ---
 
-A map is the most common output of GIS. This tutorial shows how to create a map from vector and raster data with standard map elements like map inset, grids, north arrow, scale bar and labels.
+A map is the most common output of GIS. This tutorial shows how to create a map from vector and raster data with standard map elements like map inset, grids, legend, north arrow, scale bar and labels.
 
 #### The tutorial consists of the following steps:
 
@@ -113,6 +113,8 @@ Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](h
 ![image of image export](../../images/2_image export.png)
 39. Congratulations! You have made your first map! :smile:
 ![image of final map](../../images/2_final.png)
+
+#### 2.7. Adding simple raster background
 
 [^1]: EPSG Geodetic Parameter Dataset (also EPSG registry) is a public registry of geodetic datums, spatial reference systems, Earth ellipsoids, coordinate transformations and related units of measurement.  Each entity is assigned an EPSG code between 1024-32767, along with a standard machine-readable well-known text (WKT) representation. (Wiki) The EPSG codes are unique and they are very useful to use for searching and identifying the CRS-s in GIS programmes.
 [^2]: An inset map is a smaller map featured on the same page as the main map (GIS Wiki)
