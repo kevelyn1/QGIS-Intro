@@ -78,7 +78,7 @@ Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](h
 >
 *QGIS north arrows are SVG images and you may add new images from external sources or design your own north arrow. Read more about picture and north arrow items as SVG images in QGIS from [<span style="color:#0564A0">QGIS Documentation</span>](https://docs.qgis.org/3.16/en/docs/user_manual/print_composer/composer_items/composer_image.html?highlight=north%20arrow#the-picture-and-the-north-arrow-items)*
 
-25. Add title to your map by `Add Item ► Add Label` or alternatively click ![image of add north arrow](../../images/icon_add label.png). Click on the map and draw a box where the label should be. In the Item Properties tab, expand the Label section and enter a label for the map, and increase the font size and change the font type if needed.
+25. Add title to your map by `Add Item ► Add Label` or alternatively click ![image of add label](../../images/icon_add label.png). Click on the map and draw a box where the label should be. In the Item Properties tab, expand the Label section and enter a label for the map, and increase the font size and change the font type if needed.
 ![image of add title](../../images/2_add title.png)
 26. Similarly to previous step, add the information about the map projection, credits for the data, software and map design.
 ![image of add credits](../../images/2_add credits.png)
@@ -100,12 +100,19 @@ Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](h
 33. Delete also the layer name of <span style="font-family:Consolas; color:#AF1B03">ne_10m_populated_places z5 copy copy copy</span> similarly to previous step.
 34. Rename layer name <span style="font-family:Consolas; color:#AF1B03">Admin-0 capital</span> to <span style="font-family:Consolas; color:#AF1B03">Capital city</span>, layer name <span style="font-family:Consolas; color:#AF1B03">Admin-1 capital</span> to <span style="font-family:Consolas; color:#AF1B03"> Administrative unit capital</span>.
 ![image of rename legend items](../../images/2_rename legend items2.png)
-35. Because of deleting some of the layer names, there is too muc white space on the top of the legend. We will remove this by using Spacing options under Legend properties. Scroll down in the Legend Item properties tab to Spacing. Open it's options by clicking on a small arrow next to it. Change the value of Legend Title ‣ Space below to 0 and Subgroups ‣ Above subgroup also 0. Note while doing that how the legend changes.
-![image of rename legend items](../../images/2_change legend spacing.png)
-
+35. Because of deleting some of the layer names, there is too much white space on the top of the legend. We will remove this by using Spacing options under Legend properties. Scroll down in the Legend Item properties tab to Spacing. Open it's options by clicking on a small arrow next to it. Change the value of Legend Title ‣ Space below to zero and Subgroups ‣ Above subgroup also zero. Note while doing that how the legend changes.
+![image of change legend spacing](../../images/2_change legend spacing.png)
+36. We will add a title to the legend. Click `Add Item ► Add Label` or alternatively click on Add Label ![image of add label](../../images/icon_add label.png) and while holding left-side mouse button draw a label box to the legend. Rename it to "Legend"
+![image of add legend title](../../images/2_add_legend title.png)
+37. Finally, we will make the legend background more fitting with the map. In the legend's Item Properties tab scroll down to Background and click on the color option. In the color options scroll down to Opacity and reduce the opacity to 35%. This will make the legend background partially transparent making it less dominant. The map elements like legend, title, north arrow should not be too dominant on the map itself is the most important.
+![image of add legend background](../../images/2_legend background.png)
+![image of add legend background](../../images/2_legend background2.png)
 
 #### 2.6. Exporting map as image
-Once you are satisfied with the map, you can export it as an Image, PDF or SVG. For this tutorial, let’s export it as an image. `Click Layout ► Export as Image`.
+38. Once you are satisfied with the map, you can export it as an Image, PDF or SVG. For this tutorial, let’s export it as an image. `Click Layout ► Export as Image`. Give the file a suitable name and under the Image Export Options make sure that the Export resolution is 300 dpi. 300 dpi is minimal required resolution for printing. If you want to publish the map in the we, then you may reduce the resolution to 150 to 200 dpi, however, if you are not sure about the usage then keep 300 dpi because it is a pity if you design a nice map but nobody can read it because of poor resolution.
+![image of image export](../../images/2_image export.png)
+39. Congratulations! You have made your first map! :smile:
+![image of final map](../../images/2_final.png)
 
 [^1]: EPSG Geodetic Parameter Dataset (also EPSG registry) is a public registry of geodetic datums, spatial reference systems, Earth ellipsoids, coordinate transformations and related units of measurement.  Each entity is assigned an EPSG code between 1024-32767, along with a standard machine-readable well-known text (WKT) representation. (Wiki) The EPSG codes are unique and they are very useful to use for searching and identifying the CRS-s in GIS programmes.
 [^2]: An inset map is a smaller map featured on the same page as the main map (GIS Wiki)
