@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Working with CRSs
+title: Working with CRS
 modified: 2020-08-10
 categories: qgis
 image:
