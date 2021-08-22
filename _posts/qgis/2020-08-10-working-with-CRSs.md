@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Working with coordinate reference systems
+title: Working with CRSs
 modified: 2020-08-10
 categories: qgis
 image:
@@ -22,4 +22,4 @@ Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](h
 
 ### 2. Steps to make a map
 #### 2.1. Creating the main map
-1. Download 
+1. Download
