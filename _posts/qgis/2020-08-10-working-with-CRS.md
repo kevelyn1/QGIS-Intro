@@ -8,8 +8,10 @@ image:
 ---
 
 Coordinate Reference System (CRS) often cause a lot of frustration when working with GIS data. But a proper understanding of the concepts and access to the right tools will make it much easier to deal with projections. Coordinate Reference Systems, also referred to as Spatial Reference Systems, include two common types:
-+ Geographic Coordinate Sytems (GCS)
++ Geographic Coordinate Systems (GCS)
 + Projected Coordinate Systems (PCS)
+
+It is important to recognise and make the difference between them. The projected coordinate systems always include also information about the projection.
 
 In this tutorial, we will explore how CRSs work in QGIS and learn about tools available for vector and raster data layers.
 
@@ -20,9 +22,17 @@ In this tutorial, we will explore how CRSs work in QGIS and learn about tools av
 
 ### 1. Download data
 
-We will use the Natural Earth dataset - specifically the Natural Earth Quick Start Kit that comes with beautifully styled global layers that can be loaded directly to QGIS.
+Natural Earth has [<span style="color:#0564A0">Admin 0 - Countries</span>](http://www.naturalearthdata.com/downloads/10m-cultural-vectors/) dataset. Download the [<span style="color:#0564A0">countries</span>](https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip).
 
-Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](https://naciscdn.org/naturalearth/packages/Natural_Earth_quick_start.zip). If the download link doesn’t work, get it directly from Natural Earth Downloads page.
+UK’s Ordnance Survey provides open data for download. Download the MiniScale raster product for Great Britain and extract it to a folder on your computer.
+
+For convenience, you may directly download a copy of the dataset from the link below:
+
+ne_10m_admin_0_countries.zip
+
+minisc_gb.zip (Contains only the files required for this tutorial)
+
+Data Sources: [NATURALEARTH] [OSOPENDATA]
 
 ### 2. Steps to make a map
 #### 2.1. Creating the main map
