@@ -31,8 +31,8 @@ For convenience, you may directly download files required only for this tutorial
 data_projections.zip
 
 Data Sources: [<span style="color:#0564A0">Naturalearth</span>](https://www.naturalearthdata.com/) [<span style="color:#0564A0">Estonian Land Board</span>](https://maaamet.ee/en)
-
 ### 2. Steps to work with CRS
+#### 2.1. Change project CRS
 1. Open QGIS. Locate your working folder in the Browser panel and drag/drop the <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries.shp</span> file to your QGIS Map view or alternatively click on Open Data Source Manager button ![image of icon data manager](../../images/icon_data source manager.png), click on the Vector tab and add the file from there.
 ![image of add vector](../../images/3_add vector file.png)
 2. At the bottom of QGIS window, you will notice the label Coordinate. As you move your cursor over the map, it will show you the X and Y coordinates at that location. Currently it is presenting geographic coordinates because the data layer CRS is geographic, more precisely WGS84 (EPSG:4326), which you can see at the bottom-right corner. This is also the current Project CRS because QGIS assigns the empty project CRS of the first layer you add to the project.
@@ -41,7 +41,10 @@ Data Sources: [<span style="color:#0564A0">Naturalearth</span>](https://www.natu
 ![image of CRS info](../../images/3_layer crs information.png)
 4. Lets first change the Project CRS. Click on the status bar lower right corner on EPSG:4326. Type "winkel" to the filter. This should bring up several Winkel CRS-s. Click on World_Winkel_Tripel_NGS (ESRI:54042)[^1] and then OK. Winkel-Tripel is minimal-error projection and it a standard projection for world maps made by the National Geographic Society (Wiki). In result, the map should change in your map view as the Project CRS is changed.
 ![image of change project CRS](../../images/3_change project crs.png)
-5. Please re-check the layer's CRS by doing right click on <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries.shp</span> layer and select Properties. From there switch to the Information tab in the Layer Properties dialog check the CRS information. This should be still the same as before: WGS84 (EPSG: 4326). You only changed the project CRS but the layer's CRS did not change and in the map view the map was automatically and only virtually projected to the project CRS. If layer's CRS is properly defined then all GIS programmes can automatically project them into most common CRS-s that your current project is. 
+5. Please re-check the layer's CRS by doing right click on <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries.shp</span> layer and select Properties. From there switch to the Information tab in the Layer Properties dialog check the CRS information. This should be still the same as before: WGS84 (EPSG: 4326). You only changed the project CRS but the layer's CRS did not change and in the map view the map was automatically and only virtually projected to the project CRS. If layer's CRS is properly defined then all GIS programmes can automatically project them into most common CRS-s that your current project is.
 
+#### 2.2 Change layer CRS
+6. Now let’s change the layer’s CRS. This operation is called Re-Projection. It is possible to re-project the whole layer but rather than re-projecting the entire layer, we can also select a subset of features and re-project them to a new layer. Use the Select Features by Area or Single Click tool ![icon of select](../../images/icon_select.png) and click on Estonia to select it.
+![image of select estonia](../../images/3_select estonia.png)
 
-[^1]: As you might notice there is ESRI code instead of EPSG. This is because not all CRS have EPSG code and the specific Winkel Tripel III (NGS) has been implemente in ESRI softwares under this specific code.
+[^1]: As you might notice there is ESRI code instead of EPSG. This is because not all CRS have EPSG code and the specific Winkel Tripel (NGS) has been implemente in ESRI softwares under this specific code.
