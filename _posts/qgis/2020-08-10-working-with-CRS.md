@@ -52,6 +52,8 @@ Data Sources: [<span style="color:#0564A0">Naturalearth</span>](https://www.natu
 ![image of processing toolbox](../../images/3_find reproject.png)
 9. Select <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries.shp</span> as the Input layer, check Selected features only then click on the Select CRS icon ![icon of select](../../images/icon_CRS2.png) next to Target CRS, search and select EPSG:3301 - Estonian Coordinate System of 1997. In Reprojected, choose the ... and click Save to a file. Now choose the directory and enter the name as <span style="font-family:Consolas; color:#AF1B03">estonia.gkpg</span> and click Run.
 ![image of processing toolbox](../../images/3_reproject.png)
+10. A new layer <span style="font-family:Consolas; color:#AF1B03">estonia</span> will appear on the Layer Panel. As you see, both the layers still line up exactly with each other - even though they are in different CRSs. This is thanks to the On-The-Fly CRS transformation.
+Now let’s set the Project CRS to match the newly created <span style="font-family:Consolas; color:#AF1B03">estonia</span>  layer’s CRS. Remove the <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries</span>  layer and, right click on the <span style="font-family:Consolas; color:#AF1B03">estonia</span> layer and choose Layer CRS ‣ Set Project CRS from Layer.
 
 
 [^1]: As you might notice there is ESRI code instead of EPSG. This is because not all CRS have EPSG code and the specific Winkel Tripel (NGS) has been implemente in ESRI softwares under this specific code.
