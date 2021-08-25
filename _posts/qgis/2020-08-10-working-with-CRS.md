@@ -32,8 +32,12 @@ data_projections.zip
 
 Data Sources: [<span style="color:#0564A0">NATURALEARTH</span>](https://www.naturalearthdata.com/) [<span style="color:#0564A0">Estonian Land Board</span>](https://maaamet.ee/en)
 
-### 2.
+### 2. Steps to work with CRS
 1. Open QGIS. Locate your working folder in the Browser panel and drag/drop the <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries.shp</span> file to your QGIS Map view or alternatively click on Open Data Source Manager button ![image of icon data manager](../../images/icon_data source manager.png), click on the Vector tab and add the file from there.
 ![image of add vector](../../images/3_add vector file.png)
 2. At the bottom of QGIS window, you will notice the label Coordinate. As you move your cursor over the map, it will show you the X and Y coordinates at that location. Currently it is presenting geographic coordinates because the data layer CRS is geographic, more precisely WGS84 (EPSG:4326), which you can see at the bottom-right corner. This is also the current Project CRS because QGIS assigns the empty project CRS of the first layer you add to the project.
 ![image of CRS info](../../images/3_coord and CRS info.png)
+3. To determine a layer’s projection, we can look into the metadata. Right click on <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries.shp</span> layer and select Properties. From there switch to the Information tab in the Layer Properties dialog. Under provider information you will find CRS. As you can see, there is also a lot of other information under metadata, such as extent of the layer, units etc.
+![image of CRS info](../../images/3_layer crs information.png)
+4. Lets first change the Project CRS. Click on the status bar lower right corner on EPSG:4326. Type "winkel" to the filter. This should bring up several Winkel CRS-s. Click on World_Winkel_Tripel_NGS (ESRI:54042) and then OK. Winkel-Tripel is minimal-error projection and it is used in National Geographic. In result, the map should change in your map view as the Project CRS is changed.
+![image of change project CRS](../../images/3_change project crs.png)
