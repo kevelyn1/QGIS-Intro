@@ -30,7 +30,7 @@ For convenience, you may directly download files required only for this tutorial
 
 data_projections.zip
 
-Data Sources: [<span style="color:#0564A0">NATURALEARTH</span>](https://www.naturalearthdata.com/) [<span style="color:#0564A0">Estonian Land Board</span>](https://maaamet.ee/en)
+Data Sources: [<span style="color:#0564A0">Naturalearth</span>](https://www.naturalearthdata.com/) [<span style="color:#0564A0">Estonian Land Board</span>](https://maaamet.ee/en)
 
 ### 2. Steps to work with CRS
 1. Open QGIS. Locate your working folder in the Browser panel and drag/drop the <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries.shp</span> file to your QGIS Map view or alternatively click on Open Data Source Manager button ![image of icon data manager](../../images/icon_data source manager.png), click on the Vector tab and add the file from there.
@@ -39,5 +39,9 @@ Data Sources: [<span style="color:#0564A0">NATURALEARTH</span>](https://www.natu
 ![image of CRS info](../../images/3_coord and CRS info.png)
 3. To determine a layer’s projection, we can look into the metadata. Right click on <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries.shp</span> layer and select Properties. From there switch to the Information tab in the Layer Properties dialog. Under provider information you will find CRS. As you can see, there is also a lot of other information under metadata, such as extent of the layer, units etc.
 ![image of CRS info](../../images/3_layer crs information.png)
-4. Lets first change the Project CRS. Click on the status bar lower right corner on EPSG:4326. Type "winkel" to the filter. This should bring up several Winkel CRS-s. Click on World_Winkel_Tripel_NGS (ESRI:54042) and then OK. Winkel-Tripel is minimal-error projection and it is used in National Geographic. In result, the map should change in your map view as the Project CRS is changed.
+4. Lets first change the Project CRS. Click on the status bar lower right corner on EPSG:4326. Type "winkel" to the filter. This should bring up several Winkel CRS-s. Click on World_Winkel_Tripel_NGS (ESRI:54042)[^1] and then OK. Winkel-Tripel is minimal-error projection and it a standard projection for world maps made by the National Geographic Society (Wiki). In result, the map should change in your map view as the Project CRS is changed.
 ![image of change project CRS](../../images/3_change project crs.png)
+5. Please re-check the layer's CRS by doing right click on <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries.shp</span> layer and select Properties. From there switch to the Information tab in the Layer Properties dialog check the CRS information. This should be still the same as before: WGS84 (EPSG: 4326). You only changed the project CRS but the layer's CRS did not change and in the map view the map was automatically and only virtually projected to the project CRS. If layer's CRS is properly defined then all GIS programmes can automatically project them into most common CRS-s that your current project is. 
+
+
+[^1]: As you might notice there is ESRI code instead of EPSG. This is because not all CRS have EPSG code and the specific Winkel Tripel III (NGS) has been implemente in ESRI softwares under this specific code.
