@@ -24,7 +24,7 @@ In this tutorial, we will explore how CRSs work in QGIS and learn about tools av
 
 Natural Earth has [<span style="color:#0564A0">Admin 0 - Countries</span>](http://www.naturalearthdata.com/downloads/10m-cultural-vectors/) dataset. Download the [<span style="color:#0564A0">countries</span>](https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip) and extract to your working folder.
 
-[<span style="color:#0564A0">Estonian Land Board</span>](https://geoportaal.maaamet.ee/eng/Spatial-Data-p58.html) provides open data about Estonia for download. Download the [<span style="color:#0564A0"> Estonian DTM (resolution 25m)</span>](https://geoportaal.maaamet.ee/docs/haldus_asustus/maakond_shp.zip?t=20210809134825) (313 MB) and extract it to a folder on your computer. If the file is too big for you to download then you can also use [<span style="color:#0564A0">100m resolution DTM</span>]().
+[<span style="color:#0564A0">Estonian Land Board</span>](https://geoportaal.maaamet.ee/eng/Spatial-Data-p58.html) provides open data about Estonia for download. Download the [<span style="color:#0564A0"> Estonian DTM (resolution 25m)</span>](https://geoportaal.maaamet.ee/docs/haldus_asustus/maakond_shp.zip?t=20210809134825) (313 MB) and extract it to a folder on your computer. If the file is too big for you to download then you can also use [<span style="color:#0564A0">100m resolution DTM</span>](![DTM download](../../images/datasets/est_dtm100.7z).
 
 For convenience, you may directly download files required only for this tutorial from the link below:
 
@@ -58,6 +58,6 @@ You will see the Project CRS is updated to EPSG 3301 (Estonian Coordinate System
 
 #### 2.3 Change raster layer CRS
 11. Now let’s add a Raster layer. Go to `Layer ► Add Layer ► Add Raster Layer…` or alternatively click on Open Data Source Manager button ![image of icon data manager](../../images/icon_data source manager.png), click on the Raster tab and add the file from there.
-12. New raster layer is added to the map view. The layers are not perfectly overlaping each other because of different level of detail. The raster map has highel level of detail and the coastline is more precise. Also, the lakes have been removed from the elevation model. To make both layers better visible, drag layer <span style="font-family:Consolas; color:#AF1B03">estonia</span> on top of raster layer in the layer panel. 
+12. New raster layer is added to the map view. The layers are not perfectly overlaping each other because of different level of detail. The raster map has highel level of detail and the coastline is more precise. Also, the lakes have been removed from the elevation model. To make both layers better visible, drag layer <span style="font-family:Consolas; color:#AF1B03">estonia</span> on top of raster layer in the layer panel.
 
 [^1]: As you might notice there is ESRI code instead of EPSG. This is because not all CRS have EPSG code and the specific Winkel Tripel (NGS) has been implemente in ESRI softwares under this specific code.
