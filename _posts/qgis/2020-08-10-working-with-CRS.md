@@ -24,7 +24,7 @@ In this tutorial, we will explore how CRSs work in QGIS and learn about tools av
 
 Natural Earth has [<span style="color:#0564A0">Admin 0 - Countries</span>](http://www.naturalearthdata.com/downloads/10m-cultural-vectors/) dataset. Download the [<span style="color:#0564A0">countries</span>](https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip) and extract to your working folder.
 
-[<span style="color:#0564A0">Estonian Land Board</span>](https://geoportaal.maaamet.ee/eng/Spatial-Data-p58.html) provides open data about Estonia for download. Download the [<span style="color:#0564A0">administrative counties</span>](https://geoportaal.maaamet.ee/docs/haldus_asustus/maakond_shp.zip?t=20210809134825) and extract it to a folder on your computer.
+[<span style="color:#0564A0">Estonian Land Board</span>](https://geoportaal.maaamet.ee/eng/Spatial-Data-p58.html) provides open data about Estonia for download. Download the [<span style="color:#0564A0"> Estonian DTM (resolution 25m)</span>](https://geoportaal.maaamet.ee/docs/haldus_asustus/maakond_shp.zip?t=20210809134825) (313 MB) and extract it to a folder on your computer. If the file is too big for you to download then you can also use [<span style="color:#0564A0">100m resolution DTM</span>]().
 
 For convenience, you may directly download files required only for this tutorial from the link below:
 
@@ -43,7 +43,7 @@ Data Sources: [<span style="color:#0564A0">Naturalearth</span>](https://www.natu
 ![image of change project CRS](../../images/3_change project crs.png)
 5. Please re-check the layer's CRS by doing right click on <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries.shp</span> layer and select Properties. From there switch to the Information tab in the Layer Properties dialog check the CRS information. This should be still the same as before: WGS84 (EPSG: 4326). You only changed the project CRS but the layer's CRS did not change and in the map view the map was automatically and only virtually projected to the project CRS. This is because QGIS supports On-The-Fly (OTF) CRS transformation for both raster and vector data. Which means that whenever a layer’s CRS doesn’t match the Project CRS, it will automatically be transformed to the Project CRS so it can be displayed correctly. This means that regardless of the underlying CRS of particular map layers in your project, they will always be automatically transformed into the common CRS defined for your project. Behind the scenes, QGIS transparently reprojects all layers contained within your project into the project’s CRS, so that they will all be rendered in the correct position with respect to each other.
 
-#### 2.2 Change layer CRS
+#### 2.2 Change vector layer CRS
 6. Now let’s change the layer’s CRS. This operation is called Re-Projection. It is possible to re-project the whole layer but rather than re-projecting the entire layer, we can also select a subset of features and re-project them to a new layer. Use the Select Features by Area or Single Click tool ![icon of select](../../images/icon_select.png) and click on Estonia to select it.
 ![image of select estonia](../../images/3_select estonia.png)
 7. If you don't have on the right side Processing Toolbox then switch it on from the `View ► Panels`. If you have Processing Toolbox available then you can skip this step.
@@ -53,7 +53,11 @@ Data Sources: [<span style="color:#0564A0">Naturalearth</span>](https://www.natu
 9. Select <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries.shp</span> as the Input layer, check Selected features only then click on the Select CRS icon ![icon of select](../../images/icon_CRS2.png) next to Target CRS, search and select EPSG:3301 - Estonian Coordinate System of 1997. In Reprojected, choose the ... and click Save to a file. Now choose the directory and enter the name as <span style="font-family:Consolas; color:#AF1B03">estonia.gkpg</span> and click Run.
 ![image of processing toolbox](../../images/3_reproject.png)
 10. A new layer <span style="font-family:Consolas; color:#AF1B03">estonia</span> will appear on the Layer Panel. As you see, both the layers still line up exactly with each other - even though they are in different CRSs. This is thanks to the On-The-Fly CRS transformation.
-Now let’s set the Project CRS to match the newly created <span style="font-family:Consolas; color:#AF1B03">estonia</span>  layer’s CRS. Remove the <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries</span>  layer and, right click on the <span style="font-family:Consolas; color:#AF1B03">estonia</span> layer and choose Layer CRS ‣ Set Project CRS from Layer.
+Now let’s set the Project CRS to match the newly created <span style="font-family:Consolas; color:#AF1B03">estonia</span>  layer’s CRS. Remove the <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries</span>  layer and, right click on the <span style="font-family:Consolas; color:#AF1B03">estonia</span> layer and choose `Layer CRS ► Set Project CRS from Layer`.
+You will see the Project CRS is updated to EPSG 3301 (Estonian Coordinate System 1997).
 
+#### 2.3 Change raster layer CRS
+11. Now let’s add a Raster layer. Go to `Layer ► Add Layer ► Add Raster Layer…` or alternatively click on Open Data Source Manager button ![image of icon data manager](../../images/icon_data source manager.png), click on the Raster tab and add the file from there.
+12. New raster layer is added to the map view. The layers are not perfectly overlaping each other because of different level of detail. The raster map has highel level of detail and the coastline is more precise. Also, the lakes have been removed from the elevation model. To make both layers better visible, drag layer <span style="font-family:Consolas; color:#AF1B03">estonia</span> on top of raster layer in the layer panel. 
 
 [^1]: As you might notice there is ESRI code instead of EPSG. This is because not all CRS have EPSG code and the specific Winkel Tripel (NGS) has been implemente in ESRI softwares under this specific code.
