@@ -57,6 +57,11 @@ You will see the Project CRS is updated to EPSG 3301 (Estonian Coordinate System
 
 #### 2.3 Change raster layer CRS
 11. Now let’s add a Raster layer. Go to `Layer ► Add Layer ► Add Raster Layer…` or alternatively click on Open Data Source Manager button ![image of icon data manager](../../images/icon_data source manager.png), click on the Raster tab and add the file from there.
-12. New raster layer is added to the map view. The layers are not perfectly overlaping each other because of different level of detail. The raster map has highel level of detail and the coastline is more precise. Also, the lakes have been removed from the elevation model. To make both layers better visible, drag layer <span style="font-family:Consolas; color:#AF1B03">estonia</span> on top of raster layer in the layer panel.
+12. New raster layer is added to the map view. The layers are not perfectly overlaping each other because of different level of detail. The raster map has higher level of detail and the coastline is more precise. Also, the lakes have been removed from the elevation model.
+![image of raster layer](../../images/icon_data source manager.png)
+13. To make both layers better visible, drag layer <span style="font-family:Consolas; color:#AF1B03">estonia</span> on top of raster layer in the layer panel. Let's change the layer <span style="font-family:Consolas; color:#AF1B03">estonia</span> symbology so that we can also see the raster layer underneath it. Make a right click on layer <span style="font-family:Consolas; color:#AF1B03">estonia</span> name in the layer panel and choose `Properties`
+![image of layer properties](../../images/3_raster lakes.png)
+14. Under Properties switch to Symbology tab and there click on Simple Fill. Change Fill Style to No Brush and change the Stroke color into red for example, and click OK.
+![image of change symbology](../../images/3_symbology.png)
 
 [^1]: As you might notice there is ESRI code instead of EPSG. This is because not all CRS have EPSG code and the specific Winkel Tripel (NGS) has been implemente in ESRI softwares under this specific code.
