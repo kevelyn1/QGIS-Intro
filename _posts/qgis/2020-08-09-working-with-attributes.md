@@ -20,9 +20,9 @@ For convenience, you may directly download a copy of datasets from the link belo
 Data Source: [<span style="color:#0564A0">NaturalEarth</span>](https://www.naturalearthdata.com/)
 
 ### 2. Steps to work with attributes
-1. Locate the span style="font-family:Consolas; color:#AF1B03"ne_10m_populated_places_simple.shp</span> file in the QGIS Browser drag it to the map view.
+1. Locate the span style="font-family:Consolas; color:#AF1B03"ne_10m_populated_places_simple.shp</span> file in the QGIS Browser drag it to the map view. Save your project with a suitable name to your working folder.
 >**Tip** :smirk:
 >
 *You can add files also directly from zip-file without extracting them if you expant the zip file in the Browser and drag shp-file to the map view*
 
-2. A new <span style="color:#0564A0">ne_10m_populated_places_simple</span> will now be loaded in QGIS and you will see many points representing the populated places of the world. The default view in the QGIS canvas shows the geometry of the GIS layer. Each point also has associated attributes. Let’s view them. Locate the Attributes Toolbar. This toolbar contains many useful tools to inspect, view, select, and modify attributes of a layer.
+2. A new <span style="color:#AF1B03">ne_10m_populated_places_simple</span> will now be loaded in QGIS and you will see many points representing the populated places of the world. The default view in the QGIS canvas shows the geometry of the GIS layer. Each point also has associated attributes. Let’s view them. Locate the Attributes Toolbar. This toolbar contains many useful tools to inspect, view, select, and modify attributes of a layer. If you do not see the toolbar, you can enable it from `View ► Toolbars ► Attributes Toolbar`.

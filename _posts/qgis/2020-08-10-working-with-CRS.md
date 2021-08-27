@@ -35,7 +35,7 @@ For convenience, you may directly download files required only for this tutorial
 Data Sources: [<span style="color:#0564A0">NaturalEarth</span>](https://www.naturalearthdata.com/) and [<span style="color:#0564A0">Estonian Land Board</span>](https://maaamet.ee/en)
 ### 2. Steps to work with CRS
 #### 2.1. Change project CRS
-1. Open QGIS. Locate your working folder in the Browser panel and drag/drop the <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries.shp</span> file to your QGIS Map view or alternatively click on Open Data Source Manager button ![image of icon data manager](../../images/icon_data source manager.png), click on the Vector tab and add the file from there.
+1. Open QGIS. Locate your working folder in the Browser panel and drag/drop the <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries.shp</span> file to your QGIS Map view or alternatively click on Open Data Source Manager button ![image of icon data manager](../../images/icon_data source manager.png), click on the Vector tab and add the file from there. Save your project with suitable name to your working folder.
 ![image of add vector](../../images/3_add vector file.png)
 2. At the bottom of QGIS window, you will notice the label Coordinate. As you move your cursor over the map, it will show you the X and Y coordinates at that location. Currently it is presenting geographic coordinates because the data layer CRS is geographic, more precisely WGS84 (EPSG:4326), which you can see at the bottom-right corner. This is also the current Project CRS because QGIS assigns the empty project CRS of the first layer you add to the project.
 ![image of CRS info](../../images/3_coord and CRS info.png)
