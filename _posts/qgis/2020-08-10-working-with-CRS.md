@@ -64,7 +64,8 @@ You will see the Project CRS is updated to EPSG 3301 (Estonian Coordinate System
 ![image of layer properties](../../images/3_raster lakes.png)
 15. Under the Properties switch to Symbology tab and there click on Simple Fill. Change Fill Style to No Brush and change the Stroke color into red and Stroke width to 0.3, for example, and click OK.
 ![image of change symbology](../../images/3_symbology.png)
-16. To change the raster layer CRS, we need to use different tool than for vector layer. Type "reproject" into Processing Toolbox search which will bring up Warp (reproject) under GDAL[^2].
+16. To change the raster layer CRS into WGS84, we need to use different tool than for vector layer. Type "reproject" into Processing Toolbox search which will bring up Warp (reproject) under GDAL[^2]. Make layer <span style="font-family:Consolas; color:#AF1B03">estonia</span> as Input; you may leave Source input empty as it is read automatically from the layer's metadata; choose WGS84 (EPSG 4326) as Target CRS; leave other parameters as default and scroll down to Advanced Parameters where you can change whether you want your new reprojected raster layer to be Saved to temporary file or Save to file. You may leave this temporary which means that after you close the QGIS project then the file will be deleted. This is often useful option when you have a lot of intermediate results that you know, you won't need later. Click Run to start reprojecting.
+![image of warp](../../images/3_warp.png)
 
 [^1]: As you might notice there is ESRI code instead of EPSG. This is because not all CRS have EPSG code and the specific Winkel Tripel (NGS) has been implemente in ESRI softwares under this specific code.
-[^2]: [<span style="color:#0564A0">GDAL</span>](https://gdal.org/) is a open source translator library for raster and vector geospatial data formats. 
+[^2]: [<span style="color:#0564A0">GDAL</span>](https://gdal.org/) is a open source translator library for raster and vector geospatial data formats
