@@ -24,10 +24,10 @@ In this tutorial, we will explore how CRSs work in QGIS and learn about tools av
 
 Natural Earth has [<span style="color:#0564A0">Admin 0 - Countries</span>](http://www.naturalearthdata.com/downloads/10m-cultural-vectors/) dataset. Download the [<span style="color:#0564A0">countries</span>](https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip) and extract to your working folder.
 
-[<span style="color:#0564A0">Estonian Land Board</span>](https://geoportaal.maaamet.ee/eng/Spatial-Data-p58.html) provides open data about Estonia for download. Download the [<span style="color:#0564A0"> Estonian DTM (resolution 25m)</span>](https://geoportaal.maaamet.ee/index.php?lang_id=2&plugin_act=otsing&andmetyyp=mp_korgusmudelid&dl=1&f=dem_25m_eesti.tif&page_id=664) (313 MB) and extract it to a folder on your computer. If the file is too big for you to download then you can also use [<span style="color:#0564A0">100m resolution DTM</span>](![DTM download](../../images/datasets/est_dtm100.7z).
+[<span style="color:#0564A0">Estonian Land Board</span>](https://geoportaal.maaamet.ee/eng/Spatial-Data-p58.html) provides open data about Estonia for download. Download the [<span style="color:#0564A0"> Estonian DTM (resolution 25m)</span>](https://geoportaal.maaamet.ee/index.php?lang_id=2&plugin_act=otsing&andmetyyp=mp_korgusmudelid&dl=1&f=dem_25m_eesti.tif&page_id=664) (313 MB) and extract it to a folder on your computer. If the file is too big for you to download then you can also use [<span style="color:#0564A0">100m resolution DTM</span>](../../datasets/est_dtm100.7z).
 
 For convenience, you may directly download files required only for this tutorial from the link below:
-[<span style="color:#0564A0">data_projections.7z</span>](![DTM download](../../images/datasets/data_projections.7z
+[<span style="color:#0564A0">data_projections.7z</span>](../../datasets/data_projections.7z)
 
 Data Sources: [<span style="color:#0564A0">NaturalEarth</span>](https://www.naturalearthdata.com/) and [<span style="color:#0564A0">Estonian Land Board</span>](https://maaamet.ee/en)
 ### 2. Steps to work with CRS
