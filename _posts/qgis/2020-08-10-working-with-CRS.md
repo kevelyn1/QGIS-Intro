@@ -18,7 +18,10 @@ In this tutorial, we will explore how CRSs work in QGIS and learn about tools av
 #### The tutorial consists of the following steps:
 
 - [1. Download data](#1-download-data)
-- [2. Steps to make a map](#2-steps-to-make-a-map)
+- [2. Steps to work with CRS](#2-steps-to-work-with-crs)
+  * [2.1. Change project CRS](#21-change-project-crs)
+  * [2.2 Change vector layer CRS](#22-change-vector-layer-crs)
+  * [2.3 Change raster layer CRS](#23-change-raster-layer-crs)
 
 ### 1. Download data
 
