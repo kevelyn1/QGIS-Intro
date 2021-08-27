@@ -26,6 +26,6 @@ Data Source: [<span style="color:#0564A0">NaturalEarth</span>](https://www.natur
 *You can add files also directly from zip-file without extracting them if you expant the zip file in the Browser and drag shp-file to the map view*
 
 2. A new <span style="color:#AF1B03">ne_10m_populated_places_simple</span> will now be loaded in QGIS and you will see many points representing the populated places of the world. The default view in the QGIS canvas shows the geometry of the GIS layer. Each point also has associated attributes. Let’s view them. Locate the Attributes Toolbar. This toolbar contains many useful tools to inspect, view, select, and modify attributes of a layer. If you do not see the toolbar, you can enable it from `View ► Toolbars ► Attributes Toolbar`.
-![image of attribute toolbar](../../images/4_identify.png)
+![image of attribute toolbar](../../images/4_attribute toolbar.png)
 3. Click the Identify button on the Attributes Toolbar. Once the tool is selected, click on any point on the canvas. The associated attributes of that point will be displayed in a new Identify Results panel. Once you are done exploring attributes of different points, you can click the Close button.
-![image of identify](../../images/4_attribute toolbar.png)
+![image of identify](../../images/4_identify.png)
