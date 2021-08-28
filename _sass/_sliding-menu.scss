@@ -9,10 +9,10 @@
 .slide {
     transform: translateX(-100%);
     @include media($medium) {
-      transform: translateX(em(-600));
+      transform: translateX(em(-400));
     }
     @include media($large) {
-      transform: translateX(em(-900));
+      transform: translateX(em(-400));
     }
   }
 
