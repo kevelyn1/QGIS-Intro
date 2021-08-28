@@ -50,5 +50,7 @@ Data Source: [<span style="color:#0564A0">NaturalEarth</span>](https://www.natur
 >
 *In the QGIS Expression engine, text with double-quotes refers to a field and text with single-quotes refer to a string value. For example, if you would want to find Tokyo from the attribute table by using expression then your expression would look like this  "name"  =  'Tokyo'*
 
-8. You will notice that more rows in the attribute table are now selected. The label window also changes and shows the count of selected features. Close the attribute table window and return to the main QGIS window. You will notice that a subset of points is now rendered in yellow. This is the result of our query and the selected points are the ones having **pop_max** attribute value greater than <span style="font-family:Consolas">1 000 000</span>.
+8. You will notice that more rows in the attribute table are now selected. The label window also changes and shows the count of selected features. Close the attribute table window and return to the main QGIS window. You will notice that a subset of points is now rendered in yellow. This is the result of our query and the selected points are the ones having **pop_max** attribute value greater than one million.
 ![image](../../images/4_select million.png)
+9. Let’s update our query to include a condition that the place should also be a capital in addition to having a population greater than 1 million. To quickly get to the expression editor, you can use the Select Features by Expression ![image](../../images/icon_select by attributes.png) button in the Attributes Toolbar.
+![image](../../images/4_select by expression.png)
