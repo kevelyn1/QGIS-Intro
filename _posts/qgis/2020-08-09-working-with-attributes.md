@@ -46,6 +46,5 @@ Data Source: [<span style="color:#0564A0">NaturalEarth</span>](https://www.natur
 #### 2.2. Making queries
 7. Lets perform our query on these attributes. QGIS uses SQL-like expressions to perform queries. Click Select features using an expression button ![image](../../images/icon_select features expression.png) from the attribute table toolbar. In the Select By Expression window, expand the Fields and Values section and double-click the pop_max label. You will notice that it is added to the expression section at the bottom. If you aren’t sure about the field values, you can click the All Unique button to see what the attribute values are present in the dataset. For this exercise, we are looking to find all features that have a population greater than 1 million. So complete the expression as below and click Select Features and then Close.
 ![image](../../images/4_select one  million.png)
->:scroll:**Note** 
->
+>:scroll:**Note**
 *In the QGIS Expression engine, text with double-quotes refers to a field and text with single-quotes refer to a string value. For example, if you would want to find Tokyo from the attribut etable by using expression then your expression would look like this  "name"  =  'Tokyo'*
