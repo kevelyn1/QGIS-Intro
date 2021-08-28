@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Working with CRS
-modified: 2020-08-10
+modified: 2021-08-10
 categories: qgis
 image:
   teaser: CRS_teaser.png
@@ -32,7 +32,7 @@ Natural Earth has [<span style="color:#0564A0">Admin 0 - Countries</span>](http:
 For convenience, you may directly download files required only for this tutorial from the link below:
 [<span style="color:#0564A0">data_projections.7z</span>](../../datasets/data_projections.7z)
 
-Data Sources: [<span style="color:#0564A0">NaturalEarth</span>](https://www.naturalearthdata.com/) and [<span style="color:#0564A0">Estonian Land Board</span>](https://maaamet.ee/en)
+Data Sources: [<span style="color:#0564A0">Natural Earth</span>](https://www.naturalearthdata.com/) and [<span style="color:#0564A0">Estonian Land Board</span>](https://maaamet.ee/en)
 ### 2. Steps to work with CRS
 #### 2.1. Change project CRS
 1. Open QGIS. Locate your working folder in the Browser panel and drag/drop the <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries.shp</span> file to your QGIS Map view or alternatively click on Open Data Source Manager button ![image of icon data manager](../../images/icon_data source manager.png), click on the Vector tab and add the file from there. Save your project with suitable name to your working folder.
