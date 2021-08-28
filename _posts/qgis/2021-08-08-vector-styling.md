@@ -10,6 +10,12 @@ image:
 To create a map, one has to style the GIS data and present it in a form that is visually informative and also pleasing. There are a large number of options available in QGIS to apply different types of symbology to the underlying data. In this tutorial, we will take a text file and apply different data visualization techniques to highlight spatial patterns in the data.
 
 #### The tutorial consists of the following steps:
+- [1. Download data](#1-download-data)
+- [2. Procedure](#2-procedure)
+  * [2.1. Add csv file to QGIS](#21-add-csv-file-to-qgis)
+  * [2.2. Add base maps](#22-add-base-maps)
+  * [2.3. Categorized symbology](#23-categorized-symbology)
+  * [2.4. Graduated symbology](#24-graduated-symbology)
 
 ### 1. Download data
 In this tutorial we will use [<span style="color:#0564A0">UNESCO World Heritage Sites</span>](http://whc.unesco.org/en/syndication). Scroll down and find World Heritage List in XLS format. Download the file and open in Excel. Save the file as csv-file `File â–º Save As` and name it <span style="font-family:Consolas; color:#AF1B03">whc_sites_2021.csv</span> and choose file type as CSV UTF-8 (Comma delimited).
@@ -29,10 +35,15 @@ In the Data Source Manager window, switch to the Delimited Text tab. Click the â
 ![image](../../images/5_whs sites.png)
 3. Change the CRS of the project to Winkel Tripel (ESRI:54042).
 
-#### 2.2. Add base map
+#### 2.2. Add base maps
 3. Lets add some base maps to our map.  Sometimes it is practical to use ready made stylised base maps instead of styling the base map yourself. [<span style="color:#0564A0">Klas Karlsson</span>](https://github.com/klakar) has collated a nice collection of different basemaps which can be added by running a little Python script in QGIS. Open [<span style="color:#0564A0">qgis_basemaps.py</span>](https://github.com/klakar/QGIS_resources/blob/master/collections/Geosupportsystem/python/qgis_basemaps.py) from GitHub. Select the script starting from # Sources and copy it (`Crtl+C`).
 ![image](../../images/5_select script.png)
 4. Go back to QGIS and open Python Console by clicking ![image](../../images/icon_python console.png) on the toolbar. Python Console opens under the Map view. Paste the script to the console and click Enter on the keyboard. After this you may close the Python Console.
 ![image](../../images/5_paste script.png)
-5. On the Browser Panel under XYZ tiles, a lot of new layers have appeared. These are the added base maps. Let's try some of them. Double-click on CartoDb Dark Matter and the base map is added to the map view. It covers the WHS points but in the Layer panel drag <span style="font-family:Consolas; color:#AF1B03">CartoDb Dark Matter</span> under the <span style="font-family:Consolas; color:#AF1B03">whc_sites_2021</span>
+5. On the Browser Panel under XYZ tiles, a lot of new layers have appeared. These are the added base maps. Let's try some of them. Double-click on CartoDb Dark Matter and the base map is added to the map view. It covers the WHS points but in the Layer panel drag <span style="font-family:Consolas; color:#AF1B03">CartoDb Dark Matter</span> under the <span style="font-family:Consolas; color:#AF1B03">whc_sites_2021</span>. Try also for example Google Satellite base map or more fun Stamen Watercolor. Explore some more base maps.
 ![image](../../images/5_add base map layers.png)
+
+#### 2.3. Categorized symbology
+
+
+#### 2.4. Graduated symbology
