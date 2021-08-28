@@ -13,13 +13,13 @@ To create a map, one has to style the GIS data and present it in a form that is 
 
 ### 1. Download data
 In this tutorial we will use [<span style="color:#0564A0">UNESCO World Heritage Sites</span>](http://whc.unesco.org/en/syndication). Scroll down and find World Heritage List in XLS format. Download the file and open in Excel. Save the file as csv-file `File ► Save As` and name it <span style="font-family:Consolas; color:#AF1B03">whc_sites_2021.csv</span> and choose file type as CSV (Comma delimited).
-We will also need country borders. Download the [<span style="color:#0564A0">countries</span>](https://http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip) and extract to your working folder.
 
-For convenience, you may directly download a copy of datasets from the link below:
-[<span style="color:#0564A0">vector_styling.zip</span>](../../datasets/vector_styling.zip)
+For convenience, you may directly download a copy of dataset from the link below:
+[<span style="color:#0564A0">vector_styling.zip</span>](../../datasets/whc_sites_2021.csv)
 
-Data Source:
-World Heritage List from [<span style="color:#0564A0">World Heritage List</span>](http://whc.unesco.org/en/syndication) and country borders from [<span style="color:#0564A0">Natural Earth</span>](https://www.naturalearthdata.com/)
+Data Sources:
+World Heritage List from [<span style="color:#0564A0">World Heritage List</span>](http://whc.unesco.org/en/syndication) and base maps from [<span style="color:#0564A0">Klas Karlsson</span>](https://github.com/klakar)
 
 ### 2. Procedure
 #### 2.1. Add csv file to QGIS
+1. Open QGIS and in the QGIS Browser Panel, locate the directory where you added the data. The World Heritage Sites (WHS) database is a CSV file, so we will need to import it. CSV-files are simple text files but if they have coordinates in them then they can be easily imported as spatial data. Click the Open Data Source Manager button ![image](../../images/icon_data source manager.png) on the toolbar. You can also use `Ctrl + L` keyboard shortcut.
