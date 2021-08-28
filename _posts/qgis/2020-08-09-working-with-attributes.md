@@ -27,5 +27,12 @@ Data Source: [<span style="color:#0564A0">NaturalEarth</span>](https://www.natur
 
 2. A new <span style="color:#AF1B03">ne_10m_populated_places_simple</span> will now be loaded in QGIS and you will see many points representing the populated places of the world. The default view in the QGIS canvas shows the geometry of the GIS layer. Each point also has associated attributes. Let’s view them. Locate the Attributes Toolbar. This toolbar contains many useful tools to inspect, view, select, and modify attributes of a layer. If you do not see the toolbar, you can enable it from `View ► Toolbars ► Attributes Toolbar`.
 ![image of attribute toolbar](../../images/4_attribute toolbar.png)
-3. Click the Identify button on the Attributes Toolbar. Once the tool is selected, click on any point on the canvas. The associated attributes of that point will be displayed in a new Identify Results panel. Once you are done exploring attributes of different points, you can click the Close button.
+3. Click the Identify button ![icon of identify](../../images/icon_identify.png) on the Attributes Toolbar. Once the tool is selected, click on any point on the canvas. The associated attributes of that point will be displayed in a new Identify Results panel. Once you are done exploring attributes of different points, you can click the Close button.
 ![image of identify](../../images/4_identify.png)
+4. You can also view all of the attributes together as a table. Click the Open Attribute Table button ![icon of attr table](../../images/icon_attribute table.png) on the Attributes Toolbar. You can also right-click the <span style="color:#AF1B03">ne_10m_populated_places_simple</span> and select Open Attribute Table.
+>**Tip** :smirk:
+>
+*You open also the attribute table with F6 from the keyboard. However, the layer of which attribute table you wish to open must be selected from the Layer panel*
+
+5. In the attribute table, scroll horizontally and locate the **pop_max** column. This field contains the population of the associated place. You can click twice on the field header to sort the column in descending order.
+![image of identify](../../images/4_sort attributes.png)
