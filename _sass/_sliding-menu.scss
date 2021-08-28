@@ -9,10 +9,10 @@
 .slide {
     transform: translateX(-100%);
     @include media($medium) {
-      transform: translateX(em(-400));
+      transform: translateX(em(-600));
     }
     @include media($large) {
-      transform: translateX(em(-400));
+      transform: translateX(em(-900));
     }
   }
 
@@ -64,14 +64,14 @@
   visibility: hidden;
   backface-visibility: hidden;
   text-align: left;
-  @include size(100% 100%);
+  @include size(50% 100%);
   @include media($small) {
     width: em(600);
   }
   @include media($large) {
     width: em(900);
   }
-  transform: translateX(100%);
+  transform: translateX(50%);
   transition: $sliding-menu-animation;
   background: $sliding-menu-background;
   z-index: 20;
