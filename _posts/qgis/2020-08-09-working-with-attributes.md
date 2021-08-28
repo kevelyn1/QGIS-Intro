@@ -56,3 +56,11 @@ Data Source: [<span style="color:#0564A0">NaturalEarth</span>](https://www.natur
 ![image](../../images/4_select by expression.png)
 10. The field containing data about capitals is **adm0cap**. The value <span style="font-family:Consolas">1</span> indicates that the place is a capital and value <span style="font-family:Consolas">0</span> that it is not a capital. We can add this criteria to our previous expression using the <span style="font-family:Consolas">and</span> operator. Enter the expression as below and click Select Features and then Close.
 ![image](../../images/4_adding capital condition.png)
+11. Look to the Map view. Now you will see a smaller subset of the points selected. This is the result of the second query and shows all places from the dataset that are country capitals as well as have population greater than 1 million.
+![image](../../images/4_final selection.png)
+
+#### 2.3. Exporting the selection as file
+12. Now we will export the selected features as a new layer. Right-click the <span style="font-family:Consolas; color:#AF1B03">ne_10m_populated_places_simple</span> layer and go to Export ‣ Save Selected Features As… QGIS can export many formats, including GeoPackage, ESRI shp etc. For this exercise, we will choose GeoJSON. GeoJSON is a open text-based format that is used widely in web mapping. Click the … button next to File name and enter capitals_million.geojson as the output file. The input data has many columns. You are able to choose only a subset of the original columns for export. Expand the Select fields to export and their export options section. Click Deselect All and check the **name** and **pop_max** columns. Click OK.
+![image](../../images/4_save geojson.png)
+13. A new layer <span style="font-family:Consolas; color:#AF1B03">capitals_million</span> will be loaded in QGIS. You can un-check the <span style="font-family:Consolas; color:#AF1B03">ne_10m_populated_places_simple</span> layer to hide it and view the points from the newly exported layer.
+![image](../../images/4_capitals million.png)
