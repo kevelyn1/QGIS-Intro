@@ -52,5 +52,7 @@ Data Source: [<span style="color:#0564A0">NaturalEarth</span>](https://www.natur
 
 8. You will notice that more rows in the attribute table are now selected. The label window also changes and shows the count of selected features. Close the attribute table window and return to the main QGIS window. You will notice that a subset of points is now rendered in yellow. This is the result of our query and the selected points are the ones having **pop_max** attribute value greater than one million.
 ![image](../../images/4_select million.png)
-9. Let’s update our query to include a condition that the place should also be a capital in addition to having a population greater than 1 million. To quickly get to the expression editor, you can use the Select Features by Expression ![image](../../images/icon_select by attributes.png) button in the Attributes Toolbar.
+9. Let’s update our query to include a condition that the place should also be a capital in addition to having a population greater than 1 million. To quickly get to the expression editor, you can use the Select Features by Expression ![image](../../images/icon_select by attributes.png) button in the toolbar.
 ![image](../../images/4_select by expression.png)
+10. The field containing data about capitals is **adm0cap**. The value <span style="font-family:Consolas">1</span> indicates that the place is a capital and value <span style="font-family:Consolas">0</span> that it is not a capital. We can add this criteria to our previous expression using the <span style="font-family:Consolas">and</span> operator. Enter the expression as below and click Select Features and then Close.
+![image](../../images/4_adding capital condition.png)
