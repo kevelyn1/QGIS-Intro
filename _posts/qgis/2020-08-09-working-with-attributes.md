@@ -10,6 +10,11 @@ image:
 GIS data has two parts - features and attributes. Attributes are structured data about each feature. This tutorial shows how to view the attributes of a GIS vector layer and do basic queries on them in QGIS.
 
 #### The tutorial consists of the following steps:
+- [1. Download data](#1-download-data)
+- [2. Steps to work with attributes](#2-steps-to-work-with-attributes)
+  * [2.1. Identifying single objects on the map](#21-identifying-single-objects-on-the-map)
+  * [2.2. Making queries with expressions](#22-making-queries-with-expressions)
+  * [2.3. Exporting the selection as file](#23-exporting-the-selection-as-file)
 
 ### 1. Download data
 Natural Earth provides a [<span style="color:#0564A0">Populated Places</span>](http://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/) dataset. Download the [<span style="color:#0564A0">simple (less columns) dataset</span>](http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_populated_places_simple.zip). Extract the dataset to your working folder.
