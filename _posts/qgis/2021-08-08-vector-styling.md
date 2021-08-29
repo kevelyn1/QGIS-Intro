@@ -51,8 +51,13 @@ In the Data Source Manager window, switch to the Delimited Text tab. Click the â
 
 #### 2.3. Categorized symbology
 Categorized symbology is for nominal data. Nominal data are purely descriptive and they don't provide any quantitative or numeric value. For example, land use and school types. It is not possible to rank nominal data e.g. bigger or smaller.
-9. The <span style="font-family:Consolas; color:#AF1B03">whs_sites_2021</span> layer contains an attribute named **category** which indicates whether the heritage site is cultural, natural or mixed. We can create a style where each category is shown in a different color. Double-click the <span style="font-family:Consolas; color:#AF1B03">whs_sites_2021</span> layer to open Symbology. Change Single Symbol into Categorized.  Select **category** as the Value. Click Classify. Three categories appear  plus all others which don't have values. Click OK.
-![image](../../images/5_categorized symbology.png) 
+9. The <span style="font-family:Consolas; color:#AF1B03">whs_sites_2021</span> layer contains an attribute named **category** which indicates whether the heritage site is cultural, natural or mixed. We can create a style where each category is shown in a different color. Double-click the <span style="font-family:Consolas; color:#AF1B03">whs_sites_2021</span> layer to open Symbology. Change Single Symbol into Categorized.  Select **category** as the Value. Click Classify. Three categories appear  plus all others which don't have values. Click OK. Your map will be updated with three heritage sites' categories.
+![image](../../images/5_categorized symbology.png)
+![image](../../images/5_categorized symbology2.png)
+10. Let's make the size of the symbols more appropriate. Open Symbology and click on a Symbol sign. Reduce the size to 1.8. This will reduce the size of all categories.
+![image](../../images/5_reduce symbol size.png)
+11. We can change the color of the categories. Open Symbology and click on the symbol in front of each category and change it for example, cultural yellow, natural green and mixed orange. 
+![image](../../images/5_reduce symbol color.png)
 
 
 
