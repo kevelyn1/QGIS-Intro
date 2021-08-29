@@ -56,9 +56,9 @@ Categorized symbology is for nominal data. Nominal data are purely descriptive a
 ![image](../../images/5_categorized symbology2.png)
 10. Let's make the size of the symbols more appropriate. Open Symbology and click on a Symbol sign. Reduce the size to 1.8. This will reduce the size of all categories.
 ![image](../../images/5_reduce symbol size.png)
-11. We can change the color of the categories. Open Symbology and click on the symbol in front of each category and change it for example, cultural yellow, natural green and mixed orange. 
+11. Change the color of the categories to more appropriate. Open Symbology and click on the symbol in front of each category and change it for example, cultural yellow, natural green and mixed orange.
 ![image](../../images/5_reduce symbol color.png)
-
+12. One very powerful feature that QGIS has are expressions. With expression, we can make the symbol stroke color automatically adjust based on the symbol fill color.  
 
 
 #### 2.4. Graduated symbology
