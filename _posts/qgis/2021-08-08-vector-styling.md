@@ -78,3 +78,5 @@ While categorized symbology is for nominal data (qualitative) then graduated sym
 ![image](../../images/5_graduated classes.png)
 17. The map symbols should now have different color based on the year of inscription. Let's change the color palette of the gradual scale. Open layer's Symbology and click on the small arrow next to Color ramp. This will open a selection of color ramps. You can expand it even more by clicking All color ramps. You may choose a ramp of you choice. However, keep in mind that for gradually increasing values like years, sequential color palette is the best. Avoid using diverging color palette in this case because there is no clear mid-point. You can read more about [<span style="color:#0564A0">"When to use sequential and diverging palettes"</span>](https://everydayanalytics.ca/2017/03/when-to-use-sequential-and-diverging-palettes.html)
 ![image](../../images/5_color ramp.png)
+18. Change the symbol outlines 50% of darker than the fill as you did under section 2.3. Add also small shadow to the symbols. Finally, you can make it as a proper map by adding tile, legend and info about the data.
+![image](../../images/whc_year.png)
