@@ -68,6 +68,6 @@ Categorized symbology is for nominal data. Nominal data are purely descriptive a
 13. We can make the symbols even more standing out with adding shadow. QGIS has very cool Effects feature under Symbology which enables to create very beautifully stylized maps. To add shadow to the WHC sites, open Symbology and then expand Layer Rendering options. Switch on the Effects and click on the Customize Effect button ![image](../../images/icon_effects.png). The Effect Properies panel opens. Switch on Drop Shadow. You can see the immediate effect on the symbol next to it. Adjust Offset and Blur radius to 0.4 mm and reduce the Opacity to 60%. Click OK. The WHC points have now more elevated appearance.
 ![image](../../images/5_add shadow.png)
 14. You can make a nice map by using Layout manager and adding legend and title to the map. Tutorial for [<span style="color:#0564A0">making a map and adding map elements</span>](https://kevelyn1.github.io/QGIS-Intro/qgis/making-a-map/).
-
+![image](../../images/whc by category.png)
 
 #### 2.4. Graduated symbology
