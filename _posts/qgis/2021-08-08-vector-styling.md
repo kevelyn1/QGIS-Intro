@@ -56,9 +56,14 @@ Categorized symbology is for nominal data. Nominal data are purely descriptive a
 ![image](../../images/5_categorized symbology2.png)
 10. Let's make the size of the symbols more appropriate. Open Symbology and click on a Symbol sign. Reduce the size to 1.8. This will reduce the size of all categories.
 ![image](../../images/5_reduce symbol size.png)
-11. Change the color of the categories to more appropriate. Open Symbology and click on the symbol in front of each category and change it for example, cultural yellow, natural green and mixed orange.
-![image](../../images/5_reduce symbol color.png)
-12. One very powerful feature that QGIS has are expressions. With expression, we can make the symbol stroke color automatically adjust based on the symbol fill color.  
+11. Change the color of the categories to more appropriate. Open Symbology and click on the symbol in front of each category and change it for example, cultural to yellow, natural to green and mixed to orange.
+![image](../../images/5_change symbol color.png)
+12.  A useful cartographic technique is to choose a slightly darker version of the fill-color as the Stroke color. Rather than trying to pick that manually, QGIS provides an expression to control this more precisely. From the Symbology, select all the categories (hold Shift while mouse clicking). Then click the Symbol which will change the settings for all the categories. Under Symbol Settings, click Simple Marker and next to Stroke color click the Data defined override button ![image](../../images/icon_data override.png) and choose `Edit`. Enter the following expression VALUES  <span style="font-family:Consolas">darker(@symbol_color, 130)</span>  to set the color to be 50% darker shade than the fill color and click OK. You will notice that the Data defined override button next to Stroke color has turned yellow - indicating than this property is controlled by an override.Click also Ok for the Symbol Settings tab and Symbology to apply all the changes. Note how the outline of the symbols changed.
+>:scroll:**Note**
+>
+Expressions one of the most powerful features of QGIS. Expressions allow to manipulate attribute value, geometry and variables in order to dynamically change the geometry style, the content or position of the label, the value for diagram, the height of a layout item, select some features, create virtual field. Read more about expressions from [<span style="color:#0564A0">QGIS Documentation</span>](https://docs.qgis.org/3.16/en/docs/user_manual/working_with_vector/expression.html?highlight=expression#expressions).
 
+![image](../../images/5_stroke color data override.png)
+![image](../../images/5_stroke data override.png)
 
 #### 2.4. Graduated symbology
