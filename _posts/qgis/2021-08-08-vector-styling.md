@@ -46,10 +46,14 @@ In the Data Source Manager window, switch to the Delimited Text tab. Click the â
 ![image](../../images/5_create grid.png)
 7. You have now grid that is being projected into Winkel Tripel that is yoru project CRS. Let's make a mask from it by changing it's symbology. Double-click on <span style="font-family:Consolas; color:#AF1B03">global_grid</span> in the Layer panel to open it's properties. Switch to Symbology. Change the Single Symbol to Inverted Polygons. Click on Simple Fill and change the Fill color to white and Stroke style No Pen and click OK.
 ![image](../../images/5_inverted polys.png)
-8. You should now have nicely masked world and only one NZ.
+8. You should now have nicely masked world and only one NZ. Time to stylize the heritage sites.
 ![image](../../images/5_masked world.png)
 
 #### 2.3. Categorized symbology
-6.
+Categorized symbology is for nominal data. Nominal data are purely descriptive and they don't provide any quantitative or numeric value. For example, land use and school types. It is not possible to rank nominal data e.g. bigger or smaller.
+9. The <span style="font-family:Consolas; color:#AF1B03">whs_sites_2021</span> layer contains an attribute named **category** which indicates whether the heritage site is cultural, natural or mixed. We can create a style where each category is shown in a different color. Double-click the <span style="font-family:Consolas; color:#AF1B03">whs_sites_2021</span> layer to open Symbology. Change Single Symbol into Categorized.  Select **category** as the Value. Click Classify. Three categories appear  plus all others which don't have values. Click OK.
+![image](../../images/5_categorized symbology.png) 
+
+
 
 #### 2.4. Graduated symbology
