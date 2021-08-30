@@ -11,7 +11,8 @@ image:
 #### The tutorial consists of the following steps:
 
 ### 1. Download data
-In this tutorial we will use [<span style="color:#0564A0">UNESCO World Heritage Sites</span>](http://whc.unesco.org/en/syndication). Scroll down and find World Heritage List in XLS format. Download the file and open in Excel. Save the file as csv-file `File ► Save As` and name it <span style="font-family:Consolas; color:#AF1B03">whc_sites_2021.csv</span> and choose file type as CSV (Comma delimited).
+This tutorial is a continuation to [<span style="color:#0564A0">"Basic vector syling"</span>](https://kevelyn1.github.io/QGIS-Intro/qgis/vector-styling/). And we will use the same WHC sites data from [<span style="color:#0564A0">UNESCO World Heritage Sites</span>](http://whc.unesco.org/en/syndication) saved as gpkg ([<span style="color:#0564A0">"Basic vector syling"</span>](https://kevelyn1.github.io/QGIS-Intro/qgis/vector-styling/) sections 1. and 2.1).
+
 We will also need country borders. Download the [<span style="color:#0564A0">countries</span>](https://http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip) and extract to your working folder.
 
 Data Source:
@@ -19,4 +20,4 @@ World Heritage List from [<span style="color:#0564A0">World Heritage List</span>
 
 ### 2. Procedure
 #### 2.1. Add csv file to QGIS
-1. Open QGIS and in the QGIS Browser Panel, locate the directory where you added the data. Expand the ne_10m_land folder and select the ne_10m_land.shp layer. Drag the layer to the canvas.
+1. Open QGIS and in the QGIS Browser Panel, locate the directory where you added the data and add files <span style="font-family:Consolas; color:#AF1B03">whc_sites_2021.gpkg</span> and the <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries.shp</span> to QGIS.
