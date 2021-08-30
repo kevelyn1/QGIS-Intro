@@ -25,6 +25,8 @@ World Heritage List from [<span style="color:#0564A0">World Heritage List</span>
 2. Change the CRS of the project to Winkel Tripel (ESRI:54042) and save your project.
 
 #### 2.2 Spatial query
-3. Let's find out which countries have the highest numbers of world heritage sites. We will use spatial join.
-
+3. Let's find out which countries have the highest numbers of world heritage sites. We will use spatial join for that purpose. In the Procesing Toolbox, find tool Count points in polygon. Make layer <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries</span> as Polygons and layer  <span style="font-family:Consolas; color:#AF1B03">whc_sites_2021</span> as Points, save the output as <span style="font-family:Consolas; color:#AF1B03">whc_countries.gpkg</span> and click Run.
+![image of browse data](../../images/6_points in polygon.png)
+4. You will have a new layer of countries <span style="font-family:Consolas; color:#AF1B03">whc_countries.gpkg</span>. Open the attribute table of this new layer and browse horizontally to the end until you find a column named **NUMPOINTS**. This was created as a result of this analysis. Every country has now a count of WHC sites.
+5. Let's visualize the countries based on the number of WHC sites in the country. Open the Symbology of the layer <span style="font-family:Consolas; color:#AF1B03">whc_countries.gpkg</span>.
 #### 2.2. Heatmap
