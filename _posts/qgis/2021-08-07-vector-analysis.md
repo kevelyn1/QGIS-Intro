@@ -10,13 +10,18 @@ image:
 Spatial queries and spatial joins are one of the basic analysis forms in GIS. In this tutorial, we will find how many UNSESCO WHC sites are every country. In some areas there are a lot of WHC sites and this makes their visualization complicated because points tend to overlap. To overcome this, we will analyze points in a grid or generate a heatmap.
 
 #### The tutorial consists of the following steps:
+- [1. Download data](#1-download-data)
+- [2. Procedure](#2-procedure)
+  * [2.1. Spatial join](#21-spatial-join)
+  * [2.2 Spatial query](#22-spatial-query)
+  * [2.2. Heatmap](#22-heatmap)
 
 ### 1. Download data
 This tutorial is a continuation to [<span style="color:#0564A0">"Basic vector syling"</span>](https://kevelyn1.github.io/QGIS-Intro/qgis/vector-styling/). And we will use the same WHC sites data from [<span style="color:#0564A0">UNESCO World Heritage Sites</span>](http://whc.unesco.org/en/syndication) saved as gpkg ([<span style="color:#0564A0">"Basic vector syling"</span>](https://kevelyn1.github.io/QGIS-Intro/qgis/vector-styling/) sections 1. and 2.1).
 
 We will also need country borders. Download the [<span style="color:#0564A0">countries</span>](https://http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip) and extract to your working folder.
 
-Data Source:
+**Data Sources:**
 World Heritage List from [<span style="color:#0564A0">World Heritage List</span>](http://whc.unesco.org/en/syndication) and country borders from [<span style="color:#0564A0">Natural Earth</span>](https://www.naturalearthdata.com/)
 
 ### 2. Procedure
@@ -28,5 +33,7 @@ World Heritage List from [<span style="color:#0564A0">World Heritage List</span>
 3. Let's find out which countries have the highest numbers of world heritage sites. We will use spatial join for that purpose. In the Procesing Toolbox, find tool Count points in polygon. Make layer <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries</span> as Polygons and layer  <span style="font-family:Consolas; color:#AF1B03">whc_sites_2021</span> as Points, save the output as <span style="font-family:Consolas; color:#AF1B03">whc_countries.gpkg</span> and click Run.
 ![image of browse data](../../images/6_points in polygon.png)
 4. You will have a new layer of countries <span style="font-family:Consolas; color:#AF1B03">whc_countries.gpkg</span>. Open the attribute table of this new layer and browse horizontally to the end until you find a column named **NUMPOINTS**. This was created as a result of this analysis. Every country has now a count of WHC sites.
-5. Let's visualize the countries based on the number of WHC sites in the country. Open the Symbology of the layer <span style="font-family:Consolas; color:#AF1B03">whc_countries.gpkg</span>.
+![image of browse data](../../images/6_numpoint attribute.png)
+5. Let's visualize the countries based on the number of WHC sites in the country. Open the Symbology of the layer <span style="font-family:Consolas; color:#AF1B03">whc_countries.gpkg</span>. Choose legend type as Graduated and NUMPOINTS for Value. Pick suitable Color ramp and click Classify. You may see that the ranges are quite uneven because the Equal Count has divided even number into each class and as there are very few with very high numbers then the highest class has very large range. This means that we won't really see from the map what countries have a lot of WHC sites.
+![image of browse data](../../images/6_symbology countries.png)
 #### 2.2. Heatmap

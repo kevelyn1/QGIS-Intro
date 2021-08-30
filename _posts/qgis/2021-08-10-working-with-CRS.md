@@ -14,7 +14,7 @@ Coordinate Reference System (CRS) often cause a lot of frustration when working 
 It is important to recognise and make the difference between them. The projected coordinate systems always include also information about the projection. It is important to make an appropriate choice of CRS for projects. Choosing an inappropriate CRS can cause your maps to look distorted, and poorly reflect the real-world relative sizes and positions of features but it can also cause wrong spatial analysis results (wrong area or distance estimations). Usually, while working in smaller geographic areas, there will be a number of standard CRSs used within a particular country or administrative area. It’s important to research which CRSs are appropriate or standard choices for the area you are mapping, and ensure that your QGIS project follows these standards. You can read more about Coordinate Reference Systems from [<span style="color:#0564A0">QGIS Documentation</span>](https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/coordinate_reference_systems.html#coordinate-reference-systems)
 
 In this tutorial, we will explore how CRSs work in QGIS and learn about tools available for vector and raster data layers.
-
+The tutorial is mainly based on Ujaval Gandhi's [QGIS Tutorials and Tips](https://www.qgistutorials.com/en/docs/introduction.html).
 #### The tutorial consists of the following steps:
 
 - [1. Download data](#1-download-data)
@@ -32,7 +32,7 @@ Natural Earth has [<span style="color:#0564A0">Admin 0 - Countries</span>](http:
 For convenience, you may directly download files required only for this tutorial from the link below:
 [<span style="color:#0564A0">data_projections.7z</span>](../../datasets/data_projections.7z)
 
-Data Sources: [<span style="color:#0564A0">Natural Earth</span>](https://www.naturalearthdata.com/) and [<span style="color:#0564A0">Estonian Land Board</span>](https://maaamet.ee/en)
+**Data Sources:** [<span style="color:#0564A0">Natural Earth</span>](https://www.naturalearthdata.com/) and [<span style="color:#0564A0">Estonian Land Board</span>](https://maaamet.ee/en)
 
 ### 2. Steps to work with CRS
 #### 2.1. Change project CRS

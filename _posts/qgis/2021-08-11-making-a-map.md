@@ -26,7 +26,7 @@ We will use the Natural Earth dataset - specifically the Natural Earth Quick Sta
 
 Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](https://naciscdn.org/naturalearth/packages/Natural_Earth_quick_start.zip). If the download link doesn’t work, get it directly from Natural Earth Downloads page.
 
-Data Sources: [<span style="color:#0564A0">Natural Earth</span>](https://www.naturalearthdata.com/)
+**Data Sources:** [<span style="color:#0564A0">Natural Earth</span>](https://www.naturalearthdata.com/)
 
 ### 2. Steps to make a map
 #### 2.1. Creating the main map
