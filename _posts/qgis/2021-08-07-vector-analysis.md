@@ -28,12 +28,17 @@ World Heritage List from [<span style="color:#0564A0">World Heritage List</span>
 #### 2.1. Spatial join
 1. Open QGIS and in the QGIS Browser Panel, locate the directory where you added the data and add files <span style="font-family:Consolas; color:#AF1B03">whc_sites_2021.gpkg</span> and the <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries.shp</span> to QGIS.
 2. Change the CRS of the project to Winkel Tripel (ESRI:54042) and save your project.
-
-#### 2.2 Spatial query
 3. Let's find out which countries have the highest numbers of world heritage sites. We will use spatial join for that purpose. In the Procesing Toolbox, find tool Count points in polygon. Make layer <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries</span> as Polygons and layer  <span style="font-family:Consolas; color:#AF1B03">whc_sites_2021</span> as Points, save the output as <span style="font-family:Consolas; color:#AF1B03">whc_countries.gpkg</span> and click Run.
-![image of browse data](../../images/6_points in polygon.png)
+![image](../../images/6_points in polygon.png)
 4. You will have a new layer of countries <span style="font-family:Consolas; color:#AF1B03">whc_countries.gpkg</span>. Open the attribute table of this new layer and browse horizontally to the end until you find a column named **NUMPOINTS**. This was created as a result of this analysis. Every country has now a count of WHC sites.
-![image of browse data](../../images/6_numpoint attribute.png)
+![image](../../images/6_numpoint attribute.png)
 5. Let's visualize the countries based on the number of WHC sites in the country. Open the Symbology of the layer <span style="font-family:Consolas; color:#AF1B03">whc_countries.gpkg</span>. Choose legend type as Graduated and NUMPOINTS for Value. Pick suitable Color ramp and click Classify. You may see that the ranges are quite uneven because the Equal Count has divided even number into each class and as there are very few with very high numbers then the highest class has very large range. This means that we won't really see from the map what countries have a lot of WHC sites.
-![image of browse data](../../images/6_symbology countries.png)
+![image](../../images/6_symbology countries.png)
+6. Let's try to adjust the classification so that we would see better what countries have only very few WHC sites and which have a lot. Under Symbology, change the classification Mode into Natural Breaks (Jenks)[^1]. You can see that the classes changed into more equal ranges. However, there is no class with 0 WHC sites. We would still want to see also these countries, so we''ll make small adjustments to the classes based on the automatic classification. We also need to adjust the values that are presented in the legend so that they are not overlapping and would represent the actual class values. Adjust the class values to what is shown below and click OK.
+![image ](../../images/6_jenks.png)
+7. We can now adjust the stroke width of the borders and make the map even nicer with some shading. Under Symbology, select all classes and then click on Symbol. Under Symbol Settings click on Simple Fill. Change the Stroke width to 0.16 mm and switch on Draw Effect. Click on the  Customize Effects button ![image ](../../images/icon_effects.png). Switch in Inner Glow and adjust the Spead and Blur to 0.4 mm, Opacity of 50% and color darker grey. Click OK.
+![image ](../../images/6_stroke and inner glow.png)
+![image ](../../images/6_countries final.png)
+#### 2.2 Spatial query
 #### 2.2. Heatmap
+[^1]:You can read more about data classification from this [<span style="color:#0564A0">overview by Axis Maps</span>](https://www.axismaps.com/guide/data-classification).
