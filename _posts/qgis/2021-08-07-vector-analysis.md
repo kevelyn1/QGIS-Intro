@@ -7,6 +7,7 @@ image:
   teaser: vector_analysis_teaser.png
 ---
 
+Spatial queries and spatial joins are one of the basic analysis forms in GIS. In this tutorial, we will find how many UNSESCO WHC sites are every country. In some areas there are a lot of WHC sites and this makes their visualization complicated because points tend to overlap. To overcome this, we will analyze points in a grid or generate a heatmap.
 
 #### The tutorial consists of the following steps:
 
@@ -19,5 +20,9 @@ Data Source:
 World Heritage List from [<span style="color:#0564A0">World Heritage List</span>](http://whc.unesco.org/en/syndication) and country borders from [<span style="color:#0564A0">Natural Earth</span>](https://www.naturalearthdata.com/)
 
 ### 2. Procedure
-#### 2.1. Add csv file to QGIS
+#### 2.1. Spatial join
 1. Open QGIS and in the QGIS Browser Panel, locate the directory where you added the data and add files <span style="font-family:Consolas; color:#AF1B03">whc_sites_2021.gpkg</span> and the <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries.shp</span> to QGIS.
+2. Change the CRS of the project to Winkel Tripel (ESRI:54042) and save your project.
+#### 2.2 Spatial query
+3. Let's find out which countries have the highest numbers of world heritage sites.
+#### 2.2. Heatmap

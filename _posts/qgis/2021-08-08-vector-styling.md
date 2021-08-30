@@ -33,7 +33,7 @@ In the Data Source Manager window, switch to the Delimited Text tab. Click the â
 ![image](../../images/5_add csv.png)
 2. A new layer <span style="font-family:Consolas; color:#AF1B03">whc_sites_2021</span> will be added to the Layers panel and you will see the points representing the World Heritage Sites. Make right click on the layer name and `Export â–º Save Features As...` and save it as <span style="font-family:Consolas; color:#AF1B03">whc_sites_2021.gpkg</span>. You can remove the CSV layer <span style="font-family:Consolas; color:#AF1B03">whc_sites_2021.gpkg</span> by right clicking on it and `Remove Layer`.
 ![image](../../images/5_whs sites.png)
-3. Change the CRS of the project to Winkel Tripel (ESRI:54042).
+3. Change the CRS of the project to Winkel Tripel (ESRI:54042) and save your project.
 
 #### 2.2. Add base maps
 3. Lets add some base maps to our map.  Sometimes it is practical to use ready made stylised base maps instead of styling the base map yourself. [<span style="color:#0564A0">Klas Karlsson</span>](https://github.com/klakar) has collated a nice collection of different basemaps which can be added by running a little Python script in QGIS. Open [<span style="color:#0564A0">qgis_basemaps.py</span>](https://github.com/klakar/QGIS_resources/blob/master/collections/Geosupportsystem/python/qgis_basemaps.py) from GitHub. Select the script starting from # Sources and copy it (`Crtl+C`).
