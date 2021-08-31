@@ -67,12 +67,13 @@ Add the <span style="font-family:Consolas; color:#AF1B03">ne_10m_ocean.shp</span
 
 #### 2.2. Spatial queries
 Spatial queries enable to identify spatial overlap/intersection/containment of two spatial layers. For example, you can quite easily identify WHC sites that are located in United States.
-16. Select United States from the <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries</span> layer by using either button Select Features by Single Click ![image ](../../images/icon_select.png) or from the attribute table by using Select features by using an expression ![image ](../../images/icon_select features expression).
+16. Select United States from the <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries</span> layer by using either button Select Features by Single Click ![image ](../../images/icon_select.png) or from the attribute table by using Select features by using an expression ![image ](../../images/icon_select features expression.png).
 ![image ](../../images/6_select usa.png)
 17. From the Processing Toolbox, find Extract by Location tool. Make layer <span style="font-family:Consolas; color:#AF1B03">whc_sites_2021</span> as input for Extract features from, check intersect as geometric predicate, make layer <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries</span> as input for By comparing to the features from and check Select features only. You may save it as temporary layer.
 ![image ](../../images/6_extract by location.png)
 18. As a result you will have WHC sites in US.
 ![image ](../../images/6_whc in us.png)
+
 #### 2.3. Heatmap
 Will be added by 1.09.2021
 
