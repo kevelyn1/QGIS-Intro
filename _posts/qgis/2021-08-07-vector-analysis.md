@@ -54,11 +54,16 @@ Make grid type as Hexagon, fro the grid extent choose layer <span style="font-fa
 ![image ](../../images/6_spatial join hex.png)
 13. We can now visualize the hexagons based on the WHC sites' count. Open the Symbology of the <span style="font-family:Consolas; color:#AF1B03">whc_hex_count</span> layer. Change the type to Graduated, choose appropriate color ramp, switch the classification mode to Natural Breaks to get the base for classes. It is useful to look at the histogram of the data from the Histogram tab next to Classes. Most of the hexagons are without any WHC sites.  Therefore the class with value 0 could be separately and made invisible. It would be also useful to make the hexagons a little bit transparent to be able to see the country borders underneath. Expand the Layer Rendering and reduce make the Opacity to ca 70%.
 ![image ](../../images/6_symbology hex.png)
-14. For the nice map design you might want to add the oceans, so the shape of the globe would become visible. You can find the ocean layer from the  [<span style="color:#0564A0">Making a map</span>](https://kevelyn1.github.io/QGIS-Intro/qgis/making-a-map/ tutorial. You can find the file in \Natural_Earth_quick_start\packages\Natural_Earth_quick_start\10m_physical\ne_10m_ocean.shp
+14. For the nice map design you might want to add the oceans, so the shape of the globe would become visible. You can find the ocean layer from the  [<span style="color:#0564A0">Making a map</span>](https://kevelyn1.github.io/QGIS-Intro/qgis/making-a-map/) tutorial. You can find the file <span style="font-family:Consolas; color:#AF1B03">ne_10m_ocean.shp</span> in the folder \Natural_Earth_quick_start\packages\Natural_Earth_quick_start\10m_physical\
 If you don't have the Natural Earth Quickstart Kit downloaded then you can find the dataset for oceans from [<span style="color:#0564A0">Natural Earth</span>](https://www.naturalearthdata.com/downloads/10m-physical-vectors/) under Ocean.
 Add the <span style="font-family:Consolas; color:#AF1B03">ne_10m_ocean.shp</span> to the map view and drag it under the other layers in the Layer panel. Asjust the Symbology of the <span style="font-family:Consolas; color:#AF1B03">ne_10m_ocean.shp</span> light blue.
 ![image ](../../images/6_add ocean.png)
+15. You can now create a new layout and add title, legend and credentials to the map.
+>:scroll:**Note**
+>
+*If you are considering adding north arrow and scalebar to your map then for global maps they are rather unnecessary because most people know how big is Earth and have an understanding of the scale. North arrow is also rather necessary if the north is not oriented up.*
 
+![image ](../../images/whc_hex.png)
 
 #### 2.2. Spatial queries
 Will be added by 1.09.2021
