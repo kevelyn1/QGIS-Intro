@@ -19,6 +19,7 @@ A map is the most common output of GIS. This tutorial shows how to create a map 
   * [2.4. Adding the north arrow, scale bar, map title and legend](#24-adding-the-north-arrow--scale-bar--map-title-and-legend)
   * [2.5. Adding legend to the map](#25-adding-legend-to-the-map)
   * [2.6. Exporting map as image](#26-exporting-map-as-image)
+  * [2.6. Adding raster base map](#26-adding-raster-base-map)
 
 ### 1. Download data
 
@@ -120,8 +121,19 @@ Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](h
 40. Natural Earth has also beautifully stylized land cover in raster format that is often very practical to use as background map. The Natural Earth Quickstart Kit has 1:50m raster included. However, our New Zealand map is in 1:1m and therefore Natural Earth 1:10m would be more appropriate scale. Download "Natural Earth I with Shaded Relief and Water" from the [<span style="color:#0564A0">Natural Earth site</span>](https://www.naturalearthdata.com/downloads/10m-raster-data/10m-natural-earth-1/). There are two sizes available. Large size is recommended but if your internet connection is not very good or you don't have much free memory on your computer, then medium size would also do.  Extract the files to your working folder. Before the next step make sure that in the Layout view, your both maps have locked layers, so that the layout maps would not change if you change the maps in the map view.
 41. In the Layer panel make visible only <span style="font-family:Consolas; color:#AF1B03">z7 / 1:4m</span> layer group and all the others should be invisible. In the Browser panel, navigate to the folder where you have your downloaded raster <span style="color:#0564A0">NE1_HR_LC_SR_W.tif</span> and drag it to your map view.
 ![image](../../images/2_add raster.png)
+42. In the Layer panel move the <span style="color:#0564A0">NE1_HR_LC_SR_W</span> layer downward between the <span style="color:#0564A0">ne_10m_admin_0_countries</span> and <span style="color:#0564A0">ne_10m_admin_0_disputed_areas</span>. Then the raster does not cover roads, rivers and other features.
+![image](../../images/2_move layer.png)
+43. You may notice that only half of the New Zealand is covered by the added raster. This is because the Pseudo-Mercator projection does not project the map properly and splits half of the NZ to the other hemisphere. The easiest solution to this is to switch the CRS to WGS84 (EPSG:4326)[^4]. Switch back to Layout view and select the main map object. Switch the CRS to WGS84 and unlock the layers. Your map should automatically redraw. If it does not, then click refresh button ![image](../../images/icon_refresh.png).
+![image](../../images/2_switch layout crs.png)
+44. You might need to adjust the scale and pan the map into more appropriate position.
+![image](../../images/2_adjusting scale.png)
+45. You might notice that highway labels are too overpowering on the map. We can switch them off. Go back to the map view and from the Layer panel find layer <span style="color:#0564A0">roads copy copy copy</span>. Double-click on it to open the Properies. Switch to Labels tab and switch off the label rule.
+![image](../../images/2_switch off labels.png)
+46. Go back to the Layout view and refresh your map. Your map is ready for export.
+![image](../../images/NZ map raster_small.png)
 
 
 [^1]: EPSG Geodetic Parameter Dataset (also EPSG registry) is a public registry of geodetic datums, spatial reference systems, Earth ellipsoids, coordinate transformations and related units of measurement.  Each entity is assigned an EPSG code between 1024-32767, along with a standard machine-readable well-known text (WKT) representation. (Wiki) The EPSG codes are unique and they are very useful to use for searching and identifying the CRS-s in GIS programmes.
 [^2]: An inset map is a smaller map featured on the same page as the main map (GIS Wiki)
 [^3]: A map is classified as small scale or large scale or sometimes medium scale. Large scale maps are usually 1:0 – 1:600 000 and represent for example town. Medium scale maps are usually 1:600 000 – 1:2 000 000 and mostly a whole country maps are in this range. Small scale maps are 1:2 000 000 – 1:∞ and world or regions are mapped in this scale. (Wiki)
+[^4]: WGS84 is actually geographic CRS and is not projected, but as we still need to see it in 2D on the computer screen then QGIS uses Plate Carree projection to visualize WGS84 CRS.
