@@ -49,7 +49,11 @@ World Heritage List from [<span style="color:#0564A0">World Heritage List</span>
 ![image ](../../images/6_joined layer final.png)
 12. The number of WHC sites per country might be somewhat misleading because bigger countries by area could have just more WHC sites because they are bigger. This is known as modifiable areal unit problem (MAUP)[^2]. There are several ways how to reduce the problem. One possibility is to normalize the number of WHC sites with the area of the country or population. The other possibility is to normalise the spatial unit (enumeration unit) itselt. We can create a regular grid (fishnet) and count the WHC sites there. Let's generate regular grid of hexagons. Hexagons are nesting together perfectly and they look cool :smirk: To create a hexagonal grid, find Create grid tool from the Processing Toolbox.
 Make grid type as Hexagon, fro the grid extent choose layer <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries</span>, horizontal and vertical spacing 300 km, grid CRS can remain Winkel Tripel and save the file as <span style="font-family:Consolas; color:#AF1B03">whc_hex.gpkg</span>
-![image ](../../images/#### 2.2 Spatial query)
+![image ](../../images/6_generate hex.png)
+13. Now we need to perform spatial join. Open Count Points in Polygon tool. Add <span style="font-family:Consolas; color:#AF1B03">whc_hex</span> as Polygons, <span style="font-family:Consolas; color:#AF1B03">whc_sites_2021</span> as Points and save the file as <span style="font-family:Consolas; color:#AF1B03">whc_hex_count.gpkg</span>.
+![image ](../../images/6_spatial join hex.png)
+
+13. We can now visualize the hexagons based on the WHC sites' count. Open the Symbology of the <span style="font-family:Consolas; color:#AF1B03">whc_hex_count</span> layer.
 
 #### 2.2. Spatial queries
 Will be added by 1.09.2021
