@@ -40,5 +40,8 @@ World Heritage List from [<span style="color:#0564A0">World Heritage List</span>
 ![image ](../../images/6_stroke and inner glow.png)
 ![image ](../../images/6_countries final.png)
 #### 2.2 Spatial query
+Will be added
 #### 2.2. Heatmap
+Will be added
+
 [^1]:You can read more about data classification from this [<span style="color:#0564A0">overview by Axis Maps</span>](https://www.axismaps.com/guide/data-classification).
