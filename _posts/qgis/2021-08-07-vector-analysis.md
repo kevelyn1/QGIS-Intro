@@ -14,7 +14,7 @@ Spatial queries and spatial joins are one of the basic analysis forms in GIS. In
 - [2. Procedure](#2-procedure)
   * [2.1. Spatial join](#21-spatial-join)
   * [2.2 Spatial query](#22-spatial-query)
-  * [2.2. Heatmap](#22-heatmap)
+  * [2.3. Heatmap](#22-heatmap)
 
 ### 1. Download data
 This tutorial is a continuation to [<span style="color:#0564A0">"Basic vector syling"</span>](https://kevelyn1.github.io/QGIS-Intro/qgis/vector-styling/). And we will use the same WHC sites data from [<span style="color:#0564A0">UNESCO World Heritage Sites</span>](http://whc.unesco.org/en/syndication) saved as gpkg ([<span style="color:#0564A0">"Basic vector syling"</span>](https://kevelyn1.github.io/QGIS-Intro/qgis/vector-styling/) sections 1. and 2.1).
@@ -47,10 +47,14 @@ World Heritage List from [<span style="color:#0564A0">World Heritage List</span>
 ![image ](../../images/6_symbology joined.png)
 11. As you can see, most countries have their first WHC inscribed rather in the 1980ties. You may notice that some countries are not present on the map. This means that there were no WHC sites in these countries. If you would like to make it as a proper map then you should use <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries</span> under the <span style="font-family:Consolas; color:#AF1B03">Joined layer</span> and make the fill color of the missing countries, for example white and show in the legend that there are no WHC sites.
 ![image ](../../images/6_joined layer final.png)
+12. The number of WHC sites per country might be somewhat misleading because bigger countries by area could have just more WHC sites because they are bigger. This is known as modifiable areal unit problem (MAUP)[^2]. There are several ways how to reduce the problem. One possibility is to normalize the number of WHC sites with the area of the country or population. The other possibility is to normalise the spatial unit (enumeration unit) itselt. We can create a regular grid (fishnet) and count the WHC sites there. Let's generate regular grid of hexagons. Hexagons are nesting together perfectly and they look cool :smirk: To create a hexagonal grid, find Create grid tool from the Processing Toolbox.
+Make grid type as Hexagon, fro the grid extent choose layer <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries</span>, horizontal and vertical spacing 300 km, grid CRS can remain Winkel Tripel and save the file as <span style="font-family:Consolas; color:#AF1B03">whc_hex.gpkg</span>
+![image ](../../images/#### 2.2 Spatial query)
 
-#### 2.2 Spatial query
-Will be added
-#### 2.2. Heatmap
-Will be added
+#### 2.2. Spatial queries
+Will be added by 1.09.2021
+#### 2.3. Heatmap
+Will be added by 1.09.2021
 
 [^1]:You can read more about data classification from this [<span style="color:#0564A0">overview by Axis Maps</span>](https://www.axismaps.com/guide/data-classification).
+[^2]:MAUP affects results when point-based measures of spatial phenomena are aggregated into districts, for example, population density or illness rates. The resulting summary values (e.g., totals, rates, proportions, densities) are influenced by both the shape and scale of the aggregation unit. (Wiki) You can watch this nice [<span style="color:#0564A0">Youtube video about MAUP</span>](https://www.youtube.com/watch?v=CISjONu-5Qg) to understand the problem a bit better.
