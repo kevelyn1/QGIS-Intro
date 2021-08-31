@@ -52,10 +52,9 @@ Make grid type as Hexagon, fro the grid extent choose layer <span style="font-fa
 ![image ](../../images/6_generate hex.png)
 13. Now we need to perform spatial join. Open Count Points in Polygon tool. Add <span style="font-family:Consolas; color:#AF1B03">whc_hex</span> as Polygons, <span style="font-family:Consolas; color:#AF1B03">whc_sites_2021</span> as Points and save the file as <span style="font-family:Consolas; color:#AF1B03">whc_hex_count.gpkg</span>.
 ![image ](../../images/6_spatial join hex.png)
-
 13. We can now visualize the hexagons based on the WHC sites' count. Open the Symbology of the <span style="font-family:Consolas; color:#AF1B03">whc_hex_count</span> layer. Change the type to Graduated, choose appropriate color ramp, switch the classification mode to Natural Breaks to get the base for classes. There are most of the hexagons without any WHC sites. Therefore the class with value 0 could be separately and made invisible.
-
 ![image ](../../images/6_symbology hex.png)
+
 
 #### 2.2. Spatial queries
 Will be added by 1.09.2021
