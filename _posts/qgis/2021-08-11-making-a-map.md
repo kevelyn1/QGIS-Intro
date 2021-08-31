@@ -116,6 +116,11 @@ Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](h
 39. Congratulations! You have made your first map! :smile:
 ![image of final map](../../images/2_final.png)
 
+#### 2.6. Adding raster base map
+40. Natural Earth has also beautifully stylized land cover in raster format that is often very practical to use as background map. The Natural Earth Quickstart Kit has 1:50m raster included. However, our New Zealand map is in 1:1m and therefore Natural Earth 1:10m would be more appropriate scale. Download "Natural Earth I with Shaded Relief and Water" from the [<span style="color:#0564A0">Natural Earth site</span>](https://www.naturalearthdata.com/downloads/10m-raster-data/10m-natural-earth-1/). There are two sizes available. Large size is recommended but if your internet connection is not very good or you don't have much free memory on your computer, then medium size would also do.  Extract the files to your working folder. Before the next step make sure that in the Layout view, your both maps have locked layers, so that the layout maps would not change if you change the maps in the map view.
+41. In the Layer panel make visible only <span style="font-family:Consolas; color:#AF1B03">z7 / 1:4m</span> layer group and all the others should be invisible. In the Browser panel, navigate to the folder where you have your downloaded raster <span style="color:#0564A0">NE1_HR_LC_SR_W.tif</span> and drag it to your map view.
+![image](../../images/2_add raster.png)
+
 
 [^1]: EPSG Geodetic Parameter Dataset (also EPSG registry) is a public registry of geodetic datums, spatial reference systems, Earth ellipsoids, coordinate transformations and related units of measurement.  Each entity is assigned an EPSG code between 1024-32767, along with a standard machine-readable well-known text (WKT) representation. (Wiki) The EPSG codes are unique and they are very useful to use for searching and identifying the CRS-s in GIS programmes.
 [^2]: An inset map is a smaller map featured on the same page as the main map (GIS Wiki)
