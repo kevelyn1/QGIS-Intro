@@ -65,7 +65,7 @@ Add the <span style="font-family:Consolas; color:#AF1B03">ne_10m_ocean.shp</span
 
 ![image ](../../images/whc_hex.png)
 
-#### 2.2. Spatial queries
+#### 2.2. Spatial query
 Spatial queries enable to identify spatial overlap/intersection/containment of two spatial layers. For example, you can quite easily identify WHC sites that are located in United States.
 16. Select United States from the <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries</span> layer by using either button Select Features by Single Click ![image ](../../images/icon_select.png) or from the attribute table by using Select features by using an expression ![image ](../../images/icon_select features expression.png).
 ![image ](../../images/6_select usa.png)
