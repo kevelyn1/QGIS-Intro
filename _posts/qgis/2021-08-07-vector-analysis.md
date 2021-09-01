@@ -13,8 +13,8 @@ Spatial queries and spatial joins are one of the basic analysis forms in GIS. In
 - [1. Download data](#1-download-data)
 - [2. Procedure](#2-procedure)
   * [2.1. Spatial join](#21-spatial-join)
-  * [2.2 Spatial query](#22-spatial-query)
-  * [2.3. Heatmap](#22-heatmap)
+  * [2.2. Spatial query](#22-spatial-query)
+  * [2.3. Heatmap](#23-heatmap)
 
 ### 1. Download data
 This tutorial is a continuation to [<span style="color:#0564A0">"Basic vector syling"</span>](https://kevelyn1.github.io/QGIS-Intro/qgis/vector-styling/). And we will use the same WHC sites data from [<span style="color:#0564A0">UNESCO World Heritage Sites</span>](http://whc.unesco.org/en/syndication) saved as gpkg ([<span style="color:#0564A0">"Basic vector syling"</span>](https://kevelyn1.github.io/QGIS-Intro/qgis/vector-styling/) sections 1. and 2.1).
