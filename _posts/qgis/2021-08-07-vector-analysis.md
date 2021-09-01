@@ -75,7 +75,10 @@ Spatial queries enable to identify spatial overlap/intersection/containment of t
 ![image ](../../images/6_whc in us.png)
 
 #### 2.3. Heatmap
-Will be added by 1.09.2021
+Heatmaps are one possibility to analyze and visualize point patterns to see the clustering and dispersion.
+19. QGIS enables to create heatmaps very easily under Symbology. Open the Symbology of <span style="font-family:Consolas; color:#AF1B03">whc_sites_2021</span> layer and switch the symbology type into Heatmap, change the Color ramp to Magma and Radius into 4 and click OK.
+![image ](../../images/6_heatmap symbology.png)
+20. The symbology of the <span style="font-family:Consolas; color:#AF1B03">whc_sites_2021</span> layer will be changed into heatmap and you see the hotspots over some areas. To be able to see better where hotspots are, we should add country borders over the heatmap.
 
 [^1]:You can read more about data classification from this [<span style="color:#0564A0">overview by Axis Maps</span>](https://www.axismaps.com/guide/data-classification).
 [^2]:MAUP affects results when point-based measures of spatial phenomena are aggregated into districts, for example, population density or illness rates. The resulting summary values (e.g., totals, rates, proportions, densities) are influenced by both the shape and scale of the aggregation unit. (Wiki) You can watch this nice [<span style="color:#0564A0">Youtube video about MAUP</span>](https://www.youtube.com/watch?v=CISjONu-5Qg) to understand the problem a bit better.
