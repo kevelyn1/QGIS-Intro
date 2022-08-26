@@ -19,6 +19,10 @@ The tutorial is mainly based on Ujaval Gandhi's [QGIS Tutorials and Tips](https:
 ### 1. Download data
 Natural Earth provides a [<span style="color:#0564A0">Populated Places</span>](http://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/) dataset. Download the [<span style="color:#0564A0">simple (less columns) dataset</span>](http//www.naturalearthdata.com/download/10m/cultural/ne_10m_populated_places_simple.zip). Extract the dataset to your working folder.
 
+>:scroll:**Note**
+>
+*Natural Earth shows de facto boundaries by default according to who controls the territory, versus de jure. Optional point-of-view (POV) variants are available for several dozen countries in [<span style="color:#0564A0">Natural Earth</span>]( https://naturalearthdata.com/downloads/10m-cultural-vectors/) under Admin 0 – Countries point-of-views. For example, Ukraine can be found [<span style="color:#0564A0">here</span>](https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries_ukr.zip).*
+
 For convenience, you may directly download a copy of datasets from the link below:
 [<span style="color:#0564A0">ne_10m_populated_places_simple.zip</span>](../../datasets/ne_10m_populated_places_simple.zip)
 
