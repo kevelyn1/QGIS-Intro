@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Basic vector styling
-modified: 2021-08-08
+modified: 2022-08-08
 categories: qgis
 image:
   teaser: vector_styling_teaser.png
