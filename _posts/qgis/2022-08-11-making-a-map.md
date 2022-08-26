@@ -25,7 +25,7 @@ A map is the most common output of GIS. This tutorial shows how to create a map 
 
 We will use the Natural Earth dataset - specifically the Natural Earth Quick Start Kit that comes with beautifully styled global layers that can be loaded directly to QGIS.
 
-Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](https://naciscdn.org/naturalearth/packages/Natural_Earth_quick_start.zip). If the download link doesn’t work, get it directly from Natural Earth Downloads page.
+Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](https://naciscdn.org/naturalearth/packages/Natural_Earth_quick_start.zip). If the download link doesn’t work, get it directly from [<span style="color:#0564A0">Natural Earth Downloads</span>](https://www.naturalearthdata.com/downloads/) page.
 
 **Data Sources:** [<span style="color:#0564A0">Natural Earth</span>](https://www.naturalearthdata.com/)
 
