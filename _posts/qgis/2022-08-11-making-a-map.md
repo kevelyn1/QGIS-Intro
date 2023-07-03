@@ -7,7 +7,7 @@ image:
   teaser: make_map_teaser.png
 ---
 
-A map is the most common output of GIS. This tutorial shows how to create a map from vector and raster data with standard map elements like map inset, grids, legend, north arrow, scale bar and labels.
+A map is the &&& most common output of GIS. This tutorial shows how to create a map from vector and raster data with standard map elements like map inset, grids, legend, north arrow, scale bar and labels.
 
 #### The tutorial consists of the following steps:
 
