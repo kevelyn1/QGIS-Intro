@@ -127,7 +127,7 @@ Download the [<span style="color:#0564A0">Natural Earth Quickstart Kit</span>](h
 ![image](../../images/2_switch layout crs.png)
 44. You might need to adjust the scale and pan the map into more appropriate position.
 ![image](../../images/2_adjusting scale.png)
-45. You might notice that highway labels are too overpowering on the map. We can switch them off. Go back to the map view and from the Layer panel find layer <span style="color:#0564A0">roads copy copy copy</span>. Double-click on it to open the Properies. Switch to Labels tab and switch off the label rule.
+45. You might notice that highway labels are too overpowering on the map. We can switch them off. Go back to the map view and from the Layer panel find layer <span style="color:#0564A0">ne_10m_roads</span>. Double-click on it to open the Properies. Switch to Labels tab and switch off the label rule.
 ![image](../../images/2_switch off labels.png)
 46. Go back to the Layout view and refresh your map. Your map is ready for export.
 ![image](../../images/NZ map raster_small.png)
