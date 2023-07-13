@@ -16,7 +16,7 @@ A map is the most common output of GIS. This tutorial shows how to create a map 
   * [2.1. Creating the main map](#21-creating-the-main-map)
   * [2.2. Creating an inset map](#22-creating-an-inset-map)
   * [2.3. Adding grid to the map](#23-adding-grid-to-the-map)
-  * [2.4. Adding the north arrow, scale bar, map title and legend](#24-adding-the-north-arrow--scale-bar--map-title-and-legend)
+  * [2.4. Adding the north arrow, scale bar, map title and legend](#24-adding-the-north-arrow-scale-bar-map-title-and-legend)
   * [2.5. Adding legend to the map](#25-adding-legend-to-the-map)
   * [2.6. Exporting map as image](#26-exporting-map-as-image)
   * [2.6. Adding raster base map](#26-adding-raster-base-map)
