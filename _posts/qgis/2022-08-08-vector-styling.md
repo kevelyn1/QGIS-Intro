@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Basic vector styling
-modified: 2022-08-08
+modified: 2023-08-08
 categories: qgis
 image:
   teaser: vector_styling_teaser.png
@@ -76,7 +76,7 @@ While categorized symbology is for nominal data (qualitative) then graduated sym
 ![image](../../images/5_duplicate layer.png)
 16. Make the duplicate layer visible and move it on top of the original. Open layer's Symbology. Change the symbology to Graduated, and Value to <span style="font-family:Consolas">date_inscribed</span>. Make number of Classes to 4 and click Classify. Currently the classification Mode is Equal Count (Quantile) which tries to divide values into classes so that each class would have even number of observations. We would adjust them a little. The classes should also not overlap. The legend values in QGIS do not enable to eliminate overlap but if we know that the higher value of each class is in the current class and lower value is in previous class then we can create correct Legend values. Adjust the class values and legend as shown below and click OK.
 ![image](../../images/5_graduated classes.png)
-17. The map symbols should now have different color based on the year of inscription. Let's change the color palette of the gradual scale. Open layer's Symbology and click on the small arrow next to Color ramp. This will open a selection of color ramps. You can expand it even more by clicking All color ramps. You may choose a ramp of you choice. However, keep in mind that for gradually increasing values like years, sequential color palette is the best. Avoid using diverging color palette in this case because there is no clear mid-point. You can read more about [<span style="color:#0564A0">"When to use sequential and diverging palettes"</span>](https://everydayanalytics.ca/2017/03/when-to-use-sequential-and-diverging-palettes.html) ??
+17. The map symbols should now have different color based on the year of inscription. Let's change the color palette of the gradual scale. Open layer's Symbology and click on the small arrow next to Color ramp. This will open a selection of color ramps. You can expand it even more by clicking All color ramps. You may choose a ramp of you choice. However, keep in mind that for gradually increasing values like years, sequential color palette is the best. Avoid using diverging color palette in this case because there is no clear mid-point. You can read more about [<span style="color:#0564A0">"When to use sequential and diverging palettes"</span>](https://blog.datawrapper.de/diverging-vs-sequential-color-scales/).
 ![image](../../images/5_color ramp.png)
 18. Change the symbol outlines 50% of darker than the fill as you did under section 2.3. Add also small shadow to the symbols. Finally, you can make it as a proper map by adding tile, legend and info about the data.
 ![image](../../images/whc_year.png)
