@@ -61,7 +61,7 @@ Add the <span style="font-family:Consolas; color:#AF1B03">ne_10m_ocean.shp</span
 15. You can now create a new layout and add title, legend and credentials to the map.
 >:scroll:**Note**
 >
-*If you are considering adding north arrow and scalebar to your map then for global maps they are rather unnecessary because most people know how big is Earth and have an understanding of the scale. North arrow is also rather necessary if the north is not oriented up.*
+*If you are considering adding north arrow and scalebar to your map then for global maps they are rather unnecessary because most people know how big is Earth and have an understanding of the scale. North arrow is more necessary if the north is not oriented up.*
 
 ![image ](../../images/whc_hex.png)
 
