@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Working with CRS
+title: Koordinaatsüsteemid
 modified: 2023-08-10
 categories: qgis
 image:
