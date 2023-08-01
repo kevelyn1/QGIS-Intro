@@ -15,7 +15,7 @@ Kaart on kõige tavalisem GIS-i väljund. See juhend õpetab kuidas luua kaarti 
 - [2. Kaardi loomise etapid](#2-kaardi-loomise-etapid)
   * [2.1. Põhikaardi tegemine](#21-põhikaardi-tegemine)
   * [2.2. Inset kaardi tegemine](#22-inset-kaardi-tegemine)
-  * [2.3. Põhjasuuna, mõõtkava, kaardi pealkirja ja legendi lisamine](#23-põhjasuuna-mõõtkava-kaardi-pealkirja-ja-legendi-lisamine)
+  * [2.3. Põhjasuuna noole, mõõtkava, kaardi pealkirja ja legendi lisamine](#23-põhjasuuna-noole-mõõtkava-kaardi-pealkirja-ja-legendi-lisamine)
   * [2.4. Legendi lisamine kaardile](#24-legendi-lisamine-kaardile)
   * [2.5. Kaardi salvestamine pildina](#25-kaardi-salvestamine-pildina)
   * [2.6. Aluskaartide lisamine](#26-aluskaartide-lisamine)
@@ -56,20 +56,21 @@ Antud ülesandes kasutamine [<span style="color:#0564A0">Maa-ameti WMS-teenust</
 15. Print Layout-il on kasulik funktsioon, mille abil on võimalik automaatselt esile tõsta inset kaardil see osa, mis on põhikaardil (ja ka vastupidi). Vali Map 2 objekt Items panel-ist. Item properties vahekaardil keri nii kaua, kuni jõuad osani Overviews section. Vajuta nupule Add a new overview. Vali Map Frame-iks <span style="font-family:Consolas">Map 1</span>. See käsib Print Layout-il esile tõsta praguse valitud objekti (Map 2) selle osa, mis on näha objektil Map 1.
 ![image of highlight inset](../../images/e2_hightlight_inset.png)
 
-#### 2.3. Põhjasuuna, mõõtkava, kaardi pealkirja ja legendi lisamine
-21. First, we'll add a rectangluar frame to hold the map elements (north arrow, scale and label). Go to `Add Item ► Add Shape ► Add Rectangle` or alternatively use Add shape button ![image of add rectangle](../../images/icon_add shape.png) and draw a rectangle. Note that new item called Rectangle 1 appears in the Item list panel. You can change the Style of the rectangle to match the map background by clicking on the Style button under Item properties panel.
-![image of drawing an rectangle](../../images/2_draw rectangle.png)
-22. Now we will add a North Arrow to the map. QGIS comes with a nice collection of North Arrows. Click `Add Item ► Add North Arrow` or alternatively click Add North Arrow ![image of add north arrow](../../images/icon_add north arrow.png). Holding your left mouse button, draw a rectangle. On the right-hand panel, click on the Item Properties tab then under SVG browser click arrows and choose the arrow style to your liking.![image of add north arrow](../../images/2_add north arrow.png)
->**Tip** :smirk:
+#### 2.3. Põhjasuuna noole, mõõtkava, kaardi pealkirja ja legendi lisamine
+21. Kõigepealt lisame me ristküliku kujulise raamistiku, mille sisse lisame kaardi elemendid (põhjasuund, mõõtkava jms). Selleks mine `Add Item ► Add Shape ► Add Rectangle` võu kasuta nuppu Add shape ![image of add rectangle](../../images/icon_add shape.png) ning tõmba ristkülik. Pane tähele, et uus objekt nimega Rectangle 1 ilmub Items panel-i loendisse. Sa võid muuta ristkülikut nii, et see sobiks kaardiga kokku. Selleks vajuta Itemp properties vahekaardil nupule Style.
+![image of drawing an rectangle](../../images/e2_draw_rectangle.png)
+22. Järgmisena lisame me kaardile põhjasuuna noole. QGIS-is on hea kollektsioon põhjasuuna nooltest. Vajuta `Add Item ► Add North Arrow` või vajuta nupul Add North Arrow ![image of add north arrow](../../images/icon_add north arrow.png). Hoides all hiire vasakut klahvi, tõmba ristkülik. Paremal pool asuval paneelil vajuta Item properties vahekaardile ning SVG browser alt vajuta arrows. Sealt alt vali endale meeldiv stiil. 
+![image of add north arrow](../../images/e2_add_north_arrow.png)
+>**Näpunäide** :smirk:
 >
-*QGIS north arrows are SVG images and you may add new images from external sources or design your own north arrow. Read more about picture and north arrow items as SVG images in QGIS from [<span style="color:#0564A0">QGIS Documentation</span>](https://docs.qgis.org/3.28/en/docs/user_manual/print_composer/composer_items/composer_image.html#the-picture-item).*
+*QGIS-i põhjasuuna nooled on SVG pildid ja sa võid uusi pilte juurde lisada või ise kujundada. Lisainfot põhjasuuna noolest ja SVG piltidest QGIS-is saad lehelt [<span style="color:#0564A0">QGIS Documentation</span>](https://docs.qgis.org/3.28/en/docs/user_manual/print_composer/composer_items/composer_image.html#the-picture-item).*
 
-23. Add title to your map by `Add Item ► Add Label` or alternatively click ![image of add label](../../images/icon_add label.png). Click on the map and draw a box where the label should be. In the Item Properties tab, expand the Label section and enter a label for the map, and increase the font size and change the font type if needed.
-![image of add title](../../images/2_add title.png)
-24. Similarly to previous step, add the information about the map projection, credits for the data, software and map design.
-![image of add credits](../../images/2_add credits.png)
-25. Lets add scale bar to the map. Click on `Add Item ► Add Scalebar` or alternatively click on Add Scale Bar ![image of add scale bar](../../images/icon_add scalebar.png). Click on the layout where you want the scalebar to appear. In the Item Properties tab, make sure you have chosen the correct map element <span style="font-family:Consolas">Map 1</span> for which to display the scalebar. Choose the Style that fits your requirement. In the Segments panel, change the Fixed width to <span style="font-family:Consolas">150</span> units and adjust the segments to your liking. It is possible to adjust many properties of the scale bar. Read more about designing and adjusting scale bar properties from [<span style="color:#0564A0">QGIS Documentation</span>](https://docs.qgis.org/3.28/en/docs/user_manual/print_composer/composer_items/composer_scale_bar.html#the-scale-bar-item).
-![image of add scale bar](../../images/2_add scale bar.png)
+23. Kaardi pealkirja lisamiseks vajuta `Add Item ► Add Label` või vajuta nupule ![image of add label](../../images/icon_add label.png). Vajuta kaardile ja tõmba kast sinna, kuhu soovid pealkirja lisada. Item Properties chaekaardil laienda jaotist Label ning kirjuta kaardile pealkiri. Muuda teksti suurust ja fonti kui vajalik.
+![image of add title](../../images/e2_add_title.png)
+24. Nagu eelmises punktis, lisa kasti informatsioon kaardi autori, tarkvara ning andmete kohta. Lisa kaardile ka silt, mis näitab Balti SEJ asukohta. Vajuta kaardile ja tõmba kast sinna, kuhu soovid sildi lisada. Siis kujunda silt nii, et see oleks hästi nähtav. Näitkes lisades sildile teist värvi puhvri. Selleks vajuta Item properties vahepaneelil `Font ► Buffer`. Tee linnuke kasti Draw text buffer. Vajadusel muuda veel teksti värvi ja suurust.
+![image of add credits](../../images/e2_add_credits.png)
+25. Lisame kaardile ka mõõtkava. Vajuta `Add Item ► Add Scalebar` või vajuta nupule Add Scale Bar ![image of add scale bar](../../images/icon_add scalebar.png). Vajuta kaardil kohale, kus soovid, et mõõtkava asuks. Kontrolli Item Properties vahekaardil, et oled valinud õige kaardi elemendi <span style="font-family:Consolas">Map 1</span>, millele mõõtkava lisad. Vali see Style, mis sulle sobib. Paneelil nimega Segments muuda segmentide arv sulle meeldivaks. Veel on võimalik muuta mõõtkava mitmeid omadusi. Mõõtkava kujundamise ja reguleerimise kohta loe lisainfo saamiseks lehelt [<span style="color:#0564A0">QGIS Documentation</span>](https://docs.qgis.org/3.28/en/docs/user_manual/print_composer/composer_items/composer_scale_bar.html#the-scale-bar-item).
+![image of add scale bar](../../images/e2_add_scalebar.png)
 
 #### 2.4. Legendi lisamine kaardile
 27. Finally, we will add legend to the map. Click on `Add Item ► Add Legend` or alternatively click on Add Legend
