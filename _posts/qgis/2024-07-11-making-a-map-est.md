@@ -9,7 +9,7 @@ image:
 
 Kaart on kõige tavalisem GIS-i väljund. See juhend õpetab kuidas luua kaarti vektor- ning rasterandmete põhjal koos selle standartsete elementidega, nagu inset, legend, põhjasuund, mõõtkava ja kohanimed.
 
-#### The tutorial consists of the following steps:
+#### Juhend koosneb järgnevatest osadest:
 
 - [1. Kasutatavad andmed](#1-kasutatavad-andmed)
 - [2. Kaardi loomise etapid](#2-kaardi-loomise-etapid)
@@ -68,7 +68,7 @@ Antud ülesandes kasutamine [<span style="color:#0564A0">Maa-ameti WMS-teenust</
 ![image of add title](../../images/e2_add_title.png)
 24. Nagu eelmises punktis, lisa kasti informatsioon kaardi autori, tarkvara ning andmete kohta. Lisa kaardile ka silt, mis näitab Balti SEJ asukohta. Vajuta kaardile ja tõmba kast sinna, kuhu soovid silti lisada. Siis kujunda silt nii, et see oleks hästi nähtav. Näitkes lisades sildile teist värvi puhvri. Selleks vajuta Item properties vahepaneelil `Font ► Buffer`. Tee linnuke kasti Draw text buffer. Vajadusel muuda veel teksti värvi ja suurust.
 ![image of add credits](../../images/e2_add_credits.png)
-25. Lisame kaardile ka mõõtkava. Vajuta `Add Item ► Add Scalebar` või vajuta nupule Add Scale Bar ![image of add scale bar](../../images/icon_add scalebar.png). Vajuta kaardil kohale, kus soovid, et mõõtkava asuks. Kontrolli Item Properties vahekaardil, et oled valinud õige kaardi elemendi <span style="font-family:Consolas">Map 1</span>, millele mõõtkava lisada. Vali see Style, mis sulle meeldib. Paneelil nimega Segments muuda segmentide arv sulle meeldivaks. Veel on võimalik muuta mõõtkava mitmeid omadusi. Mõõtkava kujundamise ja reguleerimise kohta lisainfot saad lehelt [<span style="color:#0564A0">QGIS Documentation</span>](https://docs.qgis.org/3.28/en/docs/user_manual/print_composer/composer_items/composer_scale_bar.html#the-scale-bar-item).
+25. Lisame kaardile ka mõõtkava[^3]. Vajuta `Add Item ► Add Scalebar` või vajuta nupule Add Scale Bar ![image of add scale bar](../../images/icon_add scalebar.png). Vajuta kaardil kohale, kus soovid, et mõõtkava asuks. Kontrolli Item Properties vahekaardil, et oled valinud õige kaardi elemendi <span style="font-family:Consolas">Map 1</span>, millele mõõtkava lisada. Vali see Style, mis sulle meeldib. Paneelil nimega Segments muuda segmentide arv sulle meeldivaks. Veel on võimalik muuta mõõtkava mitmeid omadusi. Mõõtkava kujundamise ja reguleerimise kohta lisainfot saad lehelt [<span style="color:#0564A0">QGIS Documentation</span>](https://docs.qgis.org/3.28/en/docs/user_manual/print_composer/composer_items/composer_scale_bar.html#the-scale-bar-item).
 ![image of add scale bar](../../images/e2_add_scalebar.png)
 
 #### 2.4. Kaardi salvestamine pildina
@@ -87,5 +87,4 @@ Antud ülesandes kasutamine [<span style="color:#0564A0">Maa-ameti WMS-teenust</
 
 [^1]: EPSG Geodetic Parameter Dataset (lühidalt EPSG registry) on geodeetiliste andmete, ruumiliste referentssüsteemide, Maa ellipsoidide ning koordinaatide teisenduste ja sellega seotud mõõtühikute avalik register. Igale üksusele on määratud kood vahemikus 1024-32767 koos standardse masinloetava tekstiga (well-known text). (Wiki) EPSG koodid on ainulaadsed ja väga kasulikud, kui soovid GIS programmis otsida ja tuvastada CRS-e.
 [^2]: Inset kaart on põhikaardil asuv väiksem kaart. (GIS Wiki)
-[^3]: Kaardid liigitatakse väikse, suure ja keskmise mõõtkavaga kaartideks. Suure mõõtkavaga kaardid on tavaliselt vahemikus 1:0 – 1:600 000. Selles mõõtkavas on näiteks linnade kaardid. Keskmise mõõtkavaga kaardid on tavaliselt vahemikus 1:600 000 – 1:2 000 000. Enamasti on keskmise mõõtkavaga terve riigi kaardid. Väikse mõõtkavaga kaardid on tavaliselt vahemikus 1:2 000 000 – 1:∞ ning selles mõõtkavas on maailma või regiooni kaardid. (Wiki)
-[^4]: WGS84 on tegelikult geograafiline CRS ja see pole projitseeritud. Kuna meil on ikkagi vaja seda 2D-s näha, siis QGIS kasutab Plate Carree projektsiooni, et teie ekraanil visualiseerida WGS84 CRS-i. 
+[^3]: Kaardid liigitatakse väikse, suure ja keskmise mõõtkavaga kaartideks. Suure mõõtkavaga kaardid on tavaliselt vahemikus 1:0 – 1:600 000. Selles mõõtkavas on näiteks linnade kaardid. Keskmise mõõtkavaga kaardid on tavaliselt vahemikus 1:600 000 – 1:2 000 000. Enamasti on keskmise mõõtkavaga terve riigi kaardid. Väikse mõõtkavaga kaardid on tavaliselt vahemikus 1:2 000 000 – 1:∞ ning selles mõõtkavas on maailma või regiooni kaardid. (Wiki) 
