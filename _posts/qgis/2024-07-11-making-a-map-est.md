@@ -76,27 +76,19 @@ Antud ülesandes kasutame [<span style="color:#0564A0">Maa-ameti WMS-teenust</sp
 ![image of add scale bar](../../images/e2_add_scalebar.png)
 
 #### 2.4. Kaardile legendi lisamine
-28. Finally, we will add legend to the map. Click on `Add Item ► Add Legend` or alternatively click on Add Legend
-![image of add scale bar](../../images/icon_add legend.png). Click on the layout where you want the scalebar to appear and holding left-side mouse button draw a rectangle. The legend should appear and it will cover most of the map as it is pulling automatically the legend info from all the layers in the Map view. We need to switch off most of the layers from the legend. In the Item Properties tab, scroll down to Legend items and uncheck the Auto update  under the Legend items. This will disconnect the legend from the map view layer panel and several legend adjustment buttons will become active.
-![image of add legend](../../images/2_add legend.png)
-29. We will first remove all the unnecessary layers from the legend. Under the Legend items, select all layers except <span style="font-family:Consolas; color:#AF1B03">z7 / 1:4</span> and click Remove selected item(s) from legend.
-![image of add legend](../../images/2_delete legend items.png)
-30. For the simplicity, we will show only cities and other populated places in the legend. Therefore we will delete all other sublayers of the <span style="font-family:Consolas; color:#AF1B03">z7 / 1:4</span>. Click on the small arrow next to the layer group name under Legend items. This should reveal sublayers of the group. Delete all sublayers of the <span style="font-family:Consolas; color:#AF1B03">z7 / 1:4</span> except layer <span style="font-family:Consolas; color:#AF1B03">ne_10m_populated_places z7</span>
-![image of add legend](../../images/2_delete legend items2.png)
-31. Click on the small arrow in front of the layer <span style="font-family:Consolas; color:#AF1B03">ne_10m_populated_places z7</span> to see all of its sublayers. Delete all sublayers except <span style="font-family:Consolas; color:#AF1B03">Admin-0 capital, Admin-1 capital, Populated place</span>.
-![image of add legend](../../images/2_delete legend items3.png)
-32. We will now change the names of the legend items more appropriate. Double click on the <span style="font-family:Consolas; color:#AF1B03">z7 / 1:4m</span> and delete the text and just enter space. The QGIS won't accept leaving the place empty but as we don't need text there then entering space will allow it to keep seemingly empty.
-![image of rename legend items](../../images/2_rename legend items.png).
-33. Delete also the layer name of <span style="font-family:Consolas; color:#AF1B03">ne_10m_populated_places z7</span> similarly to previous step.
-34. Rename layer name <span style="font-family:Consolas; color:#AF1B03">Admin-0 capital</span> to <span style="font-family:Consolas; color:#AF1B03">Capital city</span>, layer name <span style="font-family:Consolas; color:#AF1B03">Admin-1 capital</span> to <span style="font-family:Consolas; color:#AF1B03"> Administrative unit capital</span>.
-![image of rename legend items](../../images/2_rename legend items2.png)
-35. Because of deleting some of the layer names, there is too much white space on the top of the legend. We will remove this by using Spacing options under Legend properties. Scroll down in the Legend Item properties tab to Spacing. Open it's options by clicking on a small arrow next to it. Change the value of Legend Title ‣ Space below to zero and Subgroups ‣ Above subgroup also zero. Note while doing that how the legend changes.
-![image of change legend spacing](../../images/2_change legend spacing.png)
-36. We will add a title to the legend. Click `Add Item ► Add Label` or alternatively click on Add Label ![image of add label](../../images/icon_add label.png) and while holding left-side mouse button draw a label box to the legend. Rename it to "Legend"
-![image of add legend title](../../images/2_add_legend title.png)
-37. Finally, we will make the legend background more fitting with the map. In the legend's Item Properties tab scroll down to Background and click on the color option. In the color options scroll down to Opacity and reduce the opacity to 35%. This will make the legend background partially transparent making it less dominant. The map elements like legend, title, north arrow should not be too dominant on the map itself is the most important.
-![image of add legend background](../../images/2_legend background.png)
-![image of add legend background](../../images/2_legend background2.png)
+28. Lõpetuseks lisame kaardile legendi. Vajuta `Add Item ► Add Legend` või vajuta nupule *Add Legend*
+![image of add scale bar](../../images/icon_add legend.png). Vajuta sinna, kus tahad, et legend oleks. Hoides all vasakut hiireklahvi, tõmba ristkülik. Legend ilmub, mis tõenäoliselt katab väga suure osa kaardist, kuna see võtab automaatselt informatsiooni kõikidelt kaardikihtidelt. Sellepärast peame enamikud kihid legendis välja lülitama. *Item Properties* vahekaardil keri alla, kuni jõuad valikuni *Legend items*. Eemalda linnuke valiku eest *Auto update*. See lahutab legendi *map view* kaardikihtide paneelist ning mitmed legendi muutmise nupud muutuvad aktiivseks. 
+![image of add legend](../../images/e2_add_legend.png)
+29. Kõigepealt eemaldame legendist kõik ebavajalikud kihid. *Legend items* alt valige kõik kihid peale <span style="font-family:Consolas; color:#AF1B03">keskkonnaseire_jaamad</span> ja vajutage nupul *Remove selected item(s)*. 
+![image of add legend](../../images/e2_delete_selected_items.png)
+30. Nüüd muudame legendis objekti nime korrektsemaks. Tee topeltklõps kihi nimel <span style="font-family:Consolas; color:#AF1B03">keskkonnaseire_jaamad</span> ja nimeta see ümber Keskkonnaseire jaamad, alad ja kohad.
+31. Selleks, et legendi objekti kohal oleks rohkem ruumi, vajuta *Legend Properties* ja keri kuni jõuad valikuni *Spacing*. Ava selle valikud vajutades väiksele noolele selle kõrval. Muuda `Legend Title ‣ Space below` väärtus suuremaks. 
+![image of change legend spacing](../../images/e2_change_legend_spacing.png)
+36. Nüüd lisame legendile pealkira. Vajuta `Add Item ► Add Label` või vajuta nupul *Add Label* ![image of add label](../../images/icon_add label.png). Hoia all hiire vasakut klahvi ning tõmba ristkülik legendi ülemisse osasse. Kirjuta sinna "Legend".
+![image of add legend title](../../images/e2_add_legend_title.png)
+37. Viimasena muudame legendi tausta, et see sobiks kaardiga paremini. Legendi *Item Properties* vahekaardil keri kuni jõuad valikuni *Basckbround* ja vajuta värvivalikul. Seal keri kuni jõuad valikuni *Opacity* ja vähenda seda kuni 35%. See muudab legendi tausta läbipaistvaks, mis tähendab, et legend ei ole nii domineeriv. Kaardi elemendid nagu legend, pealkiri ja põhjasuuna nool ei tohiks kaardil olla liiga domineerivad, kuna kaart ise on kõige tähtsam. 
+![image of add legend background](../../images/e2_legend_background.png)
+![image of add legend background](../../images/e2_legend_background2.png)
 
 #### 2.5. Kaardi salvestamine pildina
 38. Kui olete kaardiga rahul, siis saate selle pildi, PDF või SVG vormis salvestada. Antud juhedis salvestame kaardi pildina. Vajutage `Click Layout ► Export as Image`. Andke failile sobiv nimi ning kontrollige, et *Image Export Options* all on *Export resolution* 300 dpi. 300 dpi on minimaalne printimiseks nõutud eraldusvõime. Kui soovite kaarti internetis avaldada, siis võite eraldusvõimet vähendada 150-200 dpi-ni. Aga kui kaardi kasutamise eesmärk pole kindel, siis jätke eraldusvõimeks 300 dpi, kuna oleks kahju, kui te kujundate ilusa kaardi, aga keegi ei saa seda halva eraldusvõime tõttu lugeda.
