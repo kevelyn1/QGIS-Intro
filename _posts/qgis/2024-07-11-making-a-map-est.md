@@ -16,30 +16,34 @@ Kaart on kõige tavalisem GIS-i väljund. See juhend õpetab kuidas luua kaarti 
   * [2.1. Põhikaardi tegemine](#21-põhikaardi-tegemine)
   * [2.2. Väljalõikekaardi tegemine](#22-väljalõikekaardi-tegemine)
   * [2.3. Põhjasuuna noole, mõõtkava, kaardi pealkirja ja legendi lisamine](#23-põhjasuuna-noole-mõõtkava-kaardi-pealkirja-ja-legendi-lisamine)
-  * [2.4. Kaardi salvestamine pildina](#24-kaardi-salvestamine-pildina)
-  * [2.5. Baaskaartide lisamine](#25-baaskaartide-lisamine)
+  * [2.5. Kaardile legendi lisamine](#24-kaardile-legendi-lisamine)
+  * [2.5. Kaardi salvestamine pildina](#25-kaardi-salvestamine-pildina)
+  * [2.6. Baaskaartide lisamine](#26-baaskaartide-lisamine)
 
 ### 1. Kasutatavad andmed
 
-Antud ülesandes kasutamine [<span style="color:#0564A0">Maa-ameti WMS-teenust</span>](https://geoportaal.maaamet.ee/est/Teenused/WMSWFS-teenused-p65.html). Maa-amet pakub palju erinevaid andmekihte ja baaskaarte, mida saab otse QGIS-i laadida.
+Antud ülesandes kasutame [<span style="color:#0564A0">Maa-ameti WMS-teenust</span>](https://geoportaal.maaamet.ee/est/Teenused/WMSWFS-teenused-p65.html)ja [<span style="color:#0564A0">EELISe WFS-teenust</span>](https://gsavalik.envir.ee/geoserver/eelis/ows?version=2.0.0). Maa-amet pakub palju erinevaid andmekihte ja baaskaarte, mida saab otse QGIS-i laadida.
 
-**Andmete allikas:** [<span style="color:#0564A0">Maa-amet</span>](https://geoportaal.maaamet.ee/est/Teenused/WMSWFS-teenused-p65.html)
+**Andmete allikad:** [<span style="color:#0564A0">Maa-amet</span>](https://geoportaal.maaamet.ee/est/Teenused/WMSWFS-teenused-p65.html) ja [<span style="color:#0564A0">EELIS</span>](https://metadata.geoportaal.ee/geonetwork/srv/api/records/%7BA3FD7235-1187-49A4-BBDA-CA51D016B03D%7D).
 
 ### 2. Kaardi loomise etapid
 #### 2.1. Põhikaardi tegemine
 1. Andmete alla laadimiseks avage QGIS. Järgmiseks peame lisama uue kihi. Vali *Menu bar*-ilt `Layer ► Add layer ► Add WMS/WMTS Layer`. Avanenud aknas valige `New` ning `Name` alla kirjuta näiteks Maa-ameti aluskaart ja URL alla kopeerige link: https://kaart.maaamet.ee/wms/fotokaart? Maa-ameti leheküljelt. Siis vajutage `OK` ning `Connect`. Nüüd ilmusid andmekihid, mida saadte oma kaardile lisada. Antud töö jaoks pole aga kõiki kihte vaja, kuna see muudaks kaardi ülekoormatuks. Seega valime vaid osad kihid. Vajutades loendi aknas noole märgile, saab lisada ka üksikuid kihte. Ortofotode alt valige kiht, mille pealkiri on Ortofoto ning Halduspiiride alt valige halduspiir (1:600 000), Välisriikide piirid, jarved (1:2 000 000), Eesti-Vene kontrolljoon, meri (1:420 000) ja suur maismaa (1:420 000). Mitu kihti saab korraga valida hoides all Ctrl klahvi. Lisaks tee linnuke kasti `Load as separate layers`.
 ![image of browse data ](../../images/e2_wms_lisamine.png)
-2. Teie tegevust QGIS-is kutsutakse projektiks. QGIS saab korraga töötada ühe projektiga. Palun salvestage oma projekt `Project ► Save as` oma kausta. Proketi fail salvestab sinu lisatud kihid, kihtide atribuudid ja leppemärgid, kaardivaate projektsiooni jms. Lisainfot QGIS-i projekti kohta saad siit lehelt [<span style="color:#0564A0">QGIS Documentation</span>](https://docs.qgis.org/3.28/en/docs/user_manual/introduction/project_files.html#working-with-project-files).
-3. Kasuta *pan* and *zoom* nuppe *Map Navigation Toolbar*-il ning suurenda kaardil nähtavaks Balti SEJ. 
+2. Nüüd lisame EELISe WFS-teenusest paar kihti. Selleks vali *Menu bar*-ilt `Layer ► Add layer ► Add WFS Layer`. Avanenud aknas valige `New` ning `Name` alla kirjuta näiteks EELISe kiht ja URL alla kopeerige link: https://gsavalik.envir.ee/geoserver/eelis/ows?version=2.0.0 . Siis vajutage `OK` ning `Connect`. Ilmunud kihtidest lisage nii nagu eelmises puntis kiht: Keskkonnaseire jaamad, alad ja kohad (riiklik seire). Selleks, et kiht omale arvutisse salvestada tee parem hiireklõps antud kihil ja siis vajuta `Export ► Save Features As`. *File name* juures vajutage kolme puktiga nupule ning salvestage fail sobiva nimega oma tööfaili. Peale seda võid eelnevalt alla laetud kihi ära kustutada (*Remove layer*).
+3. Teie tegevust QGIS-is kutsutakse projektiks. QGIS saab korraga töötada ühe projektiga. Palun salvestage oma projekt `Project ► Save as` oma kausta. Proketi fail salvestab sinu lisatud kihid, kihtide atribuudid ja leppemärgid, kaardivaate projektsiooni jms. Lisainfot QGIS-i projekti kohta saad siit lehelt [<span style="color:#0564A0">QGIS Documentation</span>](https://docs.qgis.org/3.28/en/docs/user_manual/introduction/project_files.html#working-with-project-files).
+4. Kasuta *pan* and *zoom* nuppe *Map Navigation Toolbar*-il ning suurenda kaardil nähtavaks Balti SEJ. 
 ![image of zoom](../../images/e2_zoom_BaltiSEJ.png)
-4. Enne kui saame teha printimiseks sobiva kaardi, peame valima sobiva projektsiooni *Status bar*-ilt ![image of browse data](../../images/icon_crs.png), mis asub alumises paremas nurgs. Kuna laadisime andmed alla Maa-ametist, siis on automaatselt projektsioon EPSG: 3301[^1], mis on Eesti koordinaatsüsteem. Seega sobib antud projektsioon meie tööks.
-5. Uue küljendatud kaardi (*map layout*) loomiseks vali `Project ► New Print Layout` või vajuta *Show Layout Manager* ![image of icon layout](../../images/icon_layout.png). Loo uus küljendatud kaart ja nimeta see (näiteks Balti SEJ kaart). 
+5. Enne kui saame teha printimiseks sobiva kaardi, peame valima sobiva projektsiooni *Status bar*-ilt ![image of browse data](../../images/icon_crs.png), mis asub alumises paremas nurgs. Kuna laadisime andmed alla Maa-ametist, siis on automaatselt projektsioon EPSG: 3301[^1], mis on Eesti koordinaatsüsteem. Seega sobib antud projektsioon meie tööks.
+6. Lisaks peame keskkonnaseire jaamase leppemärgid sobivaks. Selleks tee parem hiireklõps keskkonnaseire jaamade kihil ning vajuta `Properties ► Symbology`. Kujunda endale meelepärane leppemärk või vajuta noolekesele otsingukasti kõrval ja vali *Topology* ning keri alla kuni leiad leppemärgi *topo pop village* ning vajuta sellele. Siis vajuta `Simple Marker` ja muuda `Size` suuruseks 5.0 ja `Stroke width` suuruseks 0.5. Lõpetuseks vajuta `Apply`. 
+![image of symbology](../../images/e2_jaamad_symbology.png)
+7. Uue küljendatud kaardi (*map layout*) loomiseks vali `Project ► New Print Layout` või vajuta *Show Layout Manager* ![image of icon layout](../../images/icon_layout.png). Loo uus küljendatud kaart ja nimeta see (näiteks Balti SEJ kaart). 
 ![image of browse data](../../images/2_new_layout.png)
-6. Nüüd on meil olemas n-ö lõuend, kuhu saame lisada kaardi *map view*-st. Automaatselt on *map layout* horisontaalses formaadis, mis sobib antud töö jaoks, aga seda on võimalik muuta ka portree formaatiks. Selleks peab tegema parema hiireklõpsu lõuendil ja siis valima `Page Properties`. Siis avaneb paneel paremas ääres, kus saab muuta lehe orientatsiooni. 
+8. Nüüd on meil olemas n-ö lõuend, kuhu saame lisada kaardi *map view*-st. Automaatselt on *map layout* horisontaalses formaadis, mis sobib antud töö jaoks, aga seda on võimalik muuta ka portree formaatiks. Selleks peab tegema parema hiireklõpsu lõuendil ja siis valima `Page Properties`. Siis avaneb paneel paremas ääres, kus saab muuta lehe orientatsiooni. 
 ![image of page properties](../../images/2_page properties.png)
-7. Selleks, et kaarti lisada, peab menüüst valima `Add Item  ► Add Map` või vajutama ![image of browse data](../../images/icon_add_map.png), mis muudab *Add map mode* aktiivseks. Hoia all hiire vasakut klahvi ning tõmba ristkülik sinna, kus tahad, et kaart oleks. Hetkel tahame, et terve lõuend oleks kaetud.
+9. Selleks, et kaarti lisada, peab menüüst valima `Add Item  ► Add Map` või vajutama ![image of browse data](../../images/icon_add_map.png), mis muudab *Add map mode* aktiivseks. Hoia all hiire vasakut klahvi ning tõmba ristkülik sinna, kus tahad, et kaart oleks. Hetkel tahame, et terve lõuend oleks kaetud.
 ![image of add map](../../images/e2_addmap.png)
-8. Nagu näha, esitatakse tõmmatud ristkülikusse kaart põhi QGIS *Map view*-st. Kui te eelnevas punktis ei tõmmanud kaarti terve lõuandi ulatuses, ei pruugi esitatud kaardil olla näha kogu meid huvitav ala. Kaardi liigutamiseks ja tsentreerimiseks vali menüüst `Edit ‣ Select/Move item aja Edit ‣ Move Content` või kasuta kaardi liigutamiseks ![image of icon select data](../../images/icon_select_move item.png) ja ![image of move content](../../images/icon_move_content.png). Selleks, et suurendatust reguleerida, vajuta *Item Properties* vahekaardile ning sisesta *Scale value*: 20000. Võib ka vajutada nupule ![image of move content](../../images/icon_move_content.png) ning kasutada hiire kerimist, et kaarti suurendada ja vähendada, aga see pole eriti mugav. 
+10. Nagu näha, esitatakse tõmmatud ristkülikusse kaart põhi QGIS *Map view*-st. Kui te eelnevas punktis ei tõmmanud kaarti terve lõuandi ulatuses, ei pruugi esitatud kaardil olla näha kogu meid huvitav ala. Kaardi liigutamiseks ja tsentreerimiseks vali menüüst `Edit ‣ Select/Move item aja Edit ‣ Move Content` või kasuta kaardi liigutamiseks ![image of icon select data](../../images/icon_select_move item.png) ja ![image of move content](../../images/icon_move_content.png). Selleks, et suurendatust reguleerida, vajuta *Item Properties* vahekaardile ning sisesta *Scale value*: 40000. Võib ka vajutada nupule ![image of move content](../../images/icon_move_content.png) ning kasutada hiire kerimist, et kaarti suurendada ja vähendada, aga see pole eriti mugav. 
 ![image of scale](../../images/e2_scale.png)
 
 #### 2.2. Väljalõikekaardi tegemine
@@ -71,13 +75,36 @@ Antud ülesandes kasutamine [<span style="color:#0564A0">Maa-ameti WMS-teenust</
 25. Lisame kaardile ka mõõtkava[^3]. Vajuta `Add Item ► Add Scalebar` või vajuta nupule *Add Scale Bar* ![image of add scale bar](../../images/icon_add scalebar.png). Vajuta kaardil kohale, kus soovid, et mõõtkava asuks. Kontrolli *Item Properties* vahekaardil, et oled valinud õige kaardi elemendi <span style="font-family:Consolas">Map 1</span>, millele mõõtkava lisada. Vali see *Style*, mis sulle meeldib. Paneelil nimega *Segments* muuda segmentide arv sulle meeldivaks. Veel on võimalik muuta mõõtkava mitmeid omadusi. Mõõtkava kujundamise ja reguleerimise kohta lisainfot saad lehelt [<span style="color:#0564A0">QGIS Documentation</span>](https://docs.qgis.org/3.28/en/docs/user_manual/print_composer/composer_items/composer_scale_bar.html#the-scale-bar-item).
 ![image of add scale bar](../../images/e2_add_scalebar.png)
 
-#### 2.4. Kaardi salvestamine pildina
+#### 2.4. Kaardile legendi lisamine
+28. Finally, we will add legend to the map. Click on `Add Item ► Add Legend` or alternatively click on Add Legend
+![image of add scale bar](../../images/icon_add legend.png). Click on the layout where you want the scalebar to appear and holding left-side mouse button draw a rectangle. The legend should appear and it will cover most of the map as it is pulling automatically the legend info from all the layers in the Map view. We need to switch off most of the layers from the legend. In the Item Properties tab, scroll down to Legend items and uncheck the Auto update  under the Legend items. This will disconnect the legend from the map view layer panel and several legend adjustment buttons will become active.
+![image of add legend](../../images/2_add legend.png)
+29. We will first remove all the unnecessary layers from the legend. Under the Legend items, select all layers except <span style="font-family:Consolas; color:#AF1B03">z7 / 1:4</span> and click Remove selected item(s) from legend.
+![image of add legend](../../images/2_delete legend items.png)
+30. For the simplicity, we will show only cities and other populated places in the legend. Therefore we will delete all other sublayers of the <span style="font-family:Consolas; color:#AF1B03">z7 / 1:4</span>. Click on the small arrow next to the layer group name under Legend items. This should reveal sublayers of the group. Delete all sublayers of the <span style="font-family:Consolas; color:#AF1B03">z7 / 1:4</span> except layer <span style="font-family:Consolas; color:#AF1B03">ne_10m_populated_places z7</span>
+![image of add legend](../../images/2_delete legend items2.png)
+31. Click on the small arrow in front of the layer <span style="font-family:Consolas; color:#AF1B03">ne_10m_populated_places z7</span> to see all of its sublayers. Delete all sublayers except <span style="font-family:Consolas; color:#AF1B03">Admin-0 capital, Admin-1 capital, Populated place</span>.
+![image of add legend](../../images/2_delete legend items3.png)
+32. We will now change the names of the legend items more appropriate. Double click on the <span style="font-family:Consolas; color:#AF1B03">z7 / 1:4m</span> and delete the text and just enter space. The QGIS won't accept leaving the place empty but as we don't need text there then entering space will allow it to keep seemingly empty.
+![image of rename legend items](../../images/2_rename legend items.png).
+33. Delete also the layer name of <span style="font-family:Consolas; color:#AF1B03">ne_10m_populated_places z7</span> similarly to previous step.
+34. Rename layer name <span style="font-family:Consolas; color:#AF1B03">Admin-0 capital</span> to <span style="font-family:Consolas; color:#AF1B03">Capital city</span>, layer name <span style="font-family:Consolas; color:#AF1B03">Admin-1 capital</span> to <span style="font-family:Consolas; color:#AF1B03"> Administrative unit capital</span>.
+![image of rename legend items](../../images/2_rename legend items2.png)
+35. Because of deleting some of the layer names, there is too much white space on the top of the legend. We will remove this by using Spacing options under Legend properties. Scroll down in the Legend Item properties tab to Spacing. Open it's options by clicking on a small arrow next to it. Change the value of Legend Title ‣ Space below to zero and Subgroups ‣ Above subgroup also zero. Note while doing that how the legend changes.
+![image of change legend spacing](../../images/2_change legend spacing.png)
+36. We will add a title to the legend. Click `Add Item ► Add Label` or alternatively click on Add Label ![image of add label](../../images/icon_add label.png) and while holding left-side mouse button draw a label box to the legend. Rename it to "Legend"
+![image of add legend title](../../images/2_add_legend title.png)
+37. Finally, we will make the legend background more fitting with the map. In the legend's Item Properties tab scroll down to Background and click on the color option. In the color options scroll down to Opacity and reduce the opacity to 35%. This will make the legend background partially transparent making it less dominant. The map elements like legend, title, north arrow should not be too dominant on the map itself is the most important.
+![image of add legend background](../../images/2_legend background.png)
+![image of add legend background](../../images/2_legend background2.png)
+
+#### 2.5. Kaardi salvestamine pildina
 38. Kui olete kaardiga rahul, siis saate selle pildi, PDF või SVG vormis salvestada. Antud juhedis salvestame kaardi pildina. Vajutage `Click Layout ► Export as Image`. Andke failile sobiv nimi ning kontrollige, et *Image Export Options* all on *Export resolution* 300 dpi. 300 dpi on minimaalne printimiseks nõutud eraldusvõime. Kui soovite kaarti internetis avaldada, siis võite eraldusvõimet vähendada 150-200 dpi-ni. Aga kui kaardi kasutamise eesmärk pole kindel, siis jätke eraldusvõimeks 300 dpi, kuna oleks kahju, kui te kujundate ilusa kaardi, aga keegi ei saa seda halva eraldusvõime tõttu lugeda.
 ![image of image export](../../images/e2_image_export.png)
 39. Õnnitlused! Olete loonud oma esimese kaardi! :smile:
 ![image of final map](../../images/e2_final_map.png)
 
-#### 2.5. Baaskaartide lisamine
+#### 2.6. Baaskaartide lisamine
 3. Lisaks õpime kuidas kaardile lisada baaskaart. Mõnikord on praktiline kasutada juba stiliseeritud baaskaarte selle asemel, et ise baaskaart kujundada. [<span style="color:#0564A0">Klas Karlsson'il</span>](https://github.com/klakar) on hea kollektsioon erinevatest baaskaartidest, mille lisamiseks on vaja vaid QGIS-is käivitada antud Python skript. Ava Github-ist [<span style="color:#0564A0">qgis_basemaps.py</span>](https://github.com/klakar/QGIS_resources/blob/master/collections/Geosupportsystem/python/qgis_basemaps.py) ja kopeeri (`Crtl+C`) skript alates reast # Sources.
 ![image](../../images/5_select script.png)
 4. Mine tagasi QGIS-i ja ava *Python Console*. Selleks vajuta *toolbar*-il ![image](../../images/icon_python console.png). *Python Console* avaneb *Map view* all. Kleebi skript ning vajuta klaviatuuril Enter. Peale seda võite *Python Console*-i sulgeda. 
