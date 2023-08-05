@@ -97,12 +97,19 @@ Antud ülesandes kasutame [<span style="color:#0564A0">Maa-ameti WMS-teenust</sp
 ![image of final map](../../images/e2_final_map.png)
 
 #### 2.6. Baaskaartide lisamine
-3. Lisaks õpime kuidas kaardile lisada baaskaart. Mõnikord on praktiline kasutada juba stiliseeritud baaskaarte selle asemel, et ise baaskaart kujundada. [<span style="color:#0564A0">Klas Karlsson'il</span>](https://github.com/klakar) on hea kollektsioon erinevatest baaskaartidest, mille lisamiseks on vaja vaid QGIS-is käivitada antud Python skript. Ava Github-ist [<span style="color:#0564A0">qgis_basemaps.py</span>](https://github.com/klakar/QGIS_resources/blob/master/collections/Geosupportsystem/python/qgis_basemaps.py) ja kopeeri (`Crtl+C`) skript alates reast # Sources.
+3. Lisaks õpime kuidas kaardile lisada baaskaart. Kõigepealt laadige [<span style="color:#0564A0">Maa-ameti/span>](https://geoportaal.maaamet.ee/est/Ruumiandmed/Haldus-ja-asustusjaotus-p119.html) leheküljelt alla fail <span style="font-family:Consolas; color:#AF1B03">Maakonnad SHP</span> ning pakkige failid lahti oma töökausta. 
+**Andmete allikad:** [<span style="color:#0564A0">Klas Karlsson'i/span>](https://github.com/klakar) baaskaardid ja [<span style="color:#0564A0">Maa-ameti/span>](https://geoportaal.maaamet.ee/est/Ruumiandmed/Haldus-ja-asustusjaotus-p119.html) Eesti maakonnad.
+4. Avage QGIS-is uus projekt. Lisage kaardile kiht <span style="font-family:Consolas; color:#AF1B03">maakond_20230801.shp</span> ja salvestage projekt sobiva nimega.
+![image of add maakonnad](../../images/e2_add_maakonnad.png)
+5. Mõnikord on praktiline kasutada juba stiliseeritud baaskaarte selle asemel, et ise baaskaart kujundada. [<span style="color:#0564A0">Klas Karlsson'il</span>](https://github.com/klakar) on hea kollektsioon erinevatest baaskaartidest, mille lisamiseks on vaja vaid QGIS-is käivitada antud Python skript. Ava Github-ist [<span style="color:#0564A0">qgis_basemaps.py</span>](https://github.com/klakar/QGIS_resources/blob/master/collections/Geosupportsystem/python/qgis_basemaps.py) ja kopeeri (`Crtl+C`) skript alates reast # Sources.
 ![image](../../images/5_select script.png)
-4. Mine tagasi QGIS-i ja ava *Python Console*. Selleks vajuta *toolbar*-il ![image](../../images/icon_python console.png). *Python Console* avaneb *Map view* all. Kleebi skript ning vajuta klaviatuuril Enter. Peale seda võite *Python Console*-i sulgeda. 
+6. Mine tagasi QGIS-i ja ava *Python Console*. Selleks vajuta *toolbar*-il ![image](../../images/icon_python console.png). *Python Console* avaneb *Map view* all. Kleebi skript ning vajuta klaviatuuril Enter. Peale seda võite *Python Console*-i sulgeda. 
 ![image](../../images/e2_paste_script.png)
-5. *Browser Panel*-is tekkisid *XYZ titels* alla paljud uued kihid. Need on lisatud baaskaardid. Proovime neist mõnda. Tee topeltklõps kihil CartoDb Dark Matter. See lisab baaskaardi *map view*-sse. Proovi näiteks ka baaskarti Google Satellite või lõbusat Stamen Watercolour. Proovi ka teisi baaskaarte. 
-![image](../../images/e2_add_base_map_layers.png) 
+7. *Browser Panel*-is tekkisid *XYZ titels* alla paljud uued kihid. Need on lisatud baaskaardid. Proovime neist mõnda. Tee topeltklõps kihil CartoDb Dark Matter. See lisab baaskaardi *map view*-sse. Proovi näiteks ka baaskarti Google Satellite või lõbusat Stamen Watercolour. Lõpuks jäta kaardile vaid Google Satellite. 
+![image](../../images/e2_add_base_map_layers.png)
+8. Suurenda ekraanile Euroopa. Kuna tahame teha Euroopa kaardi, kus oleks näidatud Eesti piirjooned. Kuna tahame teha Euroopa kaardi, kus on näidatud Eesti piirjooned, peame muutma ka projekti koordinaatsüsteemi. Tee hiireklõps *status bar*-i alumises paremas nurgas asuval tekstil EPSG:3301. *Filter* kõrval asuvasse kasti kirjutage 3035. See toob esile mitmed koordinaatsüsteemid, aga valige EPSG:3035 ning vajutage OK.
+![image](../../images/e2_change_CRS.png)
+9. Kujunda kaart *Project Layout-is* eelnevalt läbitud juhendi abil. Kaardil peaks olema pealkiri, mõõtkava ja autor.
 
 [^1]: EPSG Geodetic Parameter Dataset (lühidalt EPSG registry) on geodeetiliste andmete, ruumiliste referentssüsteemide, Maa ellipsoidide ning koordinaatide teisenduste ja sellega seotud mõõtühikute avalik register. Igale üksusele on määratud kood vahemikus 1024-32767 koos standardse masinloetava tekstiga (*well-known text*). (Wiki) EPSG koodid on ainulaadsed ja väga kasulikud, kui soovid GIS programmis otsida ja tuvastada koordinaatsüsteeme.
 [^2]: Väljalõikekaart on põhikaardil asuv väiksem kaart. (GIS Wiki)
