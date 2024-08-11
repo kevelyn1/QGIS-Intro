@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Working with attributes
-modified: 2023-08-09
+modified: 2024-08-09
 categories: qgis
 image:
   teaser: attributes_teaser.png
