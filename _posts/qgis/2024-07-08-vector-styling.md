@@ -38,7 +38,7 @@ In the Data Source Manager window, switch to the Delimited Text tab. Click the â
 #### 2.2. Add base maps
 3. Lets add some base maps to our map.  Sometimes it is practical to use ready made stylised base maps instead of styling the base map yourself. For that we can use a plugin called QuickMapServices. Click `Plugins â–º Manage and Install Plugins...` and search QuickMapServices. Then click `Install Plugin`.
 ![image](../../images/5_quickmapservices.png)
-4. Now there should be a new icon on your toolbar called QuickMapServices ![image](../../images/icon_quickmapservices.png). Click on it and choose `Search QMS`. In the new window search Google Sattelite. Then click `Add`.
+4. Now there should be a new icon on your toolbar called QuickMapServices ![image](../../images/icon_quickmapservice.png). Click on it and choose `Search QMS`. In the new window search Google Sattelite. Then click `Add`.
 ![image](../../images/5_googlesatellite.png)
 5. You should now have a map like this. Time to stylize the heritage sites.
 ![image](../../images/5_world.png)
