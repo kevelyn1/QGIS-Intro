@@ -7,4 +7,16 @@ image:
   teaser: vector_analysis_teaser.png
 ---
 
-Spatial  queries and spatial
+Raster analysis can enable very powerful and large scale analysis. It is especially useful in different environmental applications to detect land use change, mapping and modelling species distribution, mapping suitable locations for either different spieces or solar power parks. 
+
+In this task, you will analyse forest loss in Estonia and whether protected species habitats are affected by forest loss or not.
+
+
+#### The tutorial consists of the following steps:
+
+### 1. Download data
+- [1. Download data](#1-download-data)
+Please download the forest loss data: 
+
+
+**Data Sources:**
