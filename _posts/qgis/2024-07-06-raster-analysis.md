@@ -16,7 +16,7 @@ In this task, you will analyse forest loss in Estonia and whether protected spec
 
 ### 1. Download data
 - [1. Download data](#1-download-data)
-Please download the forest loss data: 
+Please download the forest loss data: [<span style="color:#0564A0">Hansen_GFC_2023_lossyear_60N_020E.tif</span>](../../datasets/Hansen_GFC_2023_lossyear_60N_020E.tif) and Estonian borders [<span style="color:#0564A0">estonia.gpkg</span>](../../datasets/estonia.gpkg)
 
 
 **Data Sources:**
