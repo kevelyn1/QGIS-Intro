@@ -24,3 +24,6 @@ Please download the forest loss data: [<span style="color:#0564A0">Hansen_GFC_20
 Trees are defined as vegetation taller than 5m in height. ‘Forest Cover Loss’ is defined as a stand-replacement disturbance, or a change from a forest to non-forest state, during the period 2000–2023.  ‘Forest Loss Year’ is a disaggregation of total ‘Forest Loss’ to annual time scales and the raster value from 1 to 23 indicates loss year from 2001 to 2023 respectively*
 
 **Data Sources:**  [<span style="color:#0564A0">"Global Forest Change by Hansen et al 2011"</span>](https://glad.earthengine.app/view/global-forest-change) and Estonian Land Board
+
+### 2. Calculating raster area
+#### 2.1. Raster clipping
