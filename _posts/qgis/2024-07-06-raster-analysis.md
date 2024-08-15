@@ -52,3 +52,5 @@ Trees are defined as vegetation taller than 5m in height. â€˜Forest Cover Lossâ€
 10. Right-click on the <span style="font-family:Consolas; color:#AF1B03">class_areas.gpkg</span> layer and open Attribute Table. The column m2 contains the area for each class in square meters. 
 11. Let's convert the area to square kilometers. To do that, search Field calculator in the Processing Toolbox and open it. Select <span style="font-family:Consolas; color:#AF1B03">class_areas</span> as the Input layer. Enter the Field name as area_sqkm and for the result field type choose decimal (double). In the Expression window enter <span style="font-family:Consolas">round("m2" / 1000000, 2)</span>. This will convert the square meters to square kilometers. Save the file as <span style="font-family:Consolas; color:#AF1B03">class_area_sqkm.xlsx</span> and click `Run`.
 ![image](../../images/7_field calc.png)
+
+### 2. Sampling raster data to points
