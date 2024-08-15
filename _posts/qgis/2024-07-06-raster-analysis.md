@@ -17,7 +17,7 @@ The tutorial is mainly based on Ujaval Gandhi's [Calculating Raster Area (QGIS3)
 
 ### 1. Download data
 - [1. Download data](#1-download-data)
-Please download the forest loss data: [<span style="color:#0564A0">Hansen_GFC_2023_lossyear_60N_020E.tif</span>](../../datasets/Hansen_GFC_2023_lossyear_60N_020E.tif) and Estonian borders [<span style="color:#0564A0">estonia.gpkg</span>](../../datasets/estonia.gpkg)
+Please download the forest loss data: [<span style="color:#0564A0">Hansen_GFC_2023_lossyear_60N_020E.tif</span>](../../datasets/Hansen_GFC_2023_lossyear_60N_020E.tif) and Estonian borders [<span style="color:#0564A0">estonia.gpkg</span>](../../datasets/estonia.gpkg). For the second part, download bird species *Lanius collurio* data  [<span style="color:#0564A0">lanius_collurio.gpkg</span>](../../datasets/lanius_collurio.gpkg) 
 
 >:scroll:**Note**
 >
