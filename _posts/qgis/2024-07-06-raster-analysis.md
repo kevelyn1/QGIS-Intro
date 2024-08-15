@@ -4,7 +4,7 @@ title: Basic raster analysis
 modified: 2024-08-07
 categories: qgis
 image:
-  teaser: vector_analysis_teaser.png
+  teaser: raster_styling_teaser.png
 ---
 
 Raster analysis can enable very powerful and large scale analysis. It is especially useful in different environmental applications to detect land use change, mapping and modelling species distribution, mapping suitable locations for either different spieces or solar power parks. 
