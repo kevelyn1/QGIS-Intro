@@ -11,6 +11,7 @@ Raster analysis can enable very powerful and large scale analysis. It is especia
 
 In this task, you will analyse forest loss in Estonia and whether protected species habitats are affected by forest loss or not.
 
+The tutorial is mainly based on Ujaval Gandhi's [Calculating Raster Area (QGIS3)](https://www.qgistutorials.com/en/docs/3/calculating_raster_area.html).
 
 #### The tutorial consists of the following steps:
 
@@ -27,3 +28,19 @@ Trees are defined as vegetation taller than 5m in height. ‘Forest Cover Loss�
 
 ### 2. Calculating raster area
 #### 2.1. Raster clipping
+1. 1. Open QGIS and in the QGIS Browser Panel, locate the directory where you added the data and add files <span style="font-family:Consolas; color:#AF1B03">estonia.gpkg</span> and <span style="font-family:Consolas; color:#AF1B03">Hansen_GFC_2023_lossyear_60N_020E.tif</span> to QGIS.
+2. Save your project with an appropriate name, for example raster_analysis.
+3. Now lets clip the raster layer to the vector boundary, so only Estonia will be left. To do that search Clip raster by mask layer in the Processing toolbox and open it. Choose <span style="font-family:Consolas; color:#AF1B03">Hansen_GFC_2023_lossyear_60N_020E.tif</span> layer as the Input Layer and <span style="font-family:Consolas; color:#AF1B03">estonia.gpkg</span> layer as the Mask Layer. Enter 0 as the nodata value.
+![image](../../images/7_clip raster.png)
+4. In the Advanced Parameters section choose Low compression. Double click on the value box and write LZW. Save the file as <span style="font-family:Consolas; color:#AF1B03">forest_est_wgs84.tif</span> and click `Run`..
+![image](../../images/7_clip raster2.png)
+5. Right-click <span style="font-family:Consolas; color:#AF1B03">Hansen_GFC_2023_lossyear_60N_020E.tif</span> layer and select Remove Layer.
+
+#### 2.2. Reprojecting raster
+6. Next we need to reproject the raster layer to the Estonian coordinate system. In the Processing Toolbox search Warp(Reprojet) and open it. Choose <span style="font-family:Consolas; color:#AF1B03">forest_est_wgs84.tif</span> as the Input Layer and EPSG:3301 as the Target CRS. In the Advanced Parameters choose Low Compression and LZW like before. Save the file as <span style="font-family:Consolas; color:#AF1B03">forest_est_reprojected.tif</span> and click `Run`.
+![image](../../images/7_warp.png)
+7. Remove the <span style="font-family:Consolas; color:#AF1B03">forest_est_wgs84.tif</span> layer. Let's set the project layer to the UTM zone. Click on <span style="font-family:Consolas; color:#AF1B03">forest_est_reprojected.tif</span> layer and choose `Layer CRS ► Set Project CRS from Layer`.
+![image](../../images/7_layer crs.png)
+
+#### 2.2. Styling raster
+8. Now let's change the symbology of the raster layer to a more suitable one. Double click on <span style="font-family:Consolas; color:#AF1B03">forest_est_reprojected.tif</span> to open Symbology.
