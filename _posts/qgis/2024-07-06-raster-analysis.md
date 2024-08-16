@@ -45,6 +45,13 @@ Trees are defined as vegetation taller than 5m in height. ‘Forest Cover Loss�
 #### 2.3. Styling raster
 8. Now let's change the symbology of the raster layer to a more suitable one. Double click on <span style="font-family:Consolas; color:#AF1B03">forest_est_reprojected</span> to open Symbology. Choose Singleband pseudocolor as the Render type, Equal Interval as the mode and 23 classes. Also choose a color ramp to your liking, for example Viridis. Then click `OK`.
 ![image](../../images/7_symbology.png)
+9.To see the forest loss better, move the layer <span style="font-family:Consolas; color:#AF1B03">estonia</span> to the bottom and change it to black. 
+![image](../../images/7_symbology2.png)
+10. Next we'll add roads and settlements, which we'll get thru WMS. Click `Layer ► Add Later ► Add WMS/WMTS Layer...`. In the new window click `New` and then write Maa-amet as the name and copy this link (https://kaart.maaamet.ee/wms/alus?) as the URL.
+![image](../../images/7_wms.png)
+11. Now click `Connect`. Now choose the layer with ID numbers 138, 139 and 140. Make sure to check the option to Load as separate layers and then click `Add`.
+![image](../../images/7_wms2.png)
+![image](../../images/7_wms3.png)
 
 #### 2.4.  Calculating areas
 9. Now let's calculate the area for each class. Search Raster layer unique values report in the Processing Toolbox and open it. Choose <span style="font-family:Consolas; color:#AF1B03">forest_est_reprojected</span> as the Input layer. Save the file as <span style="font-family:Consolas; color:#AF1B03">class_areas.gpkg</span> and click `Run`.
@@ -53,4 +60,4 @@ Trees are defined as vegetation taller than 5m in height. ‘Forest Cover Loss�
 11. Let's convert the area to square kilometers. To do that, search Field calculator in the Processing Toolbox and open it. Select <span style="font-family:Consolas; color:#AF1B03">class_areas</span> as the Input layer. Enter the Field name as area_sqkm and for the result field type choose decimal (double). In the Expression window enter <span style="font-family:Consolas">round("m2" / 1000000, 2)</span>. This will convert the square meters to square kilometers. Save the file as <span style="font-family:Consolas; color:#AF1B03">class_area_sqkm.xlsx</span> and click `Run`.
 ![image](../../images/7_field calc.png)
 
-### 2. Sampling raster data to points
+### 3. Sampling raster data to points
