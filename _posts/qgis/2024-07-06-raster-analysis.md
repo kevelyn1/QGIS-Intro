@@ -14,6 +14,13 @@ In this task, you will analyse forest loss in Estonia and whether protected spec
 The tutorial is mainly based on Ujaval Gandhi's [Calculating Raster Area (QGIS3)](https://www.qgistutorials.com/en/docs/3/calculating_raster_area.html).
 
 #### The tutorial consists of the following steps:
+- [1. Download data](#1-download-data)
+- [2. Calculating raster area](#2-calculating-raster-area)
+  * [2.1. Raster clipping](#21-raster-clipping)
+  * [2.2. Reprojecting raster](#22-reprojecting-raster)
+  * [2.3. Styling raster](#23-styling-raster)
+  * [2.4. Calculating areas](#24-calculating-areas)
+- [3. Sampling raster data to points](#3-sampling-raster-data-to-points)
 
 ### 1. Download data
 - [1. Download data](#1-download-data)
@@ -53,7 +60,7 @@ Trees are defined as vegetation taller than 5m in height. â€˜Forest Cover Lossâ€
 ![image](../../images/7_wms2.png)
 ![image](../../images/7_wms3.png)
 
-#### 2.4.  Calculating areas
+#### 2.4. Calculating areas
 12. Now let's calculate the area for each class. Search Raster layer unique values report in the Processing Toolbox and open it. Choose <span style="font-family:Consolas; color:#AF1B03">forest_est_reprojected</span> as the Input layer. Save the file as <span style="font-family:Consolas; color:#AF1B03">class_areas.gpkg</span> and click `Run`.
 ![image](../../images/7_unique values.png)
 13. Right-click on the <span style="font-family:Consolas; color:#AF1B03">class_areas.gpkg</span> layer and open Attribute Table. The column m2 contains the area for each class in square meters. 
