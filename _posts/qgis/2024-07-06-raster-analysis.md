@@ -45,11 +45,11 @@ Trees are defined as vegetation taller than 5m in height. ‘Forest Cover Loss�
 #### 2.3. Styling raster
 8. Now let's change the symbology of the raster layer to a more suitable one. Double click on <span style="font-family:Consolas; color:#AF1B03">forest_est_reprojected</span> to open Symbology. Choose Singleband pseudocolor as the Render type, Equal Interval as the mode and 23 classes. Also choose a color ramp to your liking, for example Viridis. Then click `OK`.
 ![image](../../images/7_symbology.png)
-9.To see the forest loss better, move the layer <span style="font-family:Consolas; color:#AF1B03">estonia</span> to the bottom and change it to black. 
+9. For better visualization move the layer <span style="font-family:Consolas; color:#AF1B03">estonia</span> to the bottom and change it to black. 
 ![image](../../images/7_symbology2.png)
-10. Next we'll add roads and settlements, which we'll get thru WMS. Click `Layer ► Add Later ► Add WMS/WMTS Layer...`. In the new window click `New` and then write Maa-amet as the name and copy this link (https://kaart.maaamet.ee/wms/alus?) as the URL.
+10. Next we'll add roads and settlements, which we'll get through WMS. Click `Layer ► Add Later ► Add WMS/WMTS Layer...`. In the new window click `New` and then write Maa-amet as the name and copy this link (https://kaart.maaamet.ee/wms/alus?) as the URL.
 ![image](../../images/7_wms.png)
-11. Now click `Connect`. Now choose the layer with ID numbers 138, 139 and 140. Make sure to check the option to Load as separate layers and then click `Add`.
+11. Now click `Connect` and choose the layers with ID numbers 138, 139 and 140. Make sure to check the option to Load as separate layers and then click `Add`.
 ![image](../../images/7_wms2.png)
 ![image](../../images/7_wms3.png)
 
@@ -62,10 +62,10 @@ Trees are defined as vegetation taller than 5m in height. ‘Forest Cover Loss�
 
 ### 3. Sampling raster data to points
 15. Our goal is to see how many habitats of the red-backed shrike are affected by logging. First add the layer <span style="font-family:Consolas; color:#AF1B03">lanius_collurio.gpkg</span> to the map. 
-16. Then search Sample raster values in the Processing Toolbox and open it. Add <span style="font-family:Consolas; color:#AF1B03">lanius_collurio</span> as the Input layer and <span style="font-family:Consolas; color:#AF1B03">forest_est_reprojected</span> as the Raster layer. For the output column prefix wrte forest_loss_. Then save the file as <span style="font-family:Consolas; color:#AF1B03">lanius_collurio_forest_loss.gpkg</span> and click `Run`.
+16. Then search Sample raster values in the Processing Toolbox and open it. Add <span style="font-family:Consolas; color:#AF1B03">lanius_collurio</span> as the Input layer and <span style="font-family:Consolas; color:#AF1B03">forest_est_reprojected</span> as the Raster layer. For the output column prefix write forest_loss_. Then save the file as <span style="font-family:Consolas; color:#AF1B03">lanius_collurio_forest_loss.gpkg</span> and click `Run`.
 ![image](../../images/7_raster values.png)
 17. Next open the attribute table of <span style="font-family:Consolas; color:#AF1B03">lanius_collurio_forest_loss</span>. As you can see there is a new column forest_loss_1. NULL means that there was no forest change and the number means that there was (the number shows which year the change took place).
 ![image](../../images/7_forest loss.png)
 18. Now we'll count how many habitats had forest loss. Search Basic statistics for fields in the Processing Toolbox and open it. Choose <span style="font-family:Consolas; color:#AF1B03">lanius_collurio_forest_loss</span> as the Input layer and forest_loss_1 as the field to calculate statistics on. Double click on Statistics in the Results Viewer. 
 ![image](../../images/7_basic statistics.png)
-19. Count shows how many rows had a value (aka how many points were affected by forest change) and NULL means no forest change.
+19. Count shows how many rows had a value (aka how many points were affected by forest change) and NULL means there was no forest change.
