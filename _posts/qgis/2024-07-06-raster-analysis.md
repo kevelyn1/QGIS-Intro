@@ -57,16 +57,16 @@ Trees are defined as vegetation taller than 5m in height. â€˜Forest Cover Lossâ€
 
 >:scroll:**Note**
 >
-*WMS (Web Map Service) is a service based on OGC WMS (Open Geospatial Consortium Web Map Service) standard that enables to display spatially referenced data on the computer screen without downloading . Many governmental agencies provide their data using WMS service. Estonian Land Board provideas a lot of free spatial data via WMS: https://geoportaal.maaamet.ee/eng/services/public-wms-wfs-p346.html *
+*WMS (Web Map Service) is a service based on OGC WMS (Open Geospatial Consortium Web Map Service) standard that enables to display spatially referenced data on the computer screen without downloading . Many governmental agencies provide their data using WMS service. Estonian Land Board provideas a lot of free spatial data via WMS: https://geoportaal.maaamet.ee/eng/services/public-wms-wfs-p346.html*
 
 11. Now click `Connect` and choose the layers with ID numbers 138, 139 and 140. Make sure to check the option to Load as separate layers and then click `Add`.
 ![image](../../images/7_wms2.png)
 ![image](../../images/7_wms3.png)
 
 #### 2.4. Calculating areas
-12. Now let's calculate the area for each class. Search Raster layer unique values report in the Processing Toolbox and open it. Choose <span style="font-family:Consolas; color:#AF1B03">forest_est_reprojected</span> as the Input layer. Save the file as <span style="font-family:Consolas; color:#AF1B03">class_areas.gpkg</span> and click `Run`.
+12. Now let's calculate the area for each forest change class (i.e. year of change). Find 'Raster layer unique values report' in the Processing Toolbox and open it. Choose <span style="font-family:Consolas; color:#AF1B03">forest_est_reprojected</span> as the Input layer. Save the file as <span style="font-family:Consolas; color:#AF1B03">class_areas.gpkg</span> and click `Run`.
 ![image](../../images/7_unique values.png)
-13. Right-click on the <span style="font-family:Consolas; color:#AF1B03">class_areas.gpkg</span> layer and open Attribute Table. The column m2 contains the area for each class in square meters. 
+13. Right-click on the <span style="font-family:Consolas; color:#AF1B03">class_areas.gpkg</span> layer and open Attribute Table. The column m2 contains the area for each class in square meters which shows how on how many square meters forest change took place every year. 
 14. Let's convert the area to square kilometers. To do that, search Field calculator in the Processing Toolbox and open it. Select <span style="font-family:Consolas; color:#AF1B03">class_areas</span> as the Input layer. Enter the Field name as area_sqkm and for the result field type choose decimal (double). In the Expression window enter <span style="font-family:Consolas">round("m2" / 1000000, 2)</span>. This will convert the square meters to square kilometers. Save the file as <span style="font-family:Consolas; color:#AF1B03">class_area_sqkm.xlsx</span> and click `Run`.
 ![image](../../images/7_field calc.png)
 
