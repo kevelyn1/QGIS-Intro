@@ -61,7 +61,7 @@ For convenience, you may directly download files required only for this tutorial
 ![image of processing toolbox](../../images/3_reproject.png)
 10. A new layer <span style="font-family:Consolas; color:#AF1B03">estonia</span> will appear on the Layer Panel. As you see, both the layers still line up exactly with each other - even though they are in different CRSs. This is thanks to the On-The-Fly CRS transformation. To check if layer <span style="font-family:Consolas; color:#AF1B03">estonia</span> CRS has really been changed, right-click on the <span style="font-family:Consolas; color:#AF1B03">estonia</span> layer and click on `Properties`. In the Layer Properties, switch to Information where you can see that the CRS is EPSG:3301. This confirms that the layer’s CRS has been changed.
 11. Now let’s set the Project CRS to match the newly created <span style="font-family:Consolas; color:#AF1B03">estonia</span>  layer’s CRS. Remove the <span style="font-family:Consolas; color:#AF1B03">ne_10m_admin_0_countries</span>  layer and, right click on the <span style="font-family:Consolas; color:#AF1B03">estonia</span> layer and choose `Layer CRS ► Set Project CRS from Layer`.
-You will see the Project CRS is updated to EPSG 3301 (Estonian Coordinate System 1997).
+You will see the Project CRS is updated to EPSG: 3301 (Estonian Coordinate System 1997).
 
 
 #### 2.3 Change raster layer CRS
