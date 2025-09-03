@@ -34,7 +34,7 @@ Natural Earth has [<span style="color:#0564A0">Admin 0 - Countries</span>](http:
 [<span style="color:#0564A0">Estonian Land Board</span>](https://geoportaal.maaamet.ee/eng/Spatial-Data-p58.html) provides open data about Estonia for download. However, it is very high resolution (1 to 5m) and would be too big for this exercise. Therefore it is resampled to 100m for you to use: [<span style="color:#0564A0">100m resolution DTM</span>](../../datasets/est_dtm100.zip).
 
 For convenience, you may directly download files required only for this tutorial from the link below:
-[<span style="color:#0564A0">data_projections.7z</span>](../../datasets/data_projections.zip)
+[<span style="color:#0564A0">data_projections.zip</span>](../../datasets/data_projections.zip)
 
 **Data Sources:** [<span style="color:#0564A0">Natural Earth</span>](https://www.naturalearthdata.com/) and [<span style="color:#0564A0">Estonian Land Board</span>](https://maaamet.ee/en)
 
