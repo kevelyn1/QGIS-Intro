@@ -56,6 +56,7 @@ Categorized symbology is for nominal data. Nominal data are purely descriptive a
 >:scroll:**Note**
 >
 *Expressions are one of the most powerful features of QGIS. Expressions allow to manipulate attribute value, geometry and variables in order to dynamically change the geometry style, the content or position of the label, the value for diagram, the height of a layout item, select some features, and create a virtual field. Read more about expressions from [<span style="color:#0564A0">QGIS Documentation</span>](https://docs.qgis.org/3.28/en/docs/user_manual/expressions/expression.html#expressions).*
+
 ![image](../../images/5_stroke color data override.png)
 ![image](../../images/5_stroke data override.png)
 10. We can make the symbols stand out even more by adding shadow. QGIS has a very cool Effects feature under `Symbology` which enables to create very beautifully stylized maps. To add shadow to the WHC sites, open `Symbology` and then expand Layer Rendering options. Switch on the Effects and click on the Customize Effect button ![image](../../images/icon_effects.png). The Effect Properies panel opens. Switch on Drop Shadow. You can see the immediate effect on the symbol next to it. Adjust Offset and Blur radius to 0.4 mm and reduce the Opacity to 60%. Switch on Source. If Source is not there when you open Effect properties, click on the green plus sign. Also, make sure that Drop Shadow is below Source (move it with blue arrows if needed). Click OK. The WHC points now have a more elevated appearance.
