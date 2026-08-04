@@ -18,9 +18,7 @@ To create a map, one has to style the GIS data and present it in a form that is 
   * [2.4. Graduated symbology](#24-graduated-symbology)
 
 ### 1. Download data
-In this tutorial we will use [<span style="color:#0564A0">UNESCO World Heritage Sites</span>](http://whc.unesco.org/en/syndication). Scroll down and find World Heritage List in XLS format. Download the file and open it in Excel. Save the file as csv-file (`File ► Save As`) and name it <span style="font-family:Consolas; color:#AF1B03">whc_sites_2025.csv</span> and choose file type as CSV UTF-8 (Comma delimited).
-
-For convenience, you may directly download a copy of the dataset from the link below:
+In this tutorial we will use UNESCO World Heritage Sites. For convenience, you may directly download a copy of the dataset from the link below:
 [<span style="color:#0564A0">vector_styling.zip</span>](../../datasets/whc_sites_2021.csv)
 
 **Data Sources:**
