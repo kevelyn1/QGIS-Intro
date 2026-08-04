@@ -56,7 +56,6 @@ Trees are defined as vegetation taller than 5m in height. ‘Forest Cover Loss�
 ![image](../../images/7_symbology2.png)
 10. Next we'll add roads and settlements, which we'll get via WMS. Click `Layer ► Add Later ► Add WMS/WMTS Layer...`. In the new window click `New` and then write Maa-amet as the name and copy this link (https://kaart.maaamet.ee/wms/alus?) as the URL.
 ![image](../../images/7_wms.png)
-
 >:scroll:**Note**
 >
 >*WMS (Web Map Service) is a service based on OGC WMS (Open Geospatial Consortium Web Map Service) standard that enables displaying spatially referenced data on the computer screen without downloading . Many governmental agencies provide their data using WMS services. Estonian Land Board provideas a lot of free spatial data via WMS: https://geoportaal.maaamet.ee/eng/services/public-wms-wfs-p346.html*
